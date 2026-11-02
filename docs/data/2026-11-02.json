@@ -1,19 +1,64 @@
 {
  "date": "2026-11-02",
  "weekday": "周一",
- "status": "partial",
- "generated_at": "2026-11-02T21:17:44+08:00",
+ "status": "ok",
+ "generated_at": "2026-11-02T21:34:04+08:00",
  "llm": "zhipu/glm-4.7-flash",
- "searches": 14,
+ "searches": 13,
  "sections": [
   {
    "id": "ai_video",
    "name": "AI 创意视频",
    "emoji": "🤖",
-   "status": "missing",
-   "items": [],
-   "note": "今天这一栏没生成出来",
-   "error": "RateLimitError: Error code: 429 - 该模型当前访问量过大，请您稍后再试"
+   "status": "ok",
+   "items": [
+    {
+     "title": "小猫骑士视频二创教程",
+     "subtitle": "YouTube · 碳基生物退役指南",
+     "summary": "教你用AI轻松复刻爆款小猫骑士视频，适合零基础学习者。",
+     "analysis": [
+      {
+       "label": "创意点",
+       "text": "这个视频的创意在于用AI进行二次创作，将简单的概念（小猫骑士）通过AI工具生成具有创意的视觉内容，降低了视频创作的门槛。"
+      },
+      {
+       "label": "为什么让人眼前一亮",
+       "text": "它提供了一个简单易行的步骤，让普通人也能快速上手AI视频创作，并且结果看起来很“爆款”，满足了一种快速实现创意的成就感。"
+      },
+      {
+       "label": "可以借鉴的做法",
+       "text": "可以借鉴其流程化的创作思路，比如先定人物形象再用AI生成细节，以及套用“弱小骑士+巨大对手+柔软细节或燃战斗”的剧情公式，这种结构化方法适合快速生成内容。"
+      }
+     ],
+     "links": [
+      {
+       "name": "去YouTube看",
+       "url": "https://www.youtube.com/watch?v=yOtQplnkotw"
+      },
+      {
+       "name": "在B站搜索",
+       "url": "https://search.bilibili.com/all?keyword=%E8%B6%85%E7%AE%80%E5%8D%95%E7%9A%84%E5%B0%8F%E7%8C%AB%E9%AA%91%E5%A3%AB%E8%A7%86%E9%A2%91%E4%BA%8C%E5%88%9B%E6%95%99%E7%A8%8B%E6%9D%A5%E5%95%A6%EF%BC%811%E5%88%86%E9%92%9F%E8%BD%BB%E6%9D%BE%E5%A4%8D%E5%88%BB%E7%88%86%E6%AC%BE%E8%A7%86%E9%A2%91%EF%BD%9E"
+      }
+     ],
+     "images": [
+      {
+       "src": "img/2026-11/2026-11-02-ai_video-8fb9b8f7.jpg",
+       "caption": "视频封面",
+       "credit": "YouTube"
+      }
+     ],
+     "tags": [
+      "AI教程",
+      "二次创作",
+      "小猫骑士",
+      "AI视频生成",
+      "创意视频"
+     ],
+     "source_note": "AI 没有看过视频本身，解读根据标题、简介和网上的公开评价整理，细节以视频为准。",
+     "original_title": "超简单的小猫骑士视频二创教程来啦！1分钟轻松复刻爆款视频～",
+     "badge": "创意短片"
+    }
+   ]
   },
   {
    "id": "creative_video",
@@ -22,49 +67,47 @@
    "status": "ok",
    "items": [
     {
-     "title": "I Made a Stop-Motion Ad From a Few Phone Photos",
-     "subtitle": "YouTube · Mitchel Dumlao",
-     "summary": "用手机里的几张静态照片，通过定格动画技巧变成动态视频，低成本实现电影感。",
+     "title": "今天的不开心就到此为止，明天依然光芒万丈啊",
+     "subtitle": "YouTube · วาสนา ระอองนวน",
+     "summary": "一段治愈系定格动画，用创意手工的方式传递积极能量。",
      "analysis": [
       {
        "label": "创意在哪",
-       "text": "打破了“定格动画需要复杂摆拍”的刻板印象，用最简单的静态素材（手机照片）实现了动态效果，这种“以静制动”的思路很有新意。"
+       "text": "从标题和标签看，这是一部定格动画短片，创意在于用手工和定格动画结合的方式，把积极向上的情感具象化，比如用光影变化、手工物品的移动来表现情绪的起伏和转变。"
       },
       {
        "label": "为什么有效",
-       "text": "对于普通上班族来说，这种创作门槛极低，不需要昂贵的设备和长时间的摆拍。观众看到这种“零成本”的高质量产出，会感到惊喜和启发，觉得这事儿不难。"
+       "text": "这类视频通常能有效触动观众，因为定格动画本身带有一种手作温度和慢节奏的治愈感，加上积极的主题，能让人在观看中放松心情，获得力量。"
       },
       {
-       "label": "可借鉴的做法",
-       "text": "利用现有的素材（照片、产品图），通过软件每隔几帧调整一下位置，就能产生流畅的动画效果。重点在于节奏感和素材本身的质感，而不是复杂的设备。"
+       "label": "可以借鉴的做法",
+       "text": "可以尝试用类似的定格动画形式，结合自己的兴趣或擅长领域（比如绘画、模型），表达一个简单但有共鸣的主题，注重细节的耐心和创意的转化。"
       }
      ],
      "links": [
       {
        "name": "去YouTube看",
-       "url": "https://www.youtube.com/watch?v=aCAvoN1kwWw"
+       "url": "https://www.youtube.com/watch?v=2Hsn4W7ibPY"
       },
       {
        "name": "在B站搜索",
-       "url": "https://search.bilibili.com/all?keyword=I%20Made%20a%20Stop-Motion%20Ad%20From%20a%20Few%20Phone%20Photos%20%28AI%29"
+       "url": "https://search.bilibili.com/all?keyword=%E4%BB%8A%E5%A4%A9%E7%9A%84%E4%B8%8D%E5%BC%80%E5%BF%83%E5%B0%B1%E5%88%B0%E6%AD%A4%E4%B8%BA%E6%AD%A2%EF%BC%8C%E6%98%8E%E5%A4%A9%E4%BE%9D%E7%84%B6%E5%85%89%E8%8A%92%E4%B8%87%E4%B8%88%E5%95%8A%23%E5%AE%9A%E6%A0%BC%E5%8A%A8%E7%94%BB%23%E5%88%9B%E6%84%8F%E6%89%8B%E5%B7%A5%23%E6%B2%BB%E6%84%88%E7%9F%AD%E7%89%87"
       }
      ],
      "images": [
       {
-       "src": "img/2026-11/2026-11-02-creative_video-5b0e0796.jpg",
+       "src": "img/2026-11/2026-11-02-creative_video-ce7f8bbe.jpg",
        "caption": "视频封面",
        "credit": "YouTube"
       }
      ],
      "tags": [
       "定格动画",
-      "低成本制作",
-      "手机摄影",
-      "创意剪辑",
-      "视觉特效"
+      "治愈短片",
+      "创意手工"
      ],
      "source_note": "AI 没有看过视频本身，解读根据标题、简介和网上的公开评价整理，细节以视频为准。",
-     "original_title": "I Made a Stop-Motion Ad From a Few Phone Photos (AI)"
+     "original_title": "今天的不开心就到此为止，明天依然光芒万丈啊#定格动画#创意手工#治愈短片"
     }
    ]
   },
@@ -75,72 +118,70 @@
    "status": "ok",
    "items": [
     {
-     "title": "Final Cut Pro 加载 OpenAI 模型，剪辑效率翻倍",
+     "title": "8种核心电影镜头语言，让Ai视频有导演思维",
      "subtitle": "",
-     "summary": "苹果给专业视频剪辑软件接入了 OpenAI 能力，以后可以直接用 AI 生成特效素材和填充画面。",
+     "summary": "教你用AI制作视频时，怎么用镜头语言提升画面感。",
      "analysis": [
       {
        "label": "讲了什么",
-       "text": "Final Cut Pro 和 Pixelmator Pro 更新了 AI 功能，特别是 Final Cut Pro 可以用 OpenAI 的模型来生成视觉特效（MotionVFX）和画面填充，还能自动生成字幕。"
+       "text": "这个视频教程介绍了8种电影镜头语言，比如故事与分镜、角色视觉风格、提示词与参考图、首尾帧等，并用AI生成画面演示了创作流程。"
       },
       {
        "label": "怎么用 / 适合做什么",
-       "text": "如果你是做短视频的上班族，以后做片头特效或者补全画面背景时，不用再去素材网站找半天，直接在剪辑软件里输入指令就能生成。"
+       "text": "适合想学用AI做视频，特别是想提升画面质感和导演思维的上班族，可以参考这些镜头语言来优化提示词和生成效果。"
       },
       {
        "label": "注意事项或省积分技巧",
-       "text": "这是苹果自带的功能，调用 OpenAI 模型通常不需要额外花钱，主要消耗你的 Apple Intelligence 额度。"
+       "text": "注意提示词要具体，多尝试不同的镜头语言组合，视频里展示的生成过程可以参考，但实际使用时可能需要调整参数。"
       }
      ],
      "links": [
       {
        "name": "看原文",
-       "url": "https://9to5mac.com/2026/10/27/apple-creator-studio-gets-powerful-new-ai-features-using-openai-models/"
+       "url": "https://www.instagram.com/reel/DfHO-o6TI35"
       }
      ],
      "images": [],
      "tags": [
-      "Final Cut Pro",
-      "OpenAI",
-      "苹果",
-      "视频剪辑"
+      "AI视频教程",
+      "电影镜头",
+      "创作技巧"
      ],
      "source_note": "",
      "badge": "视频工具"
     },
     {
-     "title": "Veo 3 免费领积分，Pika 上手最快",
+     "title": "AI生成图片和视频的技巧：人物与场景一致性",
      "subtitle": "",
-     "summary": "教你如何利用 Google Veo 3 的免费额度做高质量视频，以及 Pika 适合发朋友圈的短平快视频。",
+     "summary": "教你用AI生成图片和视频时，怎么让人物和场景保持一致，避免穿帮。",
      "analysis": [
       {
        "label": "讲了什么",
-       "text": "对比了 Veo 3、Pika 和 Luma 三款工具。Veo 3 在 Google 生态里每天有免费积分，适合做高质量视频；Pika 上手最快，适合社媒短片；Luma 免费额度最宽。"
+       "text": "这个教程介绍了如何通过分镜设计、生成设置来控制人物容貌、服装、场景和动作的连贯性，以及一些AIGC生成和运镜技巧。"
       },
       {
        "label": "怎么用 / 适合做什么",
-       "text": "如果你在做项目，想省点钱，先用 Veo 3 的免费积分练手；如果只是想发个短视频玩玩，Pika 最省心。"
+       "text": "适合所有想用AI生成图片或视频的人，特别是新手，能帮你减少作品中的穿帮问题，让画面更流畅。"
       },
       {
        "label": "注意事项或省积分技巧",
-       "text": "Veo 3 在 Google 生态里，每天有免费 Flow credits，先试高质量模式才要付费。Pika 上手最快，适合做社媒短片跟玩效果。"
+       "text": "生成前要仔细规划，尽量用参考图固定人物和场景风格，避免随意生成导致不匹配。"
       }
      ],
      "links": [
       {
        "name": "看原文",
-       "url": "https://www.instagram.com/p/DfLF1XOHAeE"
+       "url": "https://www.instagram.com/p/DfMk-f5m8Ov"
       }
      ],
      "images": [],
      "tags": [
-      "Veo 3",
-      "Pika",
-      "Luma",
-      "积分技巧"
+      "AI图片教程",
+      "人物一致性",
+      "场景制作"
      ],
      "source_note": "",
-     "badge": "视频工具"
+     "badge": "图片工具"
     }
    ]
   },
@@ -151,43 +192,46 @@
    "status": "ok",
    "items": [
     {
-     "title": "双11忙忙碌碌寻宝藏belike",
+     "title": "我刚满十八岁",
      "subtitle": "",
-     "summary": "一种利用“belike”模板（类似ChatGPT的“像...一样”）进行角色扮演的玩法，常用于双11大促或日常忙碌场景。",
+     "summary": "刚满十八岁这个梗通常用来嘲讽或自嘲，因为18岁在某些语境下是一个重要的年龄节点。",
      "analysis": [
       {
        "label": "出处",
-       "text": "抖音热榜第7位。"
+       "text": "这个梗来源于一个游戏比赛中的数字梗，3154指的是一个游戏时间点，后来被用来嘲讽对手。"
       },
       {
        "label": "为什么火",
-       "text": "“belike”是最近短视频里很火的生成式玩法。用户不需要真的拍视频，只需要输入两句话（比如“猫在双十一疯狂购物”和“猫在双十一寻宝”），系统就会生成两张对比图。这种反差感既好笑又适合上班族下班后的吐槽，门槛低，传播快。"
+       "text": "因为18岁是一个重要的年龄节点，很多人在18岁时会有一些特殊的经历或身份变化，所以这个梗容易引起共鸣。"
       },
       {
        "label": "怎么用",
-       "text": "1. 找个你喜欢的角色（比如老板、同事、甚至猫狗），输入动作描述。2. 在第一句里让它做一件“正经”的事，第二句里让它做一件“离谱”的事。3. 拿着生成的图发朋友圈或发视频，配文“这就是我的双11状态”。"
+       "text": "1. 自嘲：'我刚满十八岁，工资还没3000多呢。' 2. 嘲讽：'他刚满十八岁，还不知道怎么打游戏。'"
       },
       {
        "label": "热度依据",
-       "text": "出现在抖音热榜第7位，热度9116875，属于近期高流量话题。"
+       "text": "这个梗在抖音上因为其幽默性和共鸣点而流行。"
       }
      ],
      "links": [
       {
        "name": "在抖音搜索",
-       "url": "https://www.douyin.com/search/%E5%8F%8C11%E5%AF%BB%E5%AE%9D%E8%97%8Fbelike"
+       "url": "https://www.douyin.com/search/%E6%88%91%E5%88%9A%E6%BB%A1%E5%8D%81%E5%85%AB%E5%B2%81"
       },
       {
        "name": "在B站搜索",
-       "url": "https://search.bilibili.com/all?keyword=%E5%8F%8C11%E5%AF%BB%E5%AE%9D%E8%97%8Fbelike"
+       "url": "https://search.bilibili.com/all?keyword=%E6%88%91%E5%88%9A%E6%BB%A1%E5%8D%81%E5%85%AB%E5%B2%81"
+      },
+      {
+       "name": "参考来源",
+       "url": "https://zh.moegirl.org.cn/%E6%95%B0%E5%AD%97%E6%A2%97"
       }
      ],
      "images": [],
      "tags": [
-      "AI生成",
-      "角色扮演",
-      "反差萌",
-      "热榜"
+      "游戏梗",
+      "自嘲",
+      "嘲讽"
      ],
      "source_note": ""
     }
@@ -200,84 +244,82 @@
    "status": "ok",
    "items": [
     {
-     "title": "高进 & 小沈阳 - 我的好兄弟 (抖音DJ版)",
-     "subtitle": "高进 & 小沈阳",
-     "summary": "DJ 混音版让经典老歌有了新节奏，适合热闹或兄弟情视频。",
+     "title": "1% Battery Girl 低电量女孩",
+     "subtitle": "ChiliChill乐团",
+     "summary": "一首轻松幽默的歌，适合搞笑或日常视频",
      "analysis": [
       {
        "label": "为什么火",
-       "text": "DJ 版本提升了节奏感，去掉了拖沓的部分，让整首歌更有“劲”，适合快节奏剪辑。"
+       "text": "歌词有趣，节奏感强，适合做搞笑视频或日常vlog，副歌容易上口"
       },
       {
        "label": "常配什么视频",
-       "text": "兄弟聚会、搞笑混剪、卡点视频、或者展示好身材的运动视频。"
+       "text": "搞笑vlog、生活记录、宠物视频、搞笑挑战"
       },
       {
        "label": "听点",
-       "text": "“我的好兄弟，心里有苦你对说”这句歌词非常洗脑，前奏一响就有代入感。"
+       "text": "副歌‘低电量女孩’重复多次，旋律简单洗脑，适合做背景音乐"
       }
      ],
      "links": [
       {
        "name": "在QQ音乐搜索",
-       "url": "https://y.qq.com/n/ryqq/search?w=%E9%AB%98%E8%BF%9B%20%26%20%E5%B0%8F%E6%B2%88%E9%98%B3%20-%20%E6%88%91%E7%9A%84%E5%A5%BD%E5%85%84%E5%BC%9F%20%28%E6%8A%96%E9%9F%B3DJ%E7%89%88%29%20%E9%AB%98%E8%BF%9B%20%26%20%E5%B0%8F%E6%B2%88%E9%98%B3"
+       "url": "https://y.qq.com/n/ryqq/search?w=1%25%20Battery%20Girl%20%E4%BD%8E%E7%94%B5%E9%87%8F%E5%A5%B3%E5%AD%A9%20ChiliChill%E4%B9%90%E5%9B%A2"
       },
       {
        "name": "在网易云搜索",
-       "url": "https://music.163.com/#/search/m/?s=%E9%AB%98%E8%BF%9B%20%26%20%E5%B0%8F%E6%B2%88%E9%98%B3%20-%20%E6%88%91%E7%9A%84%E5%A5%BD%E5%85%84%E5%BC%9F%20%28%E6%8A%96%E9%9F%B3DJ%E7%89%88%29%20%E9%AB%98%E8%BF%9B%20%26%20%E5%B0%8F%E6%B2%88%E9%98%B3"
+       "url": "https://music.163.com/#/search/m/?s=1%25%20Battery%20Girl%20%E4%BD%8E%E7%94%B5%E9%87%8F%E5%A5%B3%E5%AD%A9%20ChiliChill%E4%B9%90%E5%9B%A2"
       },
       {
        "name": "在抖音搜索",
-       "url": "https://www.douyin.com/search/%E9%AB%98%E8%BF%9B%20%26%20%E5%B0%8F%E6%B2%88%E9%98%B3%20-%20%E6%88%91%E7%9A%84%E5%A5%BD%E5%85%84%E5%BC%9F%20%28%E6%8A%96%E9%9F%B3DJ%E7%89%88%29"
+       "url": "https://www.douyin.com/search/1%25%20Battery%20Girl%20%E4%BD%8E%E7%94%B5%E9%87%8F%E5%A5%B3%E5%AD%A9"
       }
      ],
      "images": [],
      "tags": [
-      "抖音DJ版",
-      "兄弟情",
-      "卡点",
-      "经典翻红"
+      "搞笑",
+      "vlog",
+      "轻松"
      ],
      "source_note": ""
     },
     {
-     "title": "感情断了也乱了- 断了乱了(抖音DJ版)",
-     "subtitle": "断了乱了",
-     "summary": "DJ 混音版放大了情绪张力，听起来更虐心，适合情绪类视频。",
+     "title": "Cherry Candy",
+     "subtitle": "Lunak",
+     "summary": "甜美轻快的电子音乐，适合情侣或浪漫场景",
      "analysis": [
       {
        "label": "为什么火",
-       "text": "原曲比较抒情，DJ 版本加了重低音和变奏，把那种“心碎”的感觉放大了，非常抓耳。"
+       "text": "旋律甜美，节奏轻快，适合做情侣互动视频或浪漫场景，在抖音上被情侣们广泛使用"
       },
       {
        "label": "常配什么视频",
-       "text": "情感叙事、分手场景、深夜emo、或者带有强烈情绪转折的卡点视频。"
+       "text": "情侣日常、约会vlog、浪漫场景、美食制作"
       },
       {
        "label": "听点",
-       "text": "副歌部分“感情断了也乱了”旋律起伏大，情绪递进明显，很适合做视频的高潮部分。"
+       "text": "副歌‘Cherry Candy’旋律轻快，适合做甜蜜氛围的背景音乐"
       }
      ],
      "links": [
       {
        "name": "在QQ音乐搜索",
-       "url": "https://y.qq.com/n/ryqq/search?w=%E6%84%9F%E6%83%85%E6%96%AD%E4%BA%86%E4%B9%9F%E4%B9%B1%E4%BA%86-%20%E6%96%AD%E4%BA%86%E4%B9%B1%E4%BA%86%28%E6%8A%96%E9%9F%B3DJ%E7%89%88%29%20%E6%96%AD%E4%BA%86%E4%B9%B1%E4%BA%86"
+       "url": "https://y.qq.com/n/ryqq/search?w=Cherry%20Candy%20Lunak"
       },
       {
        "name": "在网易云搜索",
-       "url": "https://music.163.com/#/search/m/?s=%E6%84%9F%E6%83%85%E6%96%AD%E4%BA%86%E4%B9%9F%E4%B9%B1%E4%BA%86-%20%E6%96%AD%E4%BA%86%E4%B9%B1%E4%BA%86%28%E6%8A%96%E9%9F%B3DJ%E7%89%88%29%20%E6%96%AD%E4%BA%86%E4%B9%B1%E4%BA%86"
+       "url": "https://music.163.com/#/search/m/?s=Cherry%20Candy%20Lunak"
       },
       {
        "name": "在抖音搜索",
-       "url": "https://www.douyin.com/search/%E6%84%9F%E6%83%85%E6%96%AD%E4%BA%86%E4%B9%9F%E4%B9%B1%E4%BA%86-%20%E6%96%AD%E4%BA%86%E4%B9%B1%E4%BA%86%28%E6%8A%96%E9%9F%B3DJ%E7%89%88%29"
+       "url": "https://www.douyin.com/search/Cherry%20Candy"
       }
      ],
      "images": [],
      "tags": [
-      "情绪卡点",
-      "分手",
-      "DJ版",
-      "情感"
+      "浪漫",
+      "情侣",
+      "甜系"
      ],
      "source_note": ""
     }
@@ -290,93 +332,91 @@
    "status": "ok",
    "items": [
     {
-     "title": "多巴胺配色 Dopamine design",
-     "subtitle": "色彩风格",
-     "summary": "用高饱和度的亮色和几何图形拼贴出让人看了就开心的画面。",
+     "title": "瑞士国际主义风格 Swiss Style International Typographic Style",
+     "subtitle": "平面设计",
+     "summary": "简洁、清晰、现代，一看就高级",
      "analysis": [
       {
        "label": "一句话认出它",
-       "text": "看颜色就知道，特别亮、特别鲜艳，看着就让人觉得心情好、有活力。"
+       "text": "全是直线、方块，文字和图片分得超清楚，一点花里胡哨的没有。"
       },
       {
        "label": "起源",
-       "text": "最早源自 80 年代的复古波普风格，后来因为心理学里“多巴胺”能带来快乐的概念火了起来，现在成了社交媒体上的热门风格。"
+       "text": "20世纪初在瑞士兴起，当时觉得这种风格最科学、最干净。"
       },
       {
        "label": "色彩",
-       "text": "喜欢用饱和度很高的颜色，比如荧光黄、亮粉色、克莱因蓝，而且喜欢用对比色，让颜色撞在一起特别扎眼。"
+       "text": "最爱用黑白灰，偶尔加个亮色点缀，但绝不花哨。"
       },
       {
        "label": "字体和排版",
-       "text": "字体通常选卡通体、粗体或者手写体，间距可能故意拉大或者压扁，看着就俏皮。"
+       "text": "字体非黑即白，没有太多变形，排版像搭积木一样整齐。"
       },
       {
        "label": "构图和图形",
-       "text": "常用大量的几何图形（圆圈、三角形、波浪线）和涂鸦作为装饰，像把很多贴纸拼在一起一样。"
+       "text": "图片剪裁得干干净净，留白超多，整体感觉特别平衡。"
       },
       {
        "label": "代表作品或设计师",
-       "text": "现在很多社交媒体博主（比如 Instagram 上的潮流账号）和像 Pinkoi 这样的创意平台都在用这种风格。"
+       "text": "你看很多银行的标志、地图设计，都是这个风格的。"
       },
       {
        "label": "和相近风格的区别",
-       "text": "和孟菲斯风格有点像，但孟菲斯更偏向复古怀旧，多巴胺风格更强调当下的快乐和年轻感，更“炸”。"
+       "text": "跟之前的装饰风完全相反，瑞士风就是简单到极致。"
       },
       {
        "label": "怎么用",
-       "text": "做视频封面或海报时，直接把背景换成亮黄色或亮粉色，再加几个亮色几何图形，瞬间就有那味儿了。AI 提示词里记得加 \"high saturation\" 和 \"vibrant colors\"。"
+       "text": "做视频封面时用这种风格，画面不会太杂乱，重点突出；写 AI 生图提示词时可以说 'minimalist Swiss style design, clean lines, black and white'."
       },
       {
        "label": "AI 生图提示词",
-       "text": "A young woman holding a colorful drink, dopamine design style, high saturation colors, neon yellow, bright pink, electric blue, geometric shapes, stickers, collage, 3D render, clean background, bright lighting, 8k"
+       "text": "minimalist Swiss style design, clean lines, black and white, geometric shapes, balanced composition, high contrast"
       }
      ],
      "links": [
       {
        "name": "在Pinterest搜索",
-       "url": "https://www.pinterest.com/search/pins/?q=Dopamine%20design"
+       "url": "https://www.pinterest.com/search/pins/?q=Swiss%20Style%20International%20Typographic%20Style"
       },
       {
        "name": "在花瓣搜索",
-       "url": "https://huaban.com/search?q=%E5%A4%9A%E5%B7%B4%E8%83%BA%E9%85%8D%E8%89%B2"
+       "url": "https://huaban.com/search?q=%E7%91%9E%E5%A3%AB%E5%9B%BD%E9%99%85%E4%B8%BB%E4%B9%89%E9%A3%8E%E6%A0%BC"
       },
       {
        "name": "在Behance搜索",
-       "url": "https://www.behance.net/search/projects?search=Dopamine%20design"
+       "url": "https://www.behance.net/search/projects?search=Swiss%20Style%20International%20Typographic%20Style"
       }
      ],
      "images": [
       {
-       "src": "img/2026-11/2026-11-02-design-44422b67.jpg",
-       "caption": "图中使用了鲜艳且对比强烈的色彩组合，如蓝色、黄色和橙色，体现了多巴胺配色的特点。",
+       "src": "img/2026-11/2026-11-02-design-24c9b861.jpg",
+       "caption": "图中使用了简洁的几何形状和鲜明的色彩对比，体现了瑞士国际主义风格的简约和功能性。",
        "credit": "网络图片",
        "page": ""
       },
       {
-       "src": "img/2026-11/2026-11-02-design-e1526179.jpg",
-       "caption": "图中展示了鲜艳的色彩和活泼的氛围，体现了多巴胺配色的特点",
+       "src": "img/2026-11/2026-11-02-design-90ae93b8.jpg",
+       "caption": "这些海报使用了简洁的几何形状和鲜明的色彩对比，体现了瑞士国际主义风格的典型特征。",
        "credit": "网络图片",
        "page": ""
       },
       {
-       "src": "img/2026-11/2026-11-02-design-7801693c.jpg",
-       "caption": "图中鲜艳的色彩和活泼的装饰元素体现了多巴胺配色的特点",
+       "src": "img/2026-11/2026-11-02-design-56d92971.jpg",
+       "caption": "图中展示了简洁的设计和排版，使用了大量的空白空间，符合瑞士国际主义风格的简约美学。",
        "credit": "网络图片",
        "page": ""
       },
       {
-       "src": "img/2026-11/2026-11-02-design-bed0de3b.jpg",
-       "caption": "图中色彩鲜艳，充满活力，植物和家具的颜色搭配体现了多巴胺配色的特点。",
+       "src": "img/2026-11/2026-11-02-design-d11a6dc8.jpg",
+       "caption": "图中使用了简洁的几何形状和鲜明的色彩对比，体现了瑞士国际主义风格的简约和功能主义特点。",
        "credit": "网络图片",
        "page": ""
       }
      ],
      "tags": [
-      "多巴胺",
-      "高饱和度",
-      "复古波普",
-      "几何图形",
-      "AI绘画"
+      "瑞士国际主义风格",
+      "极简设计",
+      "平面设计"
      ],
      "source_note": ""
     }
@@ -389,107 +429,107 @@
    "status": "ok",
    "items": [
     {
-     "title": "垃圾摇滚 Grunge",
+     "title": "独立摇滚 Indie rock",
      "subtitle": "音乐风格",
-     "summary": "听着就像穿了一件洗了很多次、有点脏兮兮的旧T恤，充满愤怒但又很酷，吉他声特别大，主打一个‘不完美’。",
+     "summary": "鼓点像心跳一样，吉他带着点慵懒的沙沙声，人声有点小情绪。",
      "analysis": [
       {
+       "label": "一句话认出它",
+       "text": "鼓点像心跳一样，吉他带着点慵懒的沙沙声，人声有点小情绪。"
+      },
+      {
        "label": "起源",
-       "text": "90年代初，最早在美国西雅图火起来，主要靠 Nirvana（涅槃乐队）带火的。"
+       "text": "独立摇滚起源于 60 年代末的英国，那时候的乐队不想被大公司控制，自己搞音乐，所以叫‘独立’。"
       },
       {
        "label": "节奏",
-       "text": "通常比较慢，大概 90 到 120 BPM。听起来像是在拖着很重的东西走，鼓点很重，小军鼓打得松松垮垮，不讲究太准的时值。"
+       "text": "速度大概在 100 到 120 BPM 左右，不算特别快，但鼓的敲击很有力量，像在走路的步伐感，有时候会突然停一下，然后又继续。"
       },
       {
        "label": "乐器构成",
-       "text": "三件套：电吉他、贝斯、鼓。吉他一定要开大失真，听起来很吵。"
+       "text": "吉他、贝斯、鼓是基础，人声很重要，有时候还会加个键盘或者萨克斯，让音乐更有层次。"
       },
       {
        "label": "和声和旋律",
-       "text": "和弦很简单，甚至有点难听，旋律也不复杂，就是反复弹几个音，主打一个‘不完美’。"
+       "text": "吉他会弹一些特别的和弦，听起来有点复古，旋律简单但很抓人，容易记住。"
       },
       {
        "label": "制作特点",
-       "text": "录音听起来很粗糙，像是地下室里直接录的。吉他经常会有那种刺耳的啸叫声（Feedback）。"
+       "text": "制作不会太花哨，有时候听起来像直接在录，有点粗糙，但这样反而更真实，更能感受到音乐人的感情。"
       },
       {
-       "label": "代表曲：Smells Like Teen Spirit - Nirvana (涅槃乐队)",
-       "text": "前奏那段吉他尖叫声（Feedback），还有那个非常重、像砸地板一样的底鼓声音。"
+       "label": "代表曲：Fake Plastic Trees - Radiohead",
+       "text": "听的时候注意鼓的节奏，还有吉他那慵懒的沙沙声，人声里藏着很多情绪。"
       }
      ],
      "links": [
       {
        "name": "在QQ音乐搜索",
-       "url": "https://y.qq.com/n/ryqq/search?w=Smells%20Like%20Teen%20Spirit%20Nirvana%20%28%E6%B6%85%E6%A7%83%E4%B9%90%E9%98%9F%29"
+       "url": "https://y.qq.com/n/ryqq/search?w=Fake%20Plastic%20Trees%20Radiohead"
       },
       {
        "name": "在网易云搜索",
-       "url": "https://music.163.com/#/search/m/?s=Smells%20Like%20Teen%20Spirit%20Nirvana%20%28%E6%B6%85%E6%A7%83%E4%B9%90%E9%98%9F%29"
+       "url": "https://music.163.com/#/search/m/?s=Fake%20Plastic%20Trees%20Radiohead"
       },
       {
        "name": "在B站搜索",
-       "url": "https://search.bilibili.com/all?keyword=Smells%20Like%20Teen%20Spirit%20Nirvana%20%28%E6%B6%85%E6%A7%83%E4%B9%90%E9%98%9F%29"
+       "url": "https://search.bilibili.com/all?keyword=Fake%20Plastic%20Trees%20Radiohead"
       }
      ],
      "images": [],
      "tags": [
-      "垃圾摇滚",
-      "90年代",
-      "西雅图之声"
+      "鼓点像心跳",
+      "吉他慵懒",
+      "人声小情绪"
      ],
      "source_note": ""
     },
     {
-     "title": "迪吉里杜管 Didgeridoo",
+     "title": "三味线 Shamisen",
      "subtitle": "乐器",
-     "summary": "一种长得像长管子、吹起来声音像风穿过洞穴的低沉乐器。",
+     "summary": "三味线声音很大，像在哭，但很美。",
      "analysis": [
       {
        "label": "音色",
-       "text": "非常低沉、厚重，一直在嗡嗡响，像大象的低语，或者一种很原始的风声。"
+       "text": "三味线声音很大，像在哭，但很美，有种悲伤又有点力量。"
       },
       {
        "label": "怎么发声",
-       "text": "需要用嘴含住管口，通过嘴唇震动发出声音，而且需要不停地吹气（循环换气）才能持续响下去。"
+       "text": "用竹子做的琴杆拨动弦，琴身是瓢的，所以声音很特别。"
       },
       {
        "label": "常出现在哪些风格",
-       "text": "世界音乐、后摇、电子音乐、电影配乐。现在很多流行歌里用它来代替低音合成器。"
-      },
-      {
-       "label": "代表曲目",
-       "text": "电影《头脑特工队》原声带里的《Breathe》，或者 Tame Impala 的《The Less I Know The Better》。"
+       "text": "常出现在日本传统音乐里，现在很多独立音乐和世界音乐也会用，让音乐更有异国情调。"
       }
      ],
      "links": [
       {
        "name": "在B站搜索",
-       "url": "https://search.bilibili.com/all?keyword=%E8%BF%AA%E5%90%89%E9%87%8C%E6%9D%9C%E7%AE%A1%20%E6%BC%94%E5%A5%8F"
+       "url": "https://search.bilibili.com/all?keyword=%E4%B8%89%E5%91%B3%E7%BA%BF%20%E6%BC%94%E5%A5%8F"
       },
       {
        "name": "在YouTube搜索",
-       "url": "https://www.youtube.com/results?search_query=Didgeridoo%20performance"
+       "url": "https://www.youtube.com/results?search_query=Shamisen%20performance"
       }
      ],
      "images": [
       {
-       "src": "img/2026-11/2026-11-02-inst-c65cb1a7.jpg",
-       "caption": "图中展示了一个人正在演奏迪吉里杜管",
+       "src": "img/2026-11/2026-11-02-inst-3e481c9f.jpg",
+       "caption": "图中人物正在演奏三味线",
        "credit": "Wikimedia Commons",
-       "page": "https://commons.wikimedia.org/wiki/File:Didgeridoo_Too_(Imagicity_1066).jpg"
+       "page": "https://commons.wikimedia.org/wiki/File:Toshimana_playing_shamisen_05.jpg"
       },
       {
-       "src": "img/2026-11/2026-11-02-inst-c2a207fe.jpg",
-       "caption": "图中展示的是一支装饰精美的迪吉里杜管",
+       "src": "img/2026-11/2026-11-02-inst-b4d22d93.jpg",
+       "caption": "图中人物正在演奏三味线",
        "credit": "Wikimedia Commons",
-       "page": "https://commons.wikimedia.org/wiki/File:Didgeridoo_MIM_Museum_Phoenix_AZ_121918_(40263491432).jpg"
+       "page": "https://commons.wikimedia.org/wiki/File:Toshimana_playing_shamisen_02.jpg"
       }
      ],
      "tags": [
-      "土著乐器",
-      "低频",
-      "氛围感"
+      "声音像在哭",
+      "很大",
+      "很美"
      ],
      "source_note": ""
     }
@@ -502,61 +542,61 @@
    "status": "ok",
    "items": [
     {
-     "title": "《罗梅斯尼》",
-     "subtitle": "Louis-Rémy Robert · 1850–55 · Salted paper print from paper negative",
-     "summary": "一幅描绘乡村建筑的早期摄影作品。",
+     "title": "Kshitigarbha",
+     "subtitle": "Unidentified artist · first half of the 14th century · Hanging scroll; ink, color, and gold on silk",
+     "summary": "一幅描绘佛教神祇Kshitigarbha的艺术作品。",
      "analysis": [
       {
        "label": "第一眼看哪里",
-       "text": "首先，眼睛会被吸引到画面的中心，那里有几座老房子，这是照片的主要焦点。"
+       "text": "首先，眼睛会被吸引到画面的中心人物身上，因为他是整个画面的焦点。"
       },
       {
        "label": "构图",
-       "text": "房屋排列成一条线，形成了一个自然的引导线，将视线从前景引向背景。留白较多，给人一种宁静的感觉。"
+       "text": "人物位于画面的中央偏上位置，周围有丰富的装饰元素，如光环和服饰上的复杂图案。这些元素增加了画面的层次感和深度。"
       },
       {
        "label": "色彩",
-       "text": "由于是黑白照片，主要颜色是不同层次的灰色，营造出一种复古的氛围。"
+       "text": "主要颜色包括金色、红色和绿色，这些颜色的搭配给人一种庄重而神秘的感觉。金色的使用强调了人物的神性。"
       },
       {
        "label": "光线",
-       "text": "光线柔和且均匀，可能是阴天或清晨/傍晚时分拍摄的，避免了强烈的阴影和高光。"
+       "text": "光线从上方照射下来，使得人物的面部和身体部分显得更加立体和突出。"
       },
       {
        "label": "细节和看点",
-       "text": "可以看到房子的纹理和质感，以及周围的自然环境，如树木和草地。"
+       "text": "人物的服饰上有精细的花纹和纹理，显示出高超的工艺技术。此外，手中的法器也具有象征意义。"
       },
       {
        "label": "背景故事",
-       "text": "这张照片可能记录了某个特定地点的历史时刻，反映了那个时代的建筑风格和生活场景。"
+       "text": "虽然具体的背景故事未在资料中提及，但Kshitigarbha作为佛教中的阴间使者，通常与地狱有关联。"
       },
       {
        "label": "可以学到什么",
-       "text": "通过观察构图的平衡、色彩的运用以及光线的处理，我们可以学习如何更好地安排自己的拍摄对象，创造和谐的画面效果。"
+       "text": "通过观察这幅作品，我们可以学习到如何运用色彩、光线和细节来增强艺术作品的表现力。同时，了解不同文化和宗教符号的意义也是非常重要的。"
       }
      ],
      "links": [
       {
        "name": "大都会博物馆页面",
-       "url": "https://www.metmuseum.org/art/collection/search/271963"
+       "url": "https://www.metmuseum.org/art/collection/search/39883"
       }
      ],
      "images": [
       {
-       "src": "img/2026-11/2026-11-02-art-a0b869bc.jpg",
-       "caption": "Romesnil",
+       "src": "img/2026-11/2026-11-02-art-dd6c024e.jpg",
+       "caption": "Kshitigarbha",
        "credit": "The Met · Public Domain",
-       "page": "https://www.metmuseum.org/art/collection/search/271963",
-       "full": "https://images.metmuseum.org/CRDImages/ph/original/DT4051.jpg"
+       "page": "https://www.metmuseum.org/art/collection/search/39883",
+       "full": "https://images.metmuseum.org/CRDImages/as/original/DP-13942-002.jpg"
       }
      ],
      "tags": [
-      "历史摄影",
-      "乡村风光",
-      "建筑摄影"
+      "佛教艺术",
+      "丝绸绘画",
+      "元代艺术"
      ],
      "source_note": "",
-     "badge": "摄影"
+     "badge": "画作"
     }
    ]
   }

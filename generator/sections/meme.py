@@ -63,17 +63,26 @@ def run(ctx):
             break
         tried += 1
         refs = ctx.search(f"{name} 是什么梗 出处", time_range="month", max_results=6)["results"]
+        refs += ctx.search(f"抖音 {name}", time_range="week", max_results=6)["results"]
         # 只留真的提到这个梗的资料，否则模型会拿不相关的网页硬编一个解释
         refs = [r for r in refs if grounded(name, [f"{r['title']} {r.get('content') or ''}"])]
-        if not refs:
-            log(f"  「{name}」搜不到专门的解释，换下一个")
-            continue
-        out = ctx.llm.json(BASE_SYSTEM, WRITE.format(
-            name=name, refs="\n".join(f"[{i}] {r['title']}：{(r.get('content') or '')[:500]}" for i, r in enumerate(refs))),
-            fake={"explained": True, "summary": "dry-run 示例。", "analysis": [{"label": "出处", "text": "示例。"}],
-                  "source_index": 0, "search_keyword": name, "tags": ["示例"]})
-        if not out.get("explained", True):
+        on_hot = next((h for h in hot if grounded(name, [h])), "")
+        note = ""
+        if refs:
+            ref_text = "\n".join(f"[{i}] {r['title']}：{(r.get('content') or '')[:500]}" for i, r in enumerate(refs))
+        elif on_hot:
+            # 刚上热榜的新梗，网上往往还没有解读文章：照样介绍，但说清楚只能根据热榜标题理解
+            ref_text = (f"（还没搜到专门的解读文章，只有抖音热榜上的这一条：{on_hot}）\n"
+                        "只解释从标题能看出来的意思和玩法，出处写“刚上热榜，出处暂不明确”，不要编。")
+            note = "这个梗刚上热榜，还没搜到详细解读，以上根据热榜标题整理，具体玩法以抖音上的视频为准。"
+        else:
             log(f"  「{name}」搜不到解释，换下一个")
+            continue
+        out = ctx.llm.json(BASE_SYSTEM, WRITE.format(name=name, refs=ref_text),
+                           fake={"explained": True, "summary": "dry-run 示例。", "analysis": [{"label": "出处", "text": "示例。"}],
+                                 "source_index": 0, "search_keyword": name, "tags": ["示例"]})
+        if refs and not out.get("explained", True):
+            log(f"  「{name}」资料里没有解释，换下一个")
             continue
         ctx.mark_seen(ID, name)
         kw = out.get("search_keyword") or name
@@ -82,5 +91,5 @@ def run(ctx):
         if isinstance(idx, int) and 0 <= idx < len(refs):
             links.append({"name": "参考来源", "url": refs[idx]["url"]})
         return [make_item(title=name, summary=out.get("summary", ""), analysis=out.get("analysis"),
-                          links=links, tags=out.get("tags", []))]
+                          links=links, tags=out.get("tags", []), source_note=note)]
     raise RuntimeError("没有找到能核实的新梗")

@@ -3,13 +3,15 @@
   "ai_video": [
    "https://www.youtube.com/watch?v=-Rhv6-4AFz4",
    "https://www.youtube.com/watch?v=yOtQplnkotw",
-   "https://www.youtube.com/watch?v=XvyH_x3k-5M"
+   "https://www.youtube.com/watch?v=XvyH_x3k-5M",
+   "https://www.youtube.com/watch?v=jhHhxAkutDE"
   ],
   "creative_video": [
    "https://www.bilibili.com/video/BV1Qfps6EEVr",
    "https://www.youtube.com/watch?v=aCAvoN1kwWw",
    "https://www.youtube.com/watch?v=2Hsn4W7ibPY",
-   "http://www.bilibili.com/video/BV12HnJ6HEKb"
+   "http://www.bilibili.com/video/BV12HnJ6HEKb",
+   "https://www.bilibili.com/video/BV1JjHL6PEjB"
   ],
   "ai_news": [
    "https://www.youtube.com/@%E5%A4%A7%E5%9C%A3Ai%E8%87%AA%E4%B9%A0%E5%AE%A4/videos",
@@ -19,12 +21,15 @@
    "https://www.instagram.com/reel/DfHO-o6TI35",
    "https://www.instagram.com/p/DfMk-f5m8Ov",
    "https://kuku.baidu.com/landing/tscp_doc/0cc56476eab6b1a8559b8e604d033c3d",
-   "https://tech-insider.org/ai-image-generator-arena-blind-elo-cost-per-usable-image-2026"
+   "https://tech-insider.org/ai-image-generator-arena-blind-elo-cost-per-usable-image-2026",
+   "https://zhuanlan.zhihu.com/p/2096973243672540149",
+   "https://kuku.baidu.com/landing/tscp_doc/d784e8a85b928122abede37e03de2a80"
   ],
   "meme": [
    "筷子加水泥塞你嘴里",
    "双11忙忙碌碌寻宝藏belike",
-   "我刚满十八岁"
+   "我刚满十八岁",
+   "小猫踏步舞"
   ],
   "hot_music": [
    "恋人",
@@ -34,28 +39,33 @@
    "1% Battery Girl 低电量女孩",
    "Cherry Candy",
    "琵琶曲",
-   "季候风"
+   "季候风",
+   "学功夫练武术 你的胆子肥嘟嘟",
+   "青衣"
   ],
   "artwork": [
    437326,
    271963,
    39883,
-   267124
+   267124,
+   437430
   ]
  },
  "finance_count": {},
- "design_index": 4,
+ "design_index": 5,
  "recent_music_styles": [
   "Hindustani classical music",
   "Grunge",
   "Indie rock",
-  "Shoegaze"
+  "Shoegaze",
+  "Funk"
  ],
  "recent_instruments": [
   "Dombra",
   "Didgeridoo",
   "Shamisen",
-  "Saxophone"
+  "Saxophone",
+  "Bass guitar"
  ],
- "artwork_toggle": 4
+ "artwork_toggle": 5
 }

@@ -1,0 +1,42 @@
+13:06:49 生成 2026-11-02（周一），AI：zhipu/glm-4.7-flash
+13:06:49 🤖 AI 创意视频
+13:06:49   搜索 #1：AI 生成视频 爆款 创意 运镜 特效
+13:06:49   搜索 #2：AI music video creative generated
+13:06:53   失效，跳过：https://www.youtube.com/watch?v=cOyw7UpEMss
+13:11:40   第 1 次失败：RateLimitError: Error code: 429 - 您的账户已达到速率限制，请您控制请求频率
+13:11:50   搜索 #3：AI 生成视频 爆款 创意 运镜 特效
+13:11:50   搜索 #4：AI music video creative generated
+13:11:51   播放量太低（398），跳过：https://www.bilibili.com/video/BV1xWxT6cErq
+13:11:54   失效，跳过：https://www.youtube.com/watch?v=cOyw7UpEMss
+13:12:11   第 2 次失败：RateLimitError: Error code: 429 - 该模型当前访问量过大，请您稍后再试
+13:12:14 ✨ 创意视频
+13:12:14   搜索 #5：定格动画 创意 短片
+13:12:14   搜索 #6：stop motion animation creative
+13:12:47   完成，1 条
+13:12:50 🛠 AI 视频和图片制作资讯
+13:12:50   搜索 #7：AI 视频 教程 运镜 首尾帧 角色一致性 技巧
+13:12:55   搜索 #8：AI 视频 省积分 技巧 免费额度
+13:12:55   搜索 #9：AI image generator new model update Midjourney Flux Gemini
+13:13:38   完成，2 条
+13:13:41 🔥 抖音热梗
+13:13:43   热榜 douyin：48 条
+13:13:43   搜索 #10：抖音 热梗 盘点 本周
+13:13:43   搜索 #11：抖音 新梗 爆火
+13:14:29   完成，1 条
+13:14:32 🎵 抖音热门音乐
+13:14:32   热榜 douyin_music 获取失败：404 Client Error: Not Found for url: http://localhost:6688/douyin_music
+13:14:32   热榜 douyin-music 获取失败：404 Client Error: Not Found for url: http://localhost:6688/douyin-music
+13:14:32   搜索 #12：抖音 热门 BGM 台词 音频 最近
+13:15:46   完成，2 条
+13:15:49 🎨 设计风格
+13:16:17   搜索 #13：Dopamine design colorful design examples
+13:16:31   配图：检查 4 张，不合格 0 张，留下 4 张
+13:16:31   完成，1 条
+13:16:34 🎼 音乐风格和乐器
+13:17:29   配图：检查 3 张，不合格 1 张，留下 2 张
+13:17:29   完成，2 条
+13:17:32 🖼 摄影和画作
+13:17:32   搜索 #14：Romesnil Louis-Rémy Robert 1850–55 Met museum
+13:17:41   完成，1 条
+13:17:44 完成：partial，用了 14 次搜索 → /home/runner/work/daily-inspo/daily-inspo/docs/data/2026-11-02.json
+

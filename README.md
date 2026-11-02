@@ -29,7 +29,7 @@
   栏目名：`ai_video` `creative_video` `ai_news` `meme` `hot_music` `design_style` `music_style` `artwork`
 - **整天重新生成**：Run workflow，勾选 `force`。
 - **换成付费 AI**（质量更好）：Settings → Secrets and variables → Actions → **Variables** 里添加 `LLM_PROVIDER`：
-  - `deepseek`：再加一个 Secret `DEEPSEEK_API_KEY`（每月约 10–30 元）
+  - `deepseek`：再加一个 Secret `DEEPSEEK_API_KEY`（默认 deepseek-flash，每月约 10 元以内；看图仍用智谱免费模型，所以 `ZHIPU_API_KEY` 要保留）
   - `claude`：再加一个 Secret `ANTHROPIC_API_KEY`
 - **看运行记录**：Actions 页面，红色叉号表示那天失败了，点进去能看到原因。
 

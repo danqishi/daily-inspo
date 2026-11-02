@@ -18,7 +18,7 @@ PROVIDERS = {
     "deepseek": {
         "base_url": "https://api.deepseek.com",
         "key_env": "DEEPSEEK_API_KEY",
-        "model": "deepseek-chat",
+        "model": "deepseek-flash",  # 想要更深的解读可以设 LLM_MODEL=deepseek-v4-pro（约贵 4 倍）
         "vision_model": None,  # DeepSeek 没有看图模型，看图时借用智谱（需要 ZHIPU_API_KEY）
     },
     "claude": {

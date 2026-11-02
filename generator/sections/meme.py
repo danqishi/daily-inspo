@@ -63,7 +63,10 @@ def run(ctx):
             break
         tried += 1
         refs = ctx.search(f"{name} 是什么梗 出处", time_range="month", max_results=6)["results"]
+        # 只留真的提到这个梗的资料，否则模型会拿不相关的网页硬编一个解释
+        refs = [r for r in refs if grounded(name, [f"{r['title']} {r.get('content') or ''}"])]
         if not refs:
+            log(f"  「{name}」搜不到专门的解释，换下一个")
             continue
         out = ctx.llm.json(BASE_SYSTEM, WRITE.format(
             name=name, refs="\n".join(f"[{i}] {r['title']}：{(r.get('content') or '')[:500]}" for i, r in enumerate(refs))),

@@ -8,7 +8,8 @@ DAYS = range(5)
 
 # 频道主页、列表页、标签页不是一篇具体的文章；后面几个是云服务优惠券站
 NOT_ARTICLE = re.compile(r"youtube\.com/(@|channel/|c/|user/)|/(videos|tags?|search|category)/?(\?|$)|"
-                         r"tengxunyun8\.com|aliyun888|yunfuwuqiba")
+                         r"tengxunyun8\.com|aliyun888|yunfuwuqiba|"
+                         r"instagram\.com|facebook\.com")  # 要登录才能看，内容也太短
 
 VIDEO_QUERIES = [
     "可灵 即梦 海螺 Vidu AI视频 新功能 更新",

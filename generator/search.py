@@ -12,6 +12,7 @@ class Search:
         self.dry = dry
         self.daily_limit = daily_limit
         self.used = 0
+        self.cache = {}
         self.key = os.environ.get("TAVILY_API_KEY")
         if not dry and not self.key:
             raise RuntimeError("缺少环境变量 TAVILY_API_KEY")
@@ -20,6 +21,9 @@ class Search:
                  max_results=10, images=False):
         if self.dry:
             return _fake(query, max_results, images)
+        cache_key = (query, topic, time_range, tuple(domains or ()), max_results, images)
+        if cache_key in self.cache:  # 栏目失败重试时不重复花搜索次数
+            return self.cache[cache_key]
         if self.used >= self.daily_limit:
             log(f"  今天的搜索次数已用完（{self.daily_limit}），跳过：{query}")
             return {"results": [], "images": []}
@@ -38,7 +42,8 @@ class Search:
         r.raise_for_status()
         data = r.json()
         imgs = [i if isinstance(i, dict) else {"url": i, "description": ""} for i in data.get("images") or []]
-        return {"results": data.get("results") or [], "images": imgs}
+        self.cache[cache_key] = {"results": data.get("results") or [], "images": imgs}
+        return self.cache[cache_key]
 
 
 def _fake(query, n, images):

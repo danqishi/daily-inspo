@@ -3,12 +3,16 @@ import base64
 import json
 import os
 import re
+import time
+
+from common import log
 
 PROVIDERS = {
     "zhipu": {
         "base_url": "https://open.bigmodel.cn/api/paas/v4/",
         "key_env": "ZHIPU_API_KEY",
         "model": "glm-4.7-flash",
+        "fallback_models": ["glm-4-flash-250414"],  # 也是免费模型，主模型被限流时换它
         "vision_model": "glm-4v-flash",
     },
     "deepseek": {
@@ -45,7 +49,8 @@ def parse_json(text):
 class _OpenAICompatible:
     def __init__(self, cfg, key):
         from openai import OpenAI
-        self.client = OpenAI(api_key=key, base_url=cfg["base_url"], max_retries=5, timeout=300)
+        # 重试次数少一点：被限流时尽快换备用模型，不要干等
+        self.client = OpenAI(api_key=key, base_url=cfg["base_url"], max_retries=1, timeout=300)
 
     def chat(self, model, system, user, image=None):
         if not image:
@@ -99,6 +104,7 @@ class LLM:
         self.provider = os.environ.get("LLM_PROVIDER", "zhipu")
         cfg = PROVIDERS[self.provider]
         self.model = os.environ.get("LLM_MODEL") or cfg["model"]
+        self.fallback_models = [] if os.environ.get("LLM_MODEL") else cfg.get("fallback_models", [])
         self.vision_model = os.environ.get("VISION_MODEL") or cfg["vision_model"]
         self.text_client = self.vision_client = None
         if dry:
@@ -125,10 +131,24 @@ class LLM:
             if not self.vision_model:
                 raise RuntimeError("当前设置没有看图模型")
             client, model = self.vision_client, self.vision_model
+        models = [model] if image else [model, *self.fallback_models]
         prompt = user
         for _ in range(2):
-            data = parse_json(client.chat(model, system, prompt, image))
+            data = parse_json(self._chat_with_fallback(client, models, system, prompt, image))
             if data is not None:
                 return data
             prompt = user + "\n\n注意：上一次的输出不是合法 JSON。这次只输出 JSON，不要任何其他文字。"
         raise ValueError("模型没有返回合法 JSON")
+
+    def _chat_with_fallback(self, client, models, system, prompt, image):
+        """被限流（429）时：先换备用模型；都被限流就等一会儿再从头试，最多 3 轮。"""
+        for round_ in range(3):
+            for m in models:
+                try:
+                    return client.chat(m, system, prompt, image)
+                except Exception as e:
+                    if "429" not in str(e) and "RateLimit" not in type(e).__name__:
+                        raise
+                    log(f"  {m} 被限流，换下一个")
+            time.sleep(30 * (round_ + 1))
+        raise RuntimeError("所有模型都被限流")

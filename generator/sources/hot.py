@@ -26,11 +26,23 @@ def douyin_hot(ctx):
     return _titles(ctx, "douyin")[:50]
 
 
+# 网易云的“抖音排行榜”2026 年 6 月后不再更新，改用网络热歌榜（每周五更新，多是短视频带火的歌）和飙升榜（每天更新）
+NETEASE_CHARTS = {6723173524: "网易云网络热歌榜", 19723756: "网易云飙升榜"}
+
+
 def douyin_music(ctx):
+    """返回 ['歌名 / 歌手（榜单名）']。"""
     if ctx.dry:
-        return ["示例热歌 - 示例歌手"]
-    for route in ("douyin_music", "douyin-music"):
-        titles = _titles(ctx, route)
-        if titles:
-            return titles[:50]
-    return []
+        return ["示例热歌 / 示例歌手（网易云网络热歌榜）"]
+    out = []
+    for pid, chart in NETEASE_CHARTS.items():
+        try:
+            j = ctx.http.get("https://music.163.com/api/playlist/detail", params={"id": pid}, timeout=20,
+                             headers={"Referer": "https://music.163.com/"}).json()
+            tracks = (j.get("result") or j.get("playlist") or {}).get("tracks") or []
+            log(f"  {chart}：{len(tracks)} 首")
+            out += [f"{t['name']} / {'、'.join(a['name'] for a in t.get('artists') or t.get('ar') or [])}（{chart}）"
+                    for t in tracks[:30]]
+        except Exception as e:
+            log(f"  {chart} 获取失败：{e}")
+    return out

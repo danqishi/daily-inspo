@@ -1,0 +1,73 @@
+name: 每日灵感
+
+on:
+  schedule:
+    - cron: "0 23 * * *"   # UTC 23:00 = 北京时间 07:00，GitHub 可能晚 10–30 分钟
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "日期 YYYY-MM-DD（留空 = 今天）"
+        required: false
+      only:
+        description: "只重新生成这些栏目，逗号分隔（留空 = 全部），例如 meme,artwork"
+        required: false
+      force:
+        description: "当天已经生成过也重新生成"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: 启动抖音热榜服务（失败也没关系，会改用搜索）
+        continue-on-error: true
+        run: |
+          docker run -d --name hot -p 6688:6688 imsyy/dailyhot-api:latest
+          for i in $(seq 1 20); do curl -sf http://localhost:6688/ >/dev/null && break; sleep 3; done
+
+      - name: 生成日报
+        env:
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'zhipu' }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+          ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          DATE: ${{ inputs.date }}
+          ONLY: ${{ inputs.only }}
+          FORCE: ${{ inputs.force }}
+        run: |
+          args=()
+          [ -n "$DATE" ] && args+=(--date "$DATE")
+          [ -n "$ONLY" ] && args+=(--only "$ONLY")
+          [ "$FORCE" = "true" ] && args+=(--force)
+          python generator/main.py "${args[@]}"
+
+      - name: 保存到仓库（网站会自动更新）
+        if: always()
+        run: |
+          git config user.name "daily-bot"
+          git config user.email "daily-bot@users.noreply.github.com"
+          git add -A docs generator
+          git diff --cached --quiet && exit 0
+          git commit -m "日报 $(TZ=Asia/Shanghai date +%F)"
+          git pull --rebase
+          git push

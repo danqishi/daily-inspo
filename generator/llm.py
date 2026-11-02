@@ -1,0 +1,125 @@
+"""统一的大模型调用。用环境变量 LLM_PROVIDER 切换：zhipu（默认，免费）/ deepseek / claude。"""
+import json
+import os
+import re
+
+PROVIDERS = {
+    "zhipu": {
+        "base_url": "https://open.bigmodel.cn/api/paas/v4/",
+        "key_env": "ZHIPU_API_KEY",
+        "model": "glm-4.7-flash",
+        "vision_model": "glm-4v-flash",
+    },
+    "deepseek": {
+        "base_url": "https://api.deepseek.com",
+        "key_env": "DEEPSEEK_API_KEY",
+        "model": "deepseek-chat",
+        "vision_model": None,  # DeepSeek 没有看图模型，看图时借用智谱（需要 ZHIPU_API_KEY）
+    },
+    "claude": {
+        "key_env": "ANTHROPIC_API_KEY",
+        "model": "claude-opus-5-5",  # 想省钱可以设 LLM_MODEL=claude-sonnet-5-5
+        "vision_model": "claude-opus-5-5",
+    },
+}
+
+
+def parse_json(text):
+    """从模型输出里取出 JSON（兼容 ```json 代码块和前后多余的文字）。"""
+    if not text:
+        return None
+    m = re.search(r"```(?:json)?\s*(.*?)```", text, re.S)
+    if m:
+        text = m.group(1)
+    start = min([i for i in (text.find("{"), text.find("[")) if i >= 0], default=-1)
+    if start < 0:
+        return None
+    end = max(text.rfind("}"), text.rfind("]"))
+    try:
+        return json.loads(text[start:end + 1])
+    except json.JSONDecodeError:
+        return None
+
+
+class _OpenAICompatible:
+    def __init__(self, cfg, key):
+        from openai import OpenAI
+        self.client = OpenAI(api_key=key, base_url=cfg["base_url"], max_retries=5, timeout=300)
+
+    def chat(self, model, system, user, image_url=None):
+        content = user
+        if image_url:
+            content = [
+                {"type": "image_url", "image_url": {"url": image_url}},
+                {"type": "text", "text": user},
+            ]
+        resp = self.client.chat.completions.create(
+            model=model,
+            messages=[{"role": "system", "content": system}, {"role": "user", "content": content}],
+            temperature=0.7,
+        )
+        return resp.choices[0].message.content
+
+
+class _Claude:
+    def __init__(self, key):
+        import anthropic
+        self.client = anthropic.Anthropic(api_key=key, max_retries=4, timeout=600)
+
+    def chat(self, model, system, user, image_url=None):
+        content = [{"type": "text", "text": user}]
+        if image_url:
+            content.insert(0, {"type": "image", "source": {"type": "url", "url": image_url}})
+        resp = self.client.beta.messages.create(
+            model=model,
+            max_tokens=16000,
+            system=system,
+            messages=[{"role": "user", "content": content}],
+            output_config={"effort": "medium"},
+            betas=["server-side-fallback-2026-07-01"],
+            fallbacks="default",
+        )
+        if resp.stop_reason == "refusal":
+            raise RuntimeError("Claude 拒绝了这次请求")
+        return "".join(b.text for b in resp.content if b.type == "text")
+
+
+class LLM:
+    def __init__(self, dry=False):
+        self.dry = dry
+        self.provider = os.environ.get("LLM_PROVIDER", "zhipu")
+        cfg = PROVIDERS[self.provider]
+        self.model = os.environ.get("LLM_MODEL") or cfg["model"]
+        self.vision_model = os.environ.get("VISION_MODEL") or cfg["vision_model"]
+        self.text_client = self.vision_client = None
+        if dry:
+            return
+        key = os.environ.get(cfg["key_env"])
+        if not key:
+            raise RuntimeError(f"缺少环境变量 {cfg['key_env']}")
+        self.text_client = _Claude(key) if self.provider == "claude" else _OpenAICompatible(cfg, key)
+        self.vision_client = self.text_client
+        if not self.vision_model and os.environ.get("ZHIPU_API_KEY"):
+            self.vision_model = PROVIDERS["zhipu"]["vision_model"]
+            self.vision_client = _OpenAICompatible(PROVIDERS["zhipu"], os.environ["ZHIPU_API_KEY"])
+
+    @property
+    def can_see(self):
+        return self.dry or bool(self.vision_model)
+
+    def json(self, system, user, fake=None, image_url=None):
+        """调用模型并返回解析好的 JSON；不合法就重试一次。dry 模式直接返回 fake。"""
+        if self.dry:
+            return fake
+        client, model = self.text_client, self.model
+        if image_url:
+            if not self.vision_model:
+                raise RuntimeError("当前设置没有看图模型")
+            client, model = self.vision_client, self.vision_model
+        prompt = user
+        for _ in range(2):
+            data = parse_json(client.chat(model, system, prompt, image_url))
+            if data is not None:
+                return data
+            prompt = user + "\n\n注意：上一次的输出不是合法 JSON。这次只输出 JSON，不要任何其他文字。"
+        raise ValueError("模型没有返回合法 JSON")

@@ -1,0 +1,22 @@
+[
+ {"zh": "钢琴", "en": "Piano"}, {"zh": "电钢琴（Rhodes）", "en": "Rhodes electric piano"}, {"zh": "合成器", "en": "Synthesizer"},
+ {"zh": "808 鼓机", "en": "Roland TR-808"}, {"zh": "木吉他", "en": "Acoustic guitar"}, {"zh": "电吉他", "en": "Electric guitar"},
+ {"zh": "电贝斯", "en": "Bass guitar"}, {"zh": "低音提琴", "en": "Double bass"}, {"zh": "架子鼓", "en": "Drum kit"},
+ {"zh": "小提琴", "en": "Violin"}, {"zh": "中提琴", "en": "Viola"}, {"zh": "大提琴", "en": "Cello"},
+ {"zh": "竖琴", "en": "Harp"}, {"zh": "长笛", "en": "Flute"}, {"zh": "单簧管", "en": "Clarinet"},
+ {"zh": "双簧管", "en": "Oboe"}, {"zh": "巴松管", "en": "Bassoon"}, {"zh": "萨克斯", "en": "Saxophone"},
+ {"zh": "小号", "en": "Trumpet"}, {"zh": "长号", "en": "Trombone"}, {"zh": "圆号", "en": "French horn"},
+ {"zh": "大号", "en": "Tuba"}, {"zh": "口琴", "en": "Harmonica"}, {"zh": "手风琴", "en": "Accordion"},
+ {"zh": "班卓琴", "en": "Banjo"}, {"zh": "曼陀林", "en": "Mandolin"}, {"zh": "尤克里里", "en": "Ukulele"},
+ {"zh": "西塔琴", "en": "Sitar"}, {"zh": "古筝", "en": "Guzheng"}, {"zh": "古琴", "en": "Guqin"},
+ {"zh": "二胡", "en": "Erhu"}, {"zh": "琵琶", "en": "Pipa"}, {"zh": "笛子", "en": "Dizi"},
+ {"zh": "箫", "en": "Xiao flute"}, {"zh": "唢呐", "en": "Suona"}, {"zh": "笙", "en": "Sheng"},
+ {"zh": "扬琴", "en": "Yangqin"}, {"zh": "马头琴", "en": "Morin khuur"}, {"zh": "编钟", "en": "Bianzhong bells"},
+ {"zh": "马林巴", "en": "Marimba"}, {"zh": "颤音琴", "en": "Vibraphone"}, {"zh": "钢片琴", "en": "Celesta"},
+ {"zh": "管风琴", "en": "Pipe organ"}, {"zh": "羽管键琴", "en": "Harpsichord"}, {"zh": "卡林巴", "en": "Kalimba"},
+ {"zh": "手碟", "en": "Handpan"}, {"zh": "康加鼓", "en": "Conga"}, {"zh": "邦戈鼓", "en": "Bongo drums"},
+ {"zh": "卡洪鼓", "en": "Cajon"}, {"zh": "塔布拉鼓", "en": "Tabla"}, {"zh": "钢鼓", "en": "Steelpan"},
+ {"zh": "风笛", "en": "Bagpipes"}, {"zh": "特雷门琴", "en": "Theremin"}, {"zh": "采样器（MPC）", "en": "Akai MPC sampler"},
+ {"zh": "哈蒙德风琴", "en": "Hammond organ"}, {"zh": "定音鼓", "en": "Timpani"}, {"zh": "木琴", "en": "Xylophone"},
+ {"zh": "迪吉里杜管", "en": "Didgeridoo"}, {"zh": "三味线", "en": "Shamisen"}, {"zh": "冬不拉", "en": "Dombra"}
+]

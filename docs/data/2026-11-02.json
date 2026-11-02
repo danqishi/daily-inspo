@@ -1,10 +1,10 @@
 {
  "date": "2026-11-02",
  "weekday": "周一",
- "status": "ok",
- "generated_at": "2026-11-02T21:34:04+08:00",
- "llm": "zhipu/glm-4.7-flash",
- "searches": 13,
+ "status": "partial",
+ "generated_at": "2026-11-02T21:50:21+08:00",
+ "llm": "deepseek/deepseek-flash",
+ "searches": 15,
  "sections": [
   {
    "id": "ai_video",
@@ -13,49 +13,49 @@
    "status": "ok",
    "items": [
     {
-     "title": "小猫骑士视频二创教程",
-     "subtitle": "YouTube · 碳基生物退役指南",
-     "summary": "教你用AI轻松复刻爆款小猫骑士视频，适合零基础学习者。",
+     "title": "几分钟，把一本书做成一支 AI 音乐短片",
+     "subtitle": "YouTube · YB.Digital",
+     "summary": "作者把一本书的内容拆成七段 15 秒的竖屏片段，配上约 1 分 41 秒的歌，拼成一支完整的 AI 音乐短片，并展示了中间怎么改提示词、怎么组装。",
      "analysis": [
       {
        "label": "创意点",
-       "text": "这个视频的创意在于用AI进行二次创作，将简单的概念（小猫骑士）通过AI工具生成具有创意的视觉内容，降低了视频创作的门槛。"
+       "text": "别人做 MV 是「先有画面再配歌」，这条反过来：先有一首歌（1 分 41 秒），按 15 秒一段去算，正好切出七段，再把书的内容分配到这七段里。等于用歌曲长度倒推出分镜数量，把一个很虚的「我要做个 MV」变成了几个明确的待办。选「书」当脚本来源也很巧——书本来就有现成的意象和情绪，省掉了从零编故事这一步。"
       },
       {
        "label": "为什么让人眼前一亮",
-       "text": "它提供了一个简单易行的步骤，让普通人也能快速上手AI视频创作，并且结果看起来很“爆款”，满足了一种快速实现创意的成就感。"
+       "text": "MV 是所有 AI 视频类型里最「宽容」的：不需要连续叙事，不需要同一张脸撑满三分钟，每 15 秒换一个意象观众也不会出戏。这条用竖屏加音乐卡点，把 AI 目前最擅长的东西（单镜头氛围感）放到了最合适的位置，成片完成度自然就高。从简介看它还特意试了不同的提示词写法，这种「同一首歌、换几版试试」的思路，比追求一次成型更接近真实的创作过程。"
       },
       {
        "label": "可以借鉴的做法",
-       "text": "可以借鉴其流程化的创作思路，比如先定人物形象再用AI生成细节，以及套用“弱小骑士+巨大对手+柔软细节或燃战斗”的剧情公式，这种结构化方法适合快速生成内容。"
+       "text": "第一，先确定歌曲总时长，再除以 15（多数 AI 视频工具的单段上限），得出要生成几段，按这个数量去写分镜，不要一边做一边凑。第二，把文字拆成一个个「意象」而不是「情节」——一段一个画面，之间靠音乐的段落切换来衔接，这样就不用操心角色和场景的连续性。第三，全程锁定同一个画幅和同一套风格关键词，风格统一了，拼接起来才像一支片子而不是七个片段。"
       }
      ],
      "links": [
       {
        "name": "去YouTube看",
-       "url": "https://www.youtube.com/watch?v=yOtQplnkotw"
+       "url": "https://www.youtube.com/watch?v=XvyH_x3k-5M"
       },
       {
        "name": "在B站搜索",
-       "url": "https://search.bilibili.com/all?keyword=%E8%B6%85%E7%AE%80%E5%8D%95%E7%9A%84%E5%B0%8F%E7%8C%AB%E9%AA%91%E5%A3%AB%E8%A7%86%E9%A2%91%E4%BA%8C%E5%88%9B%E6%95%99%E7%A8%8B%E6%9D%A5%E5%95%A6%EF%BC%811%E5%88%86%E9%92%9F%E8%BD%BB%E6%9D%BE%E5%A4%8D%E5%88%BB%E7%88%86%E6%AC%BE%E8%A7%86%E9%A2%91%EF%BD%9E"
+       "url": "https://search.bilibili.com/all?keyword=Create%20an%20AI%20Music%20Video%20From%20Your%20Book%20in%20Minutes"
       }
      ],
      "images": [
       {
-       "src": "img/2026-11/2026-11-02-ai_video-8fb9b8f7.jpg",
+       "src": "img/2026-11/2026-11-02-ai_video-60920034.jpg",
        "caption": "视频封面",
        "credit": "YouTube"
       }
      ],
      "tags": [
-      "AI教程",
-      "二次创作",
-      "小猫骑士",
-      "AI视频生成",
-      "创意视频"
+      "AI音乐MV",
+      "文生视频",
+      "竖屏短片",
+      "书改视频",
+      "PixVerse"
      ],
      "source_note": "AI 没有看过视频本身，解读根据标题、简介和网上的公开评价整理，细节以视频为准。",
-     "original_title": "超简单的小猫骑士视频二创教程来啦！1分钟轻松复刻爆款视频～",
+     "original_title": "Create an AI Music Video From Your Book in Minutes",
      "badge": "创意短片"
     }
    ]
@@ -67,47 +67,39 @@
    "status": "ok",
    "items": [
     {
-     "title": "今天的不开心就到此为止，明天依然光芒万丈啊",
-     "subtitle": "YouTube · วาสนา ระอองนวน",
-     "summary": "一段治愈系定格动画，用创意手工的方式传递积极能量。",
+     "title": "把141张少司缘剪下来，叠成一段定格舞蹈",
+     "subtitle": "B站",
+     "summary": "用同一游戏角色的上百张剪纸逐张重叠排列，做出角色跳舞的纸片定格动画。",
      "analysis": [
       {
        "label": "创意在哪",
-       "text": "从标题和标签看，这是一部定格动画短片，创意在于用手工和定格动画结合的方式，把积极向上的情感具象化，比如用光影变化、手工物品的移动来表现情绪的起伏和转变。"
+       "text": "从简介看，作者把同一个游戏角色剪成上百张，再按动作顺序逐张重叠粘贴，让静态纸片连成一段舞蹈。它不像常见的黏土或乐高定格，更像把“剪纸+翻页动画”的思路搬进短视频，材料简单，但做法很具体。把大家熟悉的游戏角色变成手工纸片，本身也有反差。"
       },
       {
        "label": "为什么有效",
-       "text": "这类视频通常能有效触动观众，因为定格动画本身带有一种手作温度和慢节奏的治愈感，加上积极的主题，能让人在观看中放松心情，获得力量。"
+       "text": "这类做法通常赢在“看得见的手工感”：纸片边缘、粘贴厚度和轻微不齐，会让动作带上一种笨拙又可爱的节奏。角色本身有辨识度，观众不用先被解释剧情，一眼就知道在干什么。上百张的数量还会制造“这也太费功夫了”的观看动力。"
       },
       {
        "label": "可以借鉴的做法",
-       "text": "可以尝试用类似的定格动画形式，结合自己的兴趣或擅长领域（比如绘画、模型），表达一个简单但有共鸣的主题，注重细节的耐心和创意的转化。"
+       "text": "想模仿可以从一个简单循环动作开始，比如挥手、点头或跳两拍，先算清楚需要几张关键帧，再逐张剪贴。拍摄时固定手机和光线，每挪一次纸片拍一张，最后按顺序快速播放。选大家熟悉的形象或动作，比原创复杂角色更容易让人第一眼停下来。"
       }
      ],
      "links": [
       {
-       "name": "去YouTube看",
-       "url": "https://www.youtube.com/watch?v=2Hsn4W7ibPY"
-      },
-      {
-       "name": "在B站搜索",
-       "url": "https://search.bilibili.com/all?keyword=%E4%BB%8A%E5%A4%A9%E7%9A%84%E4%B8%8D%E5%BC%80%E5%BF%83%E5%B0%B1%E5%88%B0%E6%AD%A4%E4%B8%BA%E6%AD%A2%EF%BC%8C%E6%98%8E%E5%A4%A9%E4%BE%9D%E7%84%B6%E5%85%89%E8%8A%92%E4%B8%87%E4%B8%88%E5%95%8A%23%E5%AE%9A%E6%A0%BC%E5%8A%A8%E7%94%BB%23%E5%88%9B%E6%84%8F%E6%89%8B%E5%B7%A5%23%E6%B2%BB%E6%84%88%E7%9F%AD%E7%89%87"
+       "name": "去B站看",
+       "url": "http://www.bilibili.com/video/BV12HnJ6HEKb"
       }
      ],
-     "images": [
-      {
-       "src": "img/2026-11/2026-11-02-creative_video-ce7f8bbe.jpg",
-       "caption": "视频封面",
-       "credit": "YouTube"
-      }
-     ],
+     "images": [],
      "tags": [
       "定格动画",
-      "治愈短片",
-      "创意手工"
+      "纸片动画",
+      "王者荣耀",
+      "手工创意",
+      "低成本动画"
      ],
      "source_note": "AI 没有看过视频本身，解读根据标题、简介和网上的公开评价整理，细节以视频为准。",
-     "original_title": "今天的不开心就到此为止，明天依然光芒万丈啊#定格动画#创意手工#治愈短片"
+     "original_title": "粉丝投稿的少司缘，补发一期没有重叠版的！ #王者荣耀 #少司缘 #定格动画 #反乌托邦_哔哩哔哩_bilibili"
     }
    ]
   },
@@ -118,67 +110,68 @@
    "status": "ok",
    "items": [
     {
-     "title": "8种核心电影镜头语言，让Ai视频有导演思维",
+     "title": "零成本做 AI 仿真人漫剧：Qwen 写剧本，ComfyUI 出片，一条不花积分",
      "subtitle": "",
-     "summary": "教你用AI制作视频时，怎么用镜头语言提升画面感。",
+     "summary": "一套完整做完的本地流程：Qwen 负责写剧本、拆分镜、生成提示词，ComfyUI 负责出图、保持角色一致、生成动态视频。",
      "analysis": [
       {
        "label": "讲了什么",
-       "text": "这个视频教程介绍了8种电影镜头语言，比如故事与分镜、角色视觉风格、提示词与参考图、首尾帧等，并用AI生成画面演示了创作流程。"
+       "text": "把做“仿真人漫剧”这件事拆成两半：前半段用 Qwen 写剧本、拆分镜、生成提示词；后半段用 ComfyUI 做图像生成、角色一致性和动态视频。从零基础到成片，走一遍完整流程。"
       },
       {
        "label": "怎么用 / 适合做什么",
-       "text": "适合想学用AI做视频，特别是想提升画面质感和导演思维的上班族，可以参考这些镜头语言来优化提示词和生成效果。"
+       "text": "适合要做连续剧集、同一个人物得反复出现在不同镜头里的内容。资料里说低配 8GB 显存就能跑，推荐 12GB 以上。因为跑在自己电脑上，生成次数不受平台积分限制，可以反复试到满意。"
       },
       {
        "label": "注意事项或省积分技巧",
-       "text": "注意提示词要具体，多尝试不同的镜头语言组合，视频里展示的生成过程可以参考，但实际使用时可能需要调整参数。"
+       "text": "这条路线最大的好处是零成本、无限生成，代价是要自己装环境、调工作流，前期的折腾省不掉。文中没提具体软件版本和下载地址，动手前先看官方说明。"
       }
      ],
      "links": [
       {
        "name": "看原文",
-       "url": "https://www.instagram.com/reel/DfHO-o6TI35"
+       "url": "https://kuku.baidu.com/landing/tscp_doc/0cc56476eab6b1a8559b8e604d033c3d"
       }
      ],
      "images": [],
      "tags": [
-      "AI视频教程",
-      "电影镜头",
-      "创作技巧"
+      "ComfyUI",
+      "Qwen",
+      "角色一致性",
+      "本地方案"
      ],
      "source_note": "",
      "badge": "视频工具"
     },
     {
-     "title": "AI生成图片和视频的技巧：人物与场景一致性",
+     "title": "Nano Banana 2.1 实测：1K 出图约 0.0336 美元，512px 便宜档没了",
      "subtitle": "",
-     "summary": "教你用AI生成图片和视频时，怎么让人物和场景保持一致，避免穿帮。",
+     "summary": "一篇用 13 个步骤横评图片生成器的文章，重点测了 Nano Banana 2.1 的出图效果和价格。",
      "analysis": [
       {
        "label": "讲了什么",
-       "text": "这个教程介绍了如何通过分镜设计、生成设置来控制人物容貌、服装、场景和动作的连贯性，以及一些AIGC生成和运镜技巧。"
+       "text": "Nano Banana 2.1 被描述为基于 Gemini 3.6 Flash 的图像生成与编辑模型。文章在 1K 分辨率下做基准测试，资料里写的价格是每张 0.0336 美元；上一代有的 512px 档位这一代取消了。"
       },
       {
        "label": "怎么用 / 适合做什么",
-       "text": "适合所有想用AI生成图片或视频的人，特别是新手，能帮你减少作品中的穿帮问题，让画面更流畅。"
+       "text": "适合封面图、分镜图、缩略图这类要批量出的图。文中特别提到 4K 的价格第三方说法互相打架，所以作者只在 1K 档做对比，这是比较稳妥的参考方式。"
       },
       {
        "label": "注意事项或省积分技巧",
-       "text": "生成前要仔细规划，尽量用参考图固定人物和场景风格，避免随意生成导致不匹配。"
+       "text": "512px 的便宜档没了，以前靠小图压成本的做法要重新算账；如果你打算出高清大图，也别照 1K 的价格去估。文中没提免费额度，用之前先看官方说明。"
       }
      ],
      "links": [
       {
        "name": "看原文",
-       "url": "https://www.instagram.com/p/DfMk-f5m8Ov"
+       "url": "https://tech-insider.org/ai-image-generator-arena-blind-elo-cost-per-usable-image-2026"
       }
      ],
      "images": [],
      "tags": [
-      "AI图片教程",
-      "人物一致性",
-      "场景制作"
+      "Nano Banana",
+      "图片生成",
+      "价格对比"
      ],
      "source_note": "",
      "badge": "图片工具"
@@ -189,53 +182,10 @@
    "id": "meme",
    "name": "抖音热梗",
    "emoji": "🔥",
-   "status": "ok",
-   "items": [
-    {
-     "title": "我刚满十八岁",
-     "subtitle": "",
-     "summary": "刚满十八岁这个梗通常用来嘲讽或自嘲，因为18岁在某些语境下是一个重要的年龄节点。",
-     "analysis": [
-      {
-       "label": "出处",
-       "text": "这个梗来源于一个游戏比赛中的数字梗，3154指的是一个游戏时间点，后来被用来嘲讽对手。"
-      },
-      {
-       "label": "为什么火",
-       "text": "因为18岁是一个重要的年龄节点，很多人在18岁时会有一些特殊的经历或身份变化，所以这个梗容易引起共鸣。"
-      },
-      {
-       "label": "怎么用",
-       "text": "1. 自嘲：'我刚满十八岁，工资还没3000多呢。' 2. 嘲讽：'他刚满十八岁，还不知道怎么打游戏。'"
-      },
-      {
-       "label": "热度依据",
-       "text": "这个梗在抖音上因为其幽默性和共鸣点而流行。"
-      }
-     ],
-     "links": [
-      {
-       "name": "在抖音搜索",
-       "url": "https://www.douyin.com/search/%E6%88%91%E5%88%9A%E6%BB%A1%E5%8D%81%E5%85%AB%E5%B2%81"
-      },
-      {
-       "name": "在B站搜索",
-       "url": "https://search.bilibili.com/all?keyword=%E6%88%91%E5%88%9A%E6%BB%A1%E5%8D%81%E5%85%AB%E5%B2%81"
-      },
-      {
-       "name": "参考来源",
-       "url": "https://zh.moegirl.org.cn/%E6%95%B0%E5%AD%97%E6%A2%97"
-      }
-     ],
-     "images": [],
-     "tags": [
-      "游戏梗",
-      "自嘲",
-      "嘲讽"
-     ],
-     "source_note": ""
-    }
-   ]
+   "status": "missing",
+   "items": [],
+   "note": "今天这一栏没生成出来",
+   "error": "RuntimeError: 没有找到能核实的新梗"
   },
   {
    "id": "hot_music",
@@ -244,82 +194,84 @@
    "status": "ok",
    "items": [
     {
-     "title": "1% Battery Girl 低电量女孩",
-     "subtitle": "ChiliChill乐团",
-     "summary": "一首轻松幽默的歌，适合搞笑或日常视频",
+     "title": "琵琶曲",
+     "subtitle": "郑浩Z-Hao、冰洁",
+     "summary": "同一首歌在热歌榜上同时出现原版和 DJ 版两个版本，说明它已经被短视频反复改编、反复使用。",
      "analysis": [
       {
        "label": "为什么火",
-       "text": "歌词有趣，节奏感强，适合做搞笑视频或日常vlog，副歌容易上口"
+       "text": "这份榜单里，《琵琶曲》的原版和 DJ 筱轩版同时上榜，一首歌占两个位置，说明短视频里已经有大量二创和翻用版本。它把民乐中最抓耳的那部分（琵琶）放进电音节奏里，用国风做情绪，用鼓点做推动，天然适合卡点，是很典型的“刷到就停一下”的类型。"
       },
       {
        "label": "常配什么视频",
-       "text": "搞笑vlog、生活记录、宠物视频、搞笑挑战"
+       "text": "汉服换装、国风旅拍、古装剧混剪、妆容前后对比，还有那种“一秒变装、扇子一开”的卡点视频。琵琶旋律铺在前半段，中间鼓点一进就切镜头，节奏点很好对。"
       },
       {
        "label": "听点",
-       "text": "副歌‘低电量女孩’重复多次，旋律简单洗脑，适合做背景音乐"
+       "text": "最抓耳的是琵琶轮指那一段：单个音密集地连成一片，像下雨一样往下落。然后电音鼓点拍进来，突然从“安静的古风”变成“能抖腿”，这个落差就是它被剪成卡点的原因。"
       }
      ],
      "links": [
       {
        "name": "在QQ音乐搜索",
-       "url": "https://y.qq.com/n/ryqq/search?w=1%25%20Battery%20Girl%20%E4%BD%8E%E7%94%B5%E9%87%8F%E5%A5%B3%E5%AD%A9%20ChiliChill%E4%B9%90%E5%9B%A2"
+       "url": "https://y.qq.com/n/ryqq/search?w=%E7%90%B5%E7%90%B6%E6%9B%B2%20%E9%83%91%E6%B5%A9Z-Hao%E3%80%81%E5%86%B0%E6%B4%81"
       },
       {
        "name": "在网易云搜索",
-       "url": "https://music.163.com/#/search/m/?s=1%25%20Battery%20Girl%20%E4%BD%8E%E7%94%B5%E9%87%8F%E5%A5%B3%E5%AD%A9%20ChiliChill%E4%B9%90%E5%9B%A2"
+       "url": "https://music.163.com/#/search/m/?s=%E7%90%B5%E7%90%B6%E6%9B%B2%20%E9%83%91%E6%B5%A9Z-Hao%E3%80%81%E5%86%B0%E6%B4%81"
       },
       {
        "name": "在抖音搜索",
-       "url": "https://www.douyin.com/search/1%25%20Battery%20Girl%20%E4%BD%8E%E7%94%B5%E9%87%8F%E5%A5%B3%E5%AD%A9"
+       "url": "https://www.douyin.com/search/%E7%90%B5%E7%90%B6%E6%9B%B2"
       }
      ],
      "images": [],
      "tags": [
-      "搞笑",
-      "vlog",
-      "轻松"
+      "国风",
+      "卡点",
+      "DJ",
+      "换装BGM"
      ],
      "source_note": ""
     },
     {
-     "title": "Cherry Candy",
-     "subtitle": "Lunak",
-     "summary": "甜美轻快的电子音乐，适合情侣或浪漫场景",
+     "title": "季候风",
+     "subtitle": "王菲",
+     "summary": "老歌重新回到热歌榜，同时还带出一个海外制作人采样这首歌的新版本，老旋律因此又火了起来。",
      "analysis": [
       {
        "label": "为什么火",
-       "text": "旋律甜美，节奏轻快，适合做情侣互动视频或浪漫场景，在抖音上被情侣们广泛使用"
+       "text": "有意思的地方在于，飙升榜上还有一首 The Weeknd 的《Hong Kong (feat. 王菲季候风)》，也就是说，这首歌被拿去做成了新歌的采样素材。年轻人先听到新的，再回头找原曲，于是原版《季候风》也跟着回到网络热歌榜。这种老歌重新流行的方式在短视频时代很常见：不是先怀旧，而是先被新作品借用。"
       },
       {
        "label": "常配什么视频",
-       "text": "情侣日常、约会vlog、浪漫场景、美食制作"
+       "text": "港风复古调色、老照片翻拍、城市夜里的车窗和路灯、地铁里看窗外的空镜。也适合那些不露脸、只放一段文字的情绪独白视频，因为这首歌本身比较疏离，不黏人，不会把画面情绪盖住。"
       },
       {
        "label": "听点",
-       "text": "副歌‘Cherry Candy’旋律轻快，适合做甜蜜氛围的背景音乐"
+       "text": "王菲唱得轻，气声多，字像是含在嘴里说出来的，不像在用力唱。副歌那句“季候风”三个字收得住，听起来并不饱满，但正是这种不饱满，让它循环播放也不腻。"
       }
      ],
      "links": [
       {
        "name": "在QQ音乐搜索",
-       "url": "https://y.qq.com/n/ryqq/search?w=Cherry%20Candy%20Lunak"
+       "url": "https://y.qq.com/n/ryqq/search?w=%E5%AD%A3%E5%80%99%E9%A3%8E%20%E7%8E%8B%E8%8F%B2"
       },
       {
        "name": "在网易云搜索",
-       "url": "https://music.163.com/#/search/m/?s=Cherry%20Candy%20Lunak"
+       "url": "https://music.163.com/#/search/m/?s=%E5%AD%A3%E5%80%99%E9%A3%8E%20%E7%8E%8B%E8%8F%B2"
       },
       {
        "name": "在抖音搜索",
-       "url": "https://www.douyin.com/search/Cherry%20Candy"
+       "url": "https://www.douyin.com/search/%E5%AD%A3%E5%80%99%E9%A3%8E"
       }
      ],
      "images": [],
      "tags": [
-      "浪漫",
-      "情侣",
-      "甜系"
+      "港风",
+      "老歌翻红",
+      "采样",
+      "情绪向"
      ],
      "source_note": ""
     }
@@ -332,91 +284,93 @@
    "status": "ok",
    "items": [
     {
-     "title": "瑞士国际主义风格 Swiss Style International Typographic Style",
-     "subtitle": "平面设计",
-     "summary": "简洁、清晰、现代，一看就高级",
+     "title": "玻璃拟态 Glassmorphism",
+     "subtitle": "UI 设计",
+     "summary": "玻璃拟态就是让界面像一块块磨砂玻璃，浮在彩色背景上：内容半透明，背后的颜色被模糊成柔光，边缘还有一圈细细的亮线。",
      "analysis": [
       {
        "label": "一句话认出它",
-       "text": "全是直线、方块，文字和图片分得超清楚，一点花里胡哨的没有。"
+       "text": "看一个界面里有没有那种“雾蒙蒙的卡片”：卡片不是实心的白色，而是半透明，能隐约看到后面的颜色；后面的颜色被糊成一片柔光，卡片边缘有一圈很细的亮边，像玻璃的厚度。看到这种磨砂感，再加上彩色渐变背景和圆角，基本就是玻璃拟态了。"
       },
       {
        "label": "起源",
-       "text": "20世纪初在瑞士兴起，当时觉得这种风格最科学、最干净。"
+       "text": "它算是“半透明模糊”这个老手法的重新走红：早在 Windows Vista 的 Aero 界面和早期 iOS 的毛玻璃效果里就有类似处理。2020 年前后，设计师 Michal Malewicz 把这个词正式提出来，苹果 macOS Big Sur 和 iOS 的大面积使用让它彻底流行。所以它不新，但属于那种每隔几年就被重新包装、又流行起来的风格。"
       },
       {
        "label": "色彩",
-       "text": "最爱用黑白灰，偶尔加个亮色点缀，但绝不花哨。"
+       "text": "底色要“浓”：紫蓝、粉橙、青绿这类高饱和渐变最出效果，因为颜色越花，模糊之后的玻璃才有东西可透。卡片本身几乎是白色，但透明度很低，通常只有一成的白；文字用纯白或接近纯白。要注意的是，玻璃上的文字很容易看不清，所以背景色块尽量避开文字正后方，或者在文字下再加一层更实的暗色。"
       },
       {
        "label": "字体和排版",
-       "text": "字体非黑即白，没有太多变形，排版像搭积木一样整齐。"
+       "text": "字体选干净的无衬线字体（就是没有装饰笔画的字体，比如思源黑体、Inter），字重建议中等或偏粗，不要用很细的字重，因为压在模糊背景上，细笔画会看不清。字号对比要拉开：大标题可以占满卡片，小标签缩小并增加字间距。整块卡片里的文字别放太多，留白越多，玻璃的感觉越明显。"
       },
       {
        "label": "构图和图形",
-       "text": "图片剪裁得干干净净，留白超多，整体感觉特别平衡。"
+       "text": "核心是“层”：最底下是彩色背景（可以是大色块、渐变，或者几个模糊的圆斑），上面飘一两张圆角卡片，圆角通常比较大，比如 16 到 24 像素。卡片要有柔和的下投影，才有浮起来的感觉；再加一圈 1 像素、半透明的白边，模拟玻璃的边缘反光。图形越简单越好，图标用细线条的，不要用很重的实心图标。"
       },
       {
        "label": "代表作品或设计师",
-       "text": "你看很多银行的标志、地图设计，都是这个风格的。"
+       "text": "最直观的参考是苹果 macOS Big Sur 和 iOS 的控制中心、通知中心，那套毛玻璃质感几乎就是这个风格的教科书。设计圈里，Michal Malewicz 是把这个词推广开的人。在 Dribbble 上搜 glassmorphism，能看到大量手机 App 界面和金融、加密类产品的概念图，是这个风格最集中的地方。"
       },
       {
        "label": "和相近风格的区别",
-       "text": "跟之前的装饰风完全相反，瑞士风就是简单到极致。"
+       "text": "和“拟物化”不同：拟物化会画出皮革纹理、木纹、金属高光，玻璃拟态只借用玻璃的光学效果，不会画出玻璃的厚度和纹理。和“新拟态”不同：新拟态是用同色系的明暗凸起，让按钮像从背景里压出来或鼓出来，整体是低对比、同色系的；玻璃拟态靠透明和背景模糊形成对比，底色往往很花。和纯扁平化不同：扁平化没有层次，玻璃拟态明确区分前后层。"
       },
       {
        "label": "怎么用",
-       "text": "做视频封面时用这种风格，画面不会太杂乱，重点突出；写 AI 生图提示词时可以说 'minimalist Swiss style design, clean lines, black and white'."
+       "text": "做视频封面：底层铺一张高饱和渐变，或者把一张照片重模糊，上面放一块半透明圆角矩形，把标题压在它里面，再给矩形加 1 像素白边和柔和投影，几秒钟就能有质感。做 AI 生图时，提示词里写 frosted glass、translucent、backdrop blur、gradient background、thin light border 这几个词，基本就能触发这个风格；生成后自己再补文字，因为 AI 生成的文字通常是乱码。注意别做太满：玻璃卡片最多放两三层，背景别太杂，否则会显得脏。"
       },
       {
        "label": "AI 生图提示词",
-       "text": "minimalist Swiss style design, clean lines, black and white, geometric shapes, balanced composition, high contrast"
+       "text": "Glassmorphism UI design, floating frosted-glass cards with low white opacity and thin 1px light-edge highlights, large rounded corners, soft drop shadows, layered over a vivid purple-to-blue gradient background with blurred colorful blobs, backdrop blur, clean white sans-serif typography with clear size hierarchy, minimal icons, generous negative space, crisp high detail, Dribbble-style app mockup, 4k"
       }
      ],
      "links": [
       {
        "name": "在Pinterest搜索",
-       "url": "https://www.pinterest.com/search/pins/?q=Swiss%20Style%20International%20Typographic%20Style"
+       "url": "https://www.pinterest.com/search/pins/?q=Glassmorphism"
       },
       {
        "name": "在花瓣搜索",
-       "url": "https://huaban.com/search?q=%E7%91%9E%E5%A3%AB%E5%9B%BD%E9%99%85%E4%B8%BB%E4%B9%89%E9%A3%8E%E6%A0%BC"
+       "url": "https://huaban.com/search?q=%E7%8E%BB%E7%92%83%E6%8B%9F%E6%80%81"
       },
       {
        "name": "在Behance搜索",
-       "url": "https://www.behance.net/search/projects?search=Swiss%20Style%20International%20Typographic%20Style"
+       "url": "https://www.behance.net/search/projects?search=Glassmorphism"
       }
      ],
      "images": [
       {
-       "src": "img/2026-11/2026-11-02-design-24c9b861.jpg",
-       "caption": "图中使用了简洁的几何形状和鲜明的色彩对比，体现了瑞士国际主义风格的简约和功能性。",
+       "src": "img/2026-11/2026-11-02-design-7a9a1c9d.jpg",
+       "caption": "图中背景和元素使用了透明度不同的半透明白色矩形框，符合玻璃拟态风格",
        "credit": "网络图片",
        "page": ""
       },
       {
-       "src": "img/2026-11/2026-11-02-design-90ae93b8.jpg",
-       "caption": "这些海报使用了简洁的几何形状和鲜明的色彩对比，体现了瑞士国际主义风格的典型特征。",
+       "src": "img/2026-11/2026-11-02-design-bb7f758d.jpg",
+       "caption": "手机屏幕上的透明渐变效果和阴影体现了玻璃拟态风格",
        "credit": "网络图片",
        "page": ""
       },
       {
-       "src": "img/2026-11/2026-11-02-design-56d92971.jpg",
-       "caption": "图中展示了简洁的设计和排版，使用了大量的空白空间，符合瑞士国际主义风格的简约美学。",
+       "src": "img/2026-11/2026-11-02-design-fb1d0b49.jpg",
+       "caption": "图中展示了不同程度的背景模糊效果，体现了玻璃拟态风格的透明感和层次感。",
        "credit": "网络图片",
        "page": ""
       },
       {
-       "src": "img/2026-11/2026-11-02-design-d11a6dc8.jpg",
-       "caption": "图中使用了简洁的几何形状和鲜明的色彩对比，体现了瑞士国际主义风格的简约和功能主义特点。",
+       "src": "img/2026-11/2026-11-02-design-fb68c066.jpg",
+       "caption": "卡片透明且有渐变效果，背景有彩色圆形，符合玻璃拟态风格",
        "credit": "网络图片",
        "page": ""
       }
      ],
      "tags": [
-      "瑞士国际主义风格",
-      "极简设计",
-      "平面设计"
+      "玻璃拟态",
+      "UI设计",
+      "磨砂玻璃",
+      "渐变背景",
+      "半透明卡片"
      ],
      "source_note": ""
     }
@@ -429,107 +383,109 @@
    "status": "ok",
    "items": [
     {
-     "title": "独立摇滚 Indie rock",
+     "title": "自赏 Shoegaze",
      "subtitle": "音乐风格",
-     "summary": "鼓点像心跳一样，吉他带着点慵懒的沙沙声，人声有点小情绪。",
+     "summary": "一种听起来像整个人被一团发光的吉他噪音裹住的摇滚乐：旋律甜甜的，人声却像从隔壁房间飘过来。",
      "analysis": [
       {
        "label": "一句话认出它",
-       "text": "鼓点像心跳一样，吉他带着点慵懒的沙沙声，人声有点小情绪。"
+       "text": "吉他不是在“弹和弦”，而更像在铺一整片会晃动的噪音云，人声轻轻飘在云里面。你听不清歌词，但会觉得被包住。"
       },
       {
        "label": "起源",
-       "text": "独立摇滚起源于 60 年代末的英国，那时候的乐队不想被大公司控制，自己搞音乐，所以叫‘独立’。"
+       "text": "1980 年代末到 90 年代初的英国，伦敦和附近泰晤士河谷一带的一批乐队搞出来的。名字来自他们演出时的习惯：一直低头盯着脚下的效果器踏板，几乎不看观众。"
       },
       {
        "label": "节奏",
-       "text": "速度大概在 100 到 120 BPM 左右，不算特别快，但鼓的敲击很有力量，像在走路的步伐感，有时候会突然停一下，然后又继续。"
+       "text": "速度大多不极端，中速偏慢，大约每分钟 90 到 110 拍，有的更慢。律动是平平地往前推，不甩不跳，像有人在你身后缓慢地摇你肩膀。鼓打得很朴素——底鼓和军鼓老老实实落在拍点上，军鼓带很多混响，听着“嘭”而不是“啪”，而且经常被埋在吉他噪音里，不仔细听会以为鼓很模糊。"
       },
       {
        "label": "乐器构成",
-       "text": "吉他、贝斯、鼓是基础，人声很重要，有时候还会加个键盘或者萨克斯，让音乐更有层次。"
+       "text": "通常是两把电吉他、一把贝斯、一套鼓，加上一个或两个主唱（男女声都常见）。主角是吉他：失真开得很大，再用颤音摇杆反复推拉音高，让音“滑”着走，制造出摇晃、走音又迷人的感觉。贝斯负责在低频给一个稳的底，鼓负责不让人散架，人声反而像第四第五件乐器。"
       },
       {
        "label": "和声和旋律",
-       "text": "吉他会弹一些特别的和弦，听起来有点复古，旋律简单但很抓人，容易记住。"
+       "text": "底下其实是很规矩、很“流行歌”的和弦进行，不复杂，也不刺耳。但吉他上堆了太多音，和弦的边界被抹开了，听起来像一大团没有棱角的声音。旋律本身往往很好听、很温柔，只是被故意唱得轻、混得远。"
       },
       {
        "label": "制作特点",
-       "text": "制作不会太花哨，有时候听起来像直接在录，有点粗糙，但这样反而更真实，更能感受到音乐人的感情。"
+       "text": "混响、失真、压缩几乎拉满：声音有“空间很大”的回声感，像在体育馆或隧道里录的。人声被当成乐器处理，音量压得和吉他差不多，所以歌词经常听不清——这是风格特色而不是失误。整体听感是“大、厚、糊、亮”，细节藏在噪音里，音量开大比开小好听。"
       },
       {
-       "label": "代表曲：Fake Plastic Trees - Radiohead",
-       "text": "听的时候注意鼓的节奏，还有吉他那慵懒的沙沙声，人声里藏着很多情绪。"
+       "label": "代表曲：Only Shallow - My Bloody Valentine",
+       "text": "这是这张专辑的开场曲，最适合用来“认门”。一开头是鼓和一个往下滑的吉他音，像是有人把音高从高处拽下来，接着整面吉他噪音一下子推上来。注意两点：一是吉他那种不停微微晃、好像音没调准的感觉，那是摇杆推出来的；二是女声——她唱得很轻很甜，但你几乎抓不住歌词，人声和吉他在同一个“厚度”上，不是站在前面的。中段之后可以留意贝斯，它一直在底下稳稳地走，正是它让这团噪音没有散掉。"
       }
      ],
      "links": [
       {
        "name": "在QQ音乐搜索",
-       "url": "https://y.qq.com/n/ryqq/search?w=Fake%20Plastic%20Trees%20Radiohead"
+       "url": "https://y.qq.com/n/ryqq/search?w=Only%20Shallow%20My%20Bloody%20Valentine"
       },
       {
        "name": "在网易云搜索",
-       "url": "https://music.163.com/#/search/m/?s=Fake%20Plastic%20Trees%20Radiohead"
+       "url": "https://music.163.com/#/search/m/?s=Only%20Shallow%20My%20Bloody%20Valentine"
       },
       {
        "name": "在B站搜索",
-       "url": "https://search.bilibili.com/all?keyword=Fake%20Plastic%20Trees%20Radiohead"
+       "url": "https://search.bilibili.com/all?keyword=Only%20Shallow%20My%20Bloody%20Valentine"
       }
      ],
      "images": [],
      "tags": [
-      "鼓点像心跳",
-      "吉他慵懒",
-      "人声小情绪"
+      "音墙",
+      "大量混响",
+      "梦幻人声",
+      "吉他噪音"
      ],
      "source_note": ""
     },
     {
-     "title": "三味线 Shamisen",
+     "title": "萨克斯 Saxophone",
      "subtitle": "乐器",
-     "summary": "三味线声音很大，像在哭，但很美。",
+     "summary": "最接近人声的管乐器：能沙哑、能哭、能笑，一开口就像有人在耳边说话。",
      "analysis": [
       {
        "label": "音色",
-       "text": "三味线声音很大，像在哭，但很美，有种悲伤又有点力量。"
+       "text": "低音区粗、厚、带点沙沙的摩擦感，像有人在低声叹气；中音区暖而饱满，最有“人味”；高音区变亮变紧，带一点鼻音，用力吹的时候会有撕裂的粗粝感。它还有一种很特别的气声——你能听见气流本身的“呼”声，这让它听起来比别的管乐器更私密。"
       },
       {
        "label": "怎么发声",
-       "text": "用竹子做的琴杆拨动弦，琴身是瓢的，所以声音很特别。"
+       "text": "嘴上咬一片薄薄的簧片（哨片），气流让簧片快速震动出声，声音顺着弯弯的金属管身走，手指按键改变管子实际“通气”的长度，越长音越低、越短音越高。所以它的音高是可以连续滑过去的，不像钢琴只能一格一格跳——这也是它能“唱”的原因。"
       },
       {
        "label": "常出现在哪些风格",
-       "text": "常出现在日本传统音乐里，现在很多独立音乐和世界音乐也会用，让音乐更有异国情调。"
+       "text": "爵士里几乎无处不在；放克和灵魂乐里常用来吹短促的、有节奏的句子；R&B 和流行歌里常在中段或结尾来一段独奏把情绪推上去；拉丁音乐、军乐、老式舞曲大乐队里也少不了它。另外，因为它音色太有辨识度，很多电子和实验音乐也会拿它来制造一种“都市夜晚”的气氛。"
       }
      ],
      "links": [
       {
        "name": "在B站搜索",
-       "url": "https://search.bilibili.com/all?keyword=%E4%B8%89%E5%91%B3%E7%BA%BF%20%E6%BC%94%E5%A5%8F"
+       "url": "https://search.bilibili.com/all?keyword=%E8%90%A8%E5%85%8B%E6%96%AF%20%E6%BC%94%E5%A5%8F"
       },
       {
        "name": "在YouTube搜索",
-       "url": "https://www.youtube.com/results?search_query=Shamisen%20performance"
+       "url": "https://www.youtube.com/results?search_query=Saxophone%20performance"
       }
      ],
      "images": [
       {
-       "src": "img/2026-11/2026-11-02-inst-3e481c9f.jpg",
-       "caption": "图中人物正在演奏三味线",
+       "src": "img/2026-11/2026-11-02-inst-bb0411e7.jpg",
+       "caption": "这是一张清晰展示金色萨克斯风的图片",
        "credit": "Wikimedia Commons",
-       "page": "https://commons.wikimedia.org/wiki/File:Toshimana_playing_shamisen_05.jpg"
+       "page": "https://commons.wikimedia.org/wiki/File:Yamaha_Saxophone_YSS-875_EX.jpg"
       },
       {
-       "src": "img/2026-11/2026-11-02-inst-b4d22d93.jpg",
-       "caption": "图中人物正在演奏三味线",
+       "src": "img/2026-11/2026-11-02-inst-f4aeaae4.jpg",
+       "caption": "这是一张清晰展示金色萨克斯风的图片",
        "credit": "Wikimedia Commons",
-       "page": "https://commons.wikimedia.org/wiki/File:Toshimana_playing_shamisen_02.jpg"
+       "page": "https://commons.wikimedia.org/wiki/File:Saksofon_altowy_Serie_III_GP_firmy_Selmer.jpg"
       }
      ],
      "tags": [
-      "声音像在哭",
-      "很大",
-      "很美"
+      "簧片",
+      "人声感",
+      "气声",
+      "可滑音"
      ],
      "source_note": ""
     }
@@ -542,61 +498,61 @@
    "status": "ok",
    "items": [
     {
-     "title": "Kshitigarbha",
-     "subtitle": "Unidentified artist · first half of the 14th century · Hanging scroll; ink, color, and gold on silk",
-     "summary": "一幅描绘佛教神祇Kshitigarbha的艺术作品。",
+     "title": "亨利-查尔斯·马尼格利耶",
+     "subtitle": "Unknown · ca. 1850 · Daguerreotype",
+     "summary": "这是一幅19世纪拍摄的达盖尔银版照片，展现了人物的肖像。",
      "analysis": [
       {
        "label": "第一眼看哪里",
-       "text": "首先，眼睛会被吸引到画面的中心人物身上，因为他是整个画面的焦点。"
+       "text": "首先吸引人的是椭圆形的金边框，然后是中间的人物形象。"
       },
       {
        "label": "构图",
-       "text": "人物位于画面的中央偏上位置，周围有丰富的装饰元素，如光环和服饰上的复杂图案。这些元素增加了画面的层次感和深度。"
+       "text": "人物位于画面的中心，手托腮的姿态显得沉思而优雅。椭圆形的框架增加了视觉焦点，使观者的视线集中在人物身上。"
       },
       {
        "label": "色彩",
-       "text": "主要颜色包括金色、红色和绿色，这些颜色的搭配给人一种庄重而神秘的感觉。金色的使用强调了人物的神性。"
+       "text": "整体色调偏暗，主要以黑色和棕色为主，营造出一种复古的氛围。"
       },
       {
        "label": "光线",
-       "text": "光线从上方照射下来，使得人物的面部和身体部分显得更加立体和突出。"
+       "text": "光线柔和，从左侧照射过来，形成了轻微的阴影，增强了立体感。"
       },
       {
        "label": "细节和看点",
-       "text": "人物的服饰上有精细的花纹和纹理，显示出高超的工艺技术。此外，手中的法器也具有象征意义。"
+       "text": "人物的手势和表情非常细致，显示出摄影师对细节的关注。"
       },
       {
        "label": "背景故事",
-       "text": "虽然具体的背景故事未在资料中提及，但Kshitigarbha作为佛教中的阴间使者，通常与地狱有关联。"
+       "text": "这幅作品属于19世纪的达盖尔银版摄影，是一种早期的摄影技术，反映了那个时代的艺术风格和技术水平。"
       },
       {
        "label": "可以学到什么",
-       "text": "通过观察这幅作品，我们可以学习到如何运用色彩、光线和细节来增强艺术作品的表现力。同时，了解不同文化和宗教符号的意义也是非常重要的。"
+       "text": "可以从这幅作品中学习到如何通过构图和光影来突出主题，以及如何在简单的元素中创造出深度和情感。"
       }
      ],
      "links": [
       {
        "name": "大都会博物馆页面",
-       "url": "https://www.metmuseum.org/art/collection/search/39883"
+       "url": "https://www.metmuseum.org/art/collection/search/267124"
       }
      ],
      "images": [
       {
-       "src": "img/2026-11/2026-11-02-art-dd6c024e.jpg",
-       "caption": "Kshitigarbha",
+       "src": "img/2026-11/2026-11-02-art-03d6de2d.jpg",
+       "caption": "Henri-Charles Maniglier",
        "credit": "The Met · Public Domain",
-       "page": "https://www.metmuseum.org/art/collection/search/39883",
-       "full": "https://images.metmuseum.org/CRDImages/as/original/DP-13942-002.jpg"
+       "page": "https://www.metmuseum.org/art/collection/search/267124",
+       "full": "https://images.metmuseum.org/CRDImages/ph/original/DT1152.jpg"
       }
      ],
      "tags": [
-      "佛教艺术",
-      "丝绸绘画",
-      "元代艺术"
+      "19世纪摄影",
+      "达盖尔银版",
+      "肖像艺术"
      ],
      "source_note": "",
-     "badge": "画作"
+     "badge": "摄影"
     }
    ]
   }

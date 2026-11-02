@@ -2,12 +2,14 @@
  "seen": {
   "ai_video": [
    "https://www.youtube.com/watch?v=-Rhv6-4AFz4",
-   "https://www.youtube.com/watch?v=yOtQplnkotw"
+   "https://www.youtube.com/watch?v=yOtQplnkotw",
+   "https://www.youtube.com/watch?v=XvyH_x3k-5M"
   ],
   "creative_video": [
    "https://www.bilibili.com/video/BV1Qfps6EEVr",
    "https://www.youtube.com/watch?v=aCAvoN1kwWw",
-   "https://www.youtube.com/watch?v=2Hsn4W7ibPY"
+   "https://www.youtube.com/watch?v=2Hsn4W7ibPY",
+   "http://www.bilibili.com/video/BV12HnJ6HEKb"
   ],
   "ai_news": [
    "https://www.youtube.com/@%E5%A4%A7%E5%9C%A3Ai%E8%87%AA%E4%B9%A0%E5%AE%A4/videos",
@@ -15,7 +17,9 @@
    "https://9to5mac.com/2026/10/27/apple-creator-studio-gets-powerful-new-ai-features-using-openai-models/",
    "https://www.instagram.com/p/DfLF1XOHAeE",
    "https://www.instagram.com/reel/DfHO-o6TI35",
-   "https://www.instagram.com/p/DfMk-f5m8Ov"
+   "https://www.instagram.com/p/DfMk-f5m8Ov",
+   "https://kuku.baidu.com/landing/tscp_doc/0cc56476eab6b1a8559b8e604d033c3d",
+   "https://tech-insider.org/ai-image-generator-arena-blind-elo-cost-per-usable-image-2026"
   ],
   "meme": [
    "筷子加水泥塞你嘴里",
@@ -28,25 +32,30 @@
    "高进 & 小沈阳 - 我的好兄弟 (抖音DJ版)",
    "感情断了也乱了- 断了乱了(抖音DJ版)",
    "1% Battery Girl 低电量女孩",
-   "Cherry Candy"
+   "Cherry Candy",
+   "琵琶曲",
+   "季候风"
   ],
   "artwork": [
    437326,
    271963,
-   39883
+   39883,
+   267124
   ]
  },
  "finance_count": {},
- "design_index": 3,
+ "design_index": 4,
  "recent_music_styles": [
   "Hindustani classical music",
   "Grunge",
-  "Indie rock"
+  "Indie rock",
+  "Shoegaze"
  ],
  "recent_instruments": [
   "Dombra",
   "Didgeridoo",
-  "Shamisen"
+  "Shamisen",
+  "Saxophone"
  ],
- "artwork_toggle": 3
+ "artwork_toggle": 4
 }

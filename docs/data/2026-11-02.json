@@ -1,0 +1,596 @@
+{
+ "date": "2026-11-02",
+ "weekday": "周一",
+ "status": "ok",
+ "generated_at": "2026-11-02T20:56:28+08:00",
+ "llm": "zhipu/glm-4.7-flash",
+ "searches": 11,
+ "sections": [
+  {
+   "id": "ai_video",
+   "name": "AI 创意视频",
+   "emoji": "🤖",
+   "status": "ok",
+   "items": [
+    {
+     "title": "AI生成的情感音乐视频：Subukan mo ulit",
+     "subtitle": "YouTube · hugotarium",
+     "summary": "利用AI技术将一首歌转化为具有情感叙事的完整音乐视频，视觉风格独特且流畅。",
+     "analysis": [
+      {
+       "label": "创意点",
+       "text": "把一首歌直接变成MV，用AI画面来演绎歌词里的情绪，完全不需要真人出镜，省去了找演员和搭景的麻烦。"
+      },
+      {
+       "label": "为什么让人眼前一亮",
+       "text": "画面很有电影感，转场和光影处理得很细腻，AI生成的角色和场景连贯，看起来不像是拼凑的，情感传递很到位。"
+      },
+      {
+       "label": "可以借鉴的做法",
+       "text": "做这类视频，先定好音乐和画面风格（比如油画风或赛博朋克），用AI工具生成连贯的画面，最后配上音乐，注意保持人物和场景的一致性。"
+      }
+     ],
+     "links": [
+      {
+       "name": "去YouTube看",
+       "url": "https://www.youtube.com/watch?v=-Rhv6-4AFz4"
+      },
+      {
+       "name": "在B站搜索",
+       "url": "https://search.bilibili.com/all?keyword=Subukan%20mo%20ulit%20%5B%20AI%20Generated%20%5D%20Music%20Video%7COriginal%202026"
+      }
+     ],
+     "images": [
+      {
+       "src": "img/2026-11/2026-11-02-ai_video-4339d43e.jpg",
+       "caption": "视频封面",
+       "credit": "YouTube"
+      }
+     ],
+     "tags": [
+      "AI音乐视频",
+      "视觉叙事",
+      "创意短片",
+      "AI生成",
+      "电影感"
+     ],
+     "source_note": "AI 没有看过视频本身，解读根据标题、简介和网上的公开评价整理，细节以视频为准。",
+     "original_title": "Subukan mo ulit [ AI Generated ] Music Video|Original 2026",
+     "badge": "创意短片"
+    }
+   ]
+  },
+  {
+   "id": "creative_video",
+   "name": "创意视频",
+   "emoji": "✨",
+   "status": "ok",
+   "items": [
+    {
+     "title": "西瓜哥把好吃的都装自己便当盒里了",
+     "subtitle": "B站 · Agoni亚 · 23 播放",
+     "summary": "用乐高积木定格动画，讲述一个可爱角色把食物装进便当盒的治愈小故事。",
+     "analysis": [
+      {
+       "label": "创意在哪",
+       "text": "视频用乐高积木搭出了一个微缩世界，主角是可爱的“西瓜哥”。创意点在于把普通的玩具食物，通过定格动画变成了有“食欲”的故事，特别是“把好吃的装进便当盒”这个动作，看着特别解压。"
+      },
+      {
+       "label": "为什么有效",
+       "text": "这类视频主打“童年回忆杀”，看着熟悉的玩具变活，很容易让观众放下戒备。画面干净、色彩明亮，加上那种微小的动作（比如切水果、挤奶油），很有治愈感，让人不知不觉就看完。"
+      },
+      {
+       "label": "可以借鉴的做法",
+       "text": "拍摄时不用太复杂，用乐高或粘土都可以。重点在于“微距”视角和“微动作”，把小物体放大拍，节奏要慢，配合可爱的音效，就能做出这种治愈系风格。"
+      },
+      {
+       "label": "剧本结构",
+       "text": "结构很简单，就是“引入角色 -> 展示生活化小场景 -> 满足食欲/解压结尾”。不用复杂的台词，全靠画面和音效讲故事，最后给观众一个“真香”的视觉满足感。"
+      }
+     ],
+     "links": [
+      {
+       "name": "去B站看",
+       "url": "https://www.bilibili.com/video/BV1Qfps6EEVr"
+      }
+     ],
+     "images": [
+      {
+       "src": "img/2026-11/2026-11-02-creative_video-d0966f98.jpg",
+       "caption": "视频封面",
+       "credit": "B站"
+      }
+     ],
+     "tags": [
+      "定格动画",
+      "乐高",
+      "治愈",
+      "创意手工",
+      "解压"
+     ],
+     "source_note": "AI 没有看过视频本身，解读根据标题、简介和网上的公开评价整理，细节以视频为准。",
+     "original_title": "“这样治愈又有趣的定格动画，当然要第一个分享给你” #定格动画 #创意手工 #治愈系 #乐高美食 #童年回忆"
+    }
+   ]
+  },
+  {
+   "id": "ai_news",
+   "name": "AI 视频和图片制作资讯",
+   "emoji": "🛠",
+   "status": "ok",
+   "items": [
+    {
+     "title": "Minimax H3 视频人物一致性新方案，解决角色穿帮",
+     "subtitle": "",
+     "summary": "用 Minimax H3 模型配合本地 LoRA 训练，实现高质量长视频里人物始终一致。",
+     "analysis": [
+      {
+       "label": "讲了什么",
+       "text": "介绍了 Minimax H3 这个新模型，重点演示了如何通过本地训练 LoRA 来解决 AI 视频生成中人物容貌、动作不一致的痛点。"
+      },
+      {
+       "label": "怎么用/适合做什么",
+       "text": "适合想做长视频或电影感短片的上班族。它能保证你生成的视频里主角脸不乱变，比以前的方法更稳。"
+      },
+      {
+       "label": "注意事项或省积分技巧",
+       "text": "提到是“本地运行”，说明对电脑配置（显存）有一定要求，不是手机就能随便跑，需要先准备一台性能不错的电脑。"
+      }
+     ],
+     "links": [
+      {
+       "name": "看原文",
+       "url": "https://www.youtube.com/@%E5%A4%A7%E5%9C%A3Ai%E8%87%AA%E4%B9%A0%E5%AE%A4/videos"
+      }
+     ],
+     "images": [],
+     "tags": [
+      "Minimax H3",
+      "人物一致性",
+      "LoRA",
+      "本地部署"
+     ],
+     "source_note": "",
+     "badge": "视频工具"
+    },
+    {
+     "title": "阿里云百炼双十一活动，送 1 亿 Token 和 100 张图",
+     "subtitle": "",
+     "summary": "阿里云双十一福利，提供文生视频和图像生成的大量免费额度，适合练手。",
+     "analysis": [
+      {
+       "label": "讲了什么",
+       "text": "整理了阿里云百炼的双十一活动，包括 1 亿 tokens 的免费额度、100 张图片的免费体验，以及文生视频功能。"
+      },
+      {
+       "label": "怎么用/适合做什么",
+       "text": "适合想低成本测试 AI 绘画和视频生成能力的用户，特别是需要批量生成素材的运营或设计师。"
+      },
+      {
+       "label": "注意事项或省积分技巧",
+       "text": "这是限时活动（双十一），额度用完就没有了，建议先去领了额度再慢慢试错。"
+      }
+     ],
+     "links": [
+      {
+       "name": "看原文",
+       "url": "https://www.tengxunyun8.com/21511.html"
+      }
+     ],
+     "images": [],
+     "tags": [
+      "阿里云",
+      "免费额度",
+      "文生视频",
+      "百炼"
+     ],
+     "source_note": "",
+     "badge": "图片/视频工具"
+    }
+   ]
+  },
+  {
+   "id": "meme",
+   "name": "抖音热梗",
+   "emoji": "🔥",
+   "status": "ok",
+   "items": [
+    {
+     "title": "筷子加水泥塞你嘴里",
+     "subtitle": "",
+     "summary": "把筷子夹着水泥硬塞进嘴里的荒谬动作，主打一个视觉冲击和硬核搞笑。",
+     "analysis": [
+      {
+       "label": "出处",
+       "text": "最早源于网友拍摄用筷子夹着水泥（或者看起来像水泥的硬物）强行塞进嘴里的视频。搜索结果里专门有关于“筷子加水泥烂梗”的解析视频，说明它已经形成了一个专门的梗板块。"
+      },
+      {
+       "label": "为什么火",
+       "text": "因为太离谱了，物理上很难实现，这种反常识的“硬核”行为非常有视觉冲击力。大家喜欢这种打破常规的搞笑，属于典型的“烂梗”文化，主打一个荒诞和魔性，看多了会忍不住模仿。"
+      },
+      {
+       "label": "怎么用",
+       "text": "在视频里，你可以拿着筷子夹着硬东西（水泥、石头、甚至硬馒头），做出试图塞进嘴里或者被塞进嘴里的动作。在评论区，当看到很难办的事，或者遇到很离谱的情况时，就会有人评论“筷子加水泥”。"
+      }
+     ],
+     "links": [
+      {
+       "name": "在抖音搜索",
+       "url": "https://www.douyin.com/search/%E7%AD%B7%E5%AD%90%E5%8A%A0%E6%B0%B4%E6%B3%A5%E5%A1%9E%E4%BD%A0%E5%98%B4%E9%87%8C"
+      },
+      {
+       "name": "在B站搜索",
+       "url": "https://search.bilibili.com/all?keyword=%E7%AD%B7%E5%AD%90%E5%8A%A0%E6%B0%B4%E6%B3%A5%E5%A1%9E%E4%BD%A0%E5%98%B4%E9%87%8C"
+      },
+      {
+       "name": "参考来源",
+       "url": "https://www.douyin.com/shipin/7286758771035719738"
+      }
+     ],
+     "images": [],
+     "tags": [
+      "烂梗",
+      "视觉冲击",
+      "抽象"
+     ],
+     "source_note": ""
+    }
+   ]
+  },
+  {
+   "id": "hot_music",
+   "name": "抖音热门音乐",
+   "emoji": "🎵",
+   "status": "ok",
+   "items": [
+    {
+     "title": "恋人",
+     "subtitle": "李荣浩",
+     "summary": "李荣浩深情嗓音加持，旋律耐听，适合铺陈情绪。",
+     "analysis": [
+      {
+       "label": "嗓音辨识度高",
+       "text": "李荣浩的声音很有特点，听一遍就忘不掉，自带一种成熟男人的故事感。"
+      },
+      {
+       "label": "副歌抓耳",
+       "text": "副歌部分旋律简单重复，很容易跟着哼，适合做视频背景音，不抢戏。"
+      }
+     ],
+     "links": [
+      {
+       "name": "在QQ音乐搜索",
+       "url": "https://y.qq.com/n/ryqq/search?w=%E6%81%8B%E4%BA%BA%20%E6%9D%8E%E8%8D%A3%E6%B5%A9"
+      },
+      {
+       "name": "在网易云搜索",
+       "url": "https://music.163.com/#/search/m/?s=%E6%81%8B%E4%BA%BA%20%E6%9D%8E%E8%8D%A3%E6%B5%A9"
+      },
+      {
+       "name": "在抖音搜索",
+       "url": "https://www.douyin.com/search/%E6%81%8B%E4%BA%BA"
+      }
+     ],
+     "images": [],
+     "tags": [
+      "情感叙事",
+      "深情",
+      "流行"
+     ],
+     "source_note": ""
+    },
+    {
+     "title": "我听见了,你的痛苦成立",
+     "subtitle": "供销社乐队",
+     "summary": "名字有点怪，但节奏轻快，适合拍搞怪或生活片段。",
+     "analysis": [
+      {
+       "label": "名字很有梗",
+       "text": "歌名听起来像在吐槽，其实挺好听，容易让人产生好奇心，容易出爆款。"
+      },
+      {
+       "label": "节奏感强",
+       "text": "鼓点和旋律很轻快，听起来不累，很适合做Vlog或者日常记录，显得很元气。"
+      }
+     ],
+     "links": [
+      {
+       "name": "在QQ音乐搜索",
+       "url": "https://y.qq.com/n/ryqq/search?w=%E6%88%91%E5%90%AC%E8%A7%81%E4%BA%86%2C%E4%BD%A0%E7%9A%84%E7%97%9B%E8%8B%A6%E6%88%90%E7%AB%8B%20%E4%BE%9B%E9%94%80%E7%A4%BE%E4%B9%90%E9%98%9F"
+      },
+      {
+       "name": "在网易云搜索",
+       "url": "https://music.163.com/#/search/m/?s=%E6%88%91%E5%90%AC%E8%A7%81%E4%BA%86%2C%E4%BD%A0%E7%9A%84%E7%97%9B%E8%8B%A6%E6%88%90%E7%AB%8B%20%E4%BE%9B%E9%94%80%E7%A4%BE%E4%B9%90%E9%98%9F"
+      },
+      {
+       "name": "在抖音搜索",
+       "url": "https://www.douyin.com/search/%E6%88%91%E5%90%AC%E8%A7%81%E4%BA%86%2C%E4%BD%A0%E7%9A%84%E7%97%9B%E8%8B%A6%E6%88%90%E7%AB%8B"
+      }
+     ],
+     "images": [],
+     "tags": [
+      "搞怪",
+      "轻快",
+      "生活Vlog"
+     ],
+     "source_note": ""
+    }
+   ]
+  },
+  {
+   "id": "design_style",
+   "name": "设计风格",
+   "emoji": "🎨",
+   "status": "ok",
+   "items": [
+    {
+     "title": "包豪斯 Bauhaus",
+     "subtitle": "平面设计 / 设计运动",
+     "summary": "它是一种把艺术和工业结合的“少即是多”风格，看一眼就知道，因为全是几何图形和红黄蓝三原色。",
+     "analysis": [
+      {
+       "label": "一句话认出它",
+       "text": "一眼就能看出来，因为它特别爱用红黄蓝三原色、黑白灰，而且全是圆的、方的、三角形的几何图形。"
+      },
+      {
+       "label": "起源",
+       "text": "它诞生于 1919 年的德国魏玛，最早是为了让艺术服务于工业生产，把设计师和工匠绑在了一起。"
+      },
+      {
+       "label": "色彩",
+       "text": "经典配色是红、黄、蓝三原色，这三种颜色通常会撞色使用，搭配大面积的黑白灰，非常抢眼。"
+      },
+      {
+       "label": "字体和排版",
+       "text": "字体多用简洁的无衬线体，排版非常讲究对齐和网格系统，看着就很整齐、理性。"
+      },
+      {
+       "label": "构图和图形",
+       "text": "构图上喜欢用球体、圆环、圆柱体、立方体这些基本几何体，通过简单的线条把它们组合起来，感觉特别稳固。"
+      },
+      {
+       "label": "代表作品或设计师",
+       "text": "著名设计师瓦西里·康定斯基和包豪斯校舍建筑都是代表作，那种黑白线条的画看着特别高级。"
+      },
+      {
+       "label": "和相近风格的区别",
+       "text": "它和极简主义不一样，极简主义有时候很“冷”，而包豪斯更强调色彩的冲击力；它和达达主义也不一样，达达主义更荒诞，包豪斯追求的是理性的美。"
+      },
+      {
+       "label": "怎么用",
+       "text": "做视频封面或海报时，背景用几何图形分割，标题放在留白处，用原色做点缀，瞬间显得很专业。做 AI 生图时，就告诉它“包豪斯风格，红黄蓝三原色，几何图形”。"
+      },
+      {
+       "label": "AI 生图提示词",
+       "text": "Bauhaus design style, red yellow blue primary colors, geometric shapes, circle square triangle, black white lines, modern poster, high contrast, clean composition, vector art, 8k, minimalism"
+      }
+     ],
+     "links": [
+      {
+       "name": "在Pinterest搜索",
+       "url": "https://www.pinterest.com/search/pins/?q=Bauhaus"
+      },
+      {
+       "name": "在花瓣搜索",
+       "url": "https://huaban.com/search?q=%E5%8C%85%E8%B1%AA%E6%96%AF"
+      },
+      {
+       "name": "在Behance搜索",
+       "url": "https://www.behance.net/search/projects?search=Bauhaus"
+      }
+     ],
+     "images": [
+      {
+       "src": "img/2026-11/2026-11-02-design-d77f473e.jpg",
+       "caption": "A minimalist, abstract poster features overlapping geometric shapes in primary colors with bold black accents, promoting the Bauhaus exhibition from July to September 1923.",
+       "credit": "网络图片",
+       "page": ""
+      },
+      {
+       "src": "img/2026-11/2026-11-02-design-05125a42.jpg",
+       "caption": "An alphabet chart in bold, black sans-serif typeface with the letter \"g\" highlighted in a red rectangle, set against a beige background with a large red lowercase \"d\" on the right, all framed by a red border, exemplifying Bauhaus design principles.",
+       "credit": "网络图片",
+       "page": ""
+      },
+      {
+       "src": "img/2026-11/2026-11-02-design-889841d3.jpg",
+       "caption": "简洁的几何形状和色彩对比体现了包豪斯风格的极简主义",
+       "credit": "网络图片",
+       "page": ""
+      },
+      {
+       "src": "img/2026-11/2026-11-02-design-1fcf53c9.jpg",
+       "caption": "A grid of eight Bauhaus-inspired posters showcases bold geometric shapes, primary colors, and clean typography, echoing the design principles of figures like László Moholy-Nagy and Herbert Bayer.",
+       "credit": "网络图片",
+       "page": ""
+      }
+     ],
+     "tags": [
+      "包豪斯",
+      "几何美学",
+      "极简主义",
+      "设计灵感",
+      "AI绘画"
+     ],
+     "source_note": ""
+    }
+   ]
+  },
+  {
+   "id": "music_style",
+   "name": "音乐风格和乐器",
+   "emoji": "🎼",
+   "status": "ok",
+   "items": [
+    {
+     "title": "印度古典音乐 Hindustani classical music",
+     "subtitle": "音乐风格",
+     "summary": "那种带着浓郁异域风情的、像在讲故事一样低沉吟唱，中间还夹着清脆拍手声的风格。",
+     "analysis": [
+      {
+       "label": "起源",
+       "text": "发源于印度次大陆，是印度传统音乐的代表。"
+      },
+      {
+       "label": "节奏",
+       "text": "速度通常在 60 到 120 BPM 之间，听起来不赶时间。它的律动感像是在走慢步，主要靠拍手和塔布拉鼓来带节奏，鼓点听起来有点像心跳，很有弹性。"
+      },
+      {
+       "label": "乐器构成",
+       "text": "主要由弹拨乐器（如西塔琴 Sitar）和打击乐器（如塔布拉鼓 Tabla）组成，偶尔会有吹奏乐器。"
+      },
+      {
+       "label": "和声和旋律",
+       "text": "没有我们熟悉的和弦，主要是围绕一个固定的音阶（叫拉格 Raga）来转，旋律像是在绕着某个中心点转圈，非常绵长、细腻。"
+      },
+      {
+       "label": "制作特点",
+       "text": "录音通常很干净，带点空灵感，不会抢戏，非常适合做视频的背景音。"
+      },
+      {
+       "label": "代表曲：Raga Jog - Ravi Shankar",
+       "text": "听的时候注意 1 分 15 秒左右，西塔琴的声音开始变得清晰，像是在云里飘，紧接着鼓点进来，很有层次感。"
+      }
+     ],
+     "links": [
+      {
+       "name": "在QQ音乐搜索",
+       "url": "https://y.qq.com/n/ryqq/search?w=Raga%20Jog%20Ravi%20Shankar"
+      },
+      {
+       "name": "在网易云搜索",
+       "url": "https://music.163.com/#/search/m/?s=Raga%20Jog%20Ravi%20Shankar"
+      },
+      {
+       "name": "在B站搜索",
+       "url": "https://search.bilibili.com/all?keyword=Raga%20Jog%20Ravi%20Shankar"
+      }
+     ],
+     "images": [],
+     "tags": [
+      "异域风情",
+      "沉浸式"
+     ],
+     "source_note": ""
+    },
+    {
+     "title": "冬不拉 Dombra",
+     "subtitle": "乐器",
+     "summary": "一种长颈、像吉他一样的乐器，弹起来声音清脆又空灵，像风吹过草原。",
+     "analysis": [
+      {
+       "label": "音色",
+       "text": "声音很清脆，有点像拨动琴弦的脆响，听起来像流水或者风吹树叶，穿透力不错。"
+      },
+      {
+       "label": "怎么发声",
+       "text": "靠手指拨动琴弦发声，不用拉弓，就像弹吉他一样。"
+      },
+      {
+       "label": "常出现在哪些风格",
+       "text": "常见于哈萨克斯坦、蒙古族和中亚地区，是他们的国宝乐器。"
+      },
+      {
+       "label": "代表曲目",
+       "text": "哈萨克族的《玛依拉变奏曲》或者《冬不拉弹唱》。"
+      }
+     ],
+     "links": [
+      {
+       "name": "在B站搜索",
+       "url": "https://search.bilibili.com/all?keyword=%E5%86%AC%E4%B8%8D%E6%8B%89%20%E6%BC%94%E5%A5%8F"
+      },
+      {
+       "name": "在YouTube搜索",
+       "url": "https://www.youtube.com/results?search_query=Dombra%20performance"
+      }
+     ],
+     "images": [
+      {
+       "src": "img/2026-11/2026-11-02-inst-c1c14e8b.jpg",
+       "caption": "",
+       "credit": "Wikimedia Commons",
+       "page": "https://commons.wikimedia.org/wiki/File:Dombra._Museum_of_musical_instruments,_Almaty.jpg"
+      },
+      {
+       "src": "img/2026-11/2026-11-02-inst-d72f1aa9.jpg",
+       "caption": "",
+       "credit": "Wikimedia Commons",
+       "page": "https://commons.wikimedia.org/wiki/File:Phoenix-Musical_Instrument_Museum-Mongolia_exhibit.jpg"
+      }
+     ],
+     "tags": [
+      "拨弦乐器",
+      "草原风"
+     ],
+     "source_note": ""
+    }
+   ]
+  },
+  {
+   "id": "artwork",
+   "name": "摄影和画作",
+   "emoji": "🖼",
+   "status": "ok",
+   "items": [
+    {
+     "title": "盲目的奥利安寻找升起的太阳",
+     "subtitle": "Nicolas Poussin · 1658 · Oil on canvas",
+     "summary": "一幅描绘古代神话场景的油画，展现了人物与自然景观的结合。",
+     "analysis": [
+      {
+       "label": "第一眼",
+       "text": "首先吸引人的是画中的巨人奥利安，他占据了大部分画面，他的姿态和表情传达出一种探索和追求的感觉。"
+      },
+      {
+       "label": "构图",
+       "text": "巨人在画面的右侧，而天空中的太阳位于左侧，形成了一种平衡感。线条从左下角延伸到右上角，引导观众的视线。留白的使用使得主要人物更加突出。"
+      },
+      {
+       "label": "色彩",
+       "text": "主色调是自然的绿色和棕色，给人一种宁静和和谐的感觉。冷色调的天空与暖色调的人物形成了鲜明的对比。"
+      },
+      {
+       "label": "光线",
+       "text": "光线从左上方照射下来，照亮了奥利安的脸部和身体，增加了画面的立体感和深度。"
+      },
+      {
+       "label": "细节和看点",
+       "text": "奥利安的表情和动作非常生动，显示出他的决心和努力。天空中云彩的细节也很有趣，增加了画面的动态感。"
+      },
+      {
+       "label": "背景故事",
+       "text": "这个故事来自希腊神话，讲述了奥利安试图捕捉太阳的故事。虽然他没有成功，但他的勇气和毅力被后人传颂。"
+      },
+      {
+       "label": "可以学到什么",
+       "text": "可以从这幅作品中学习到如何通过构图、色彩和光线来表现情感和故事。同时，也可以了解到古典艺术的美学原则。"
+      }
+     ],
+     "links": [
+      {
+       "name": "大都会博物馆页面",
+       "url": "https://www.metmuseum.org/art/collection/search/437326"
+      }
+     ],
+     "images": [
+      {
+       "src": "img/2026-11/2026-11-02-art-20576ec7.jpg",
+       "caption": "Blind Orion Searching for the Rising Sun",
+       "credit": "The Met · Public Domain",
+       "page": "https://www.metmuseum.org/art/collection/search/437326",
+       "full": "https://images.metmuseum.org/CRDImages/ep/original/DP148490.jpg"
+      }
+     ],
+     "tags": [
+      "古典艺术",
+      "神话故事",
+      "风景画"
+     ],
+     "source_note": "",
+     "badge": "画作"
+    }
+   ]
+  }
+ ]
+}

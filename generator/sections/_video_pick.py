@@ -10,7 +10,10 @@ def pick(ctx, seen_key, queries, task, fake_extra=None):
         raise RuntimeError("没有搜到可用的视频")
     fake = {"pick": 0, "title": "【示例】一条很有创意的视频", "summary": "dry-run 示例内容。",
             "analysis": [{"label": "创意点", "text": "示例解读文字。"}], "tags": ["示例"], **(fake_extra or {})}
-    out = ctx.llm.json(BASE_SYSTEM, f"{task}\n\n候选视频：\n{video.describe(cands)}", fake=fake)
+    rule = ("重要：你看不到视频画面，只能看到下面的标题、简介和播放量。解读只能基于这些信息和常识推断，"
+            "不要描写具体的画面细节、镜头和台词（比如“视频里切了水果”），推断的地方用“从标题看”“这类视频通常”这样的说法。"
+            "播放量高的优先。")
+    out = ctx.llm.json(BASE_SYSTEM, f"{task}\n\n{rule}\n\n候选视频：\n{video.describe(cands)}", fake=fake)
     c = cands[min(max(as_int(out.get("pick"), 0), 0), len(cands) - 1)]
     ctx.mark_seen(seen_key, c["url"])
     images = []

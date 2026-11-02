@@ -12,6 +12,7 @@ def _titles(ctx, route):
         r = ctx.http.get(f"{HOT_API}/{route}", timeout=30)
         r.raise_for_status()
         data = r.json().get("data") or []
+        log(f"  热榜 {route}：{len(data)} 条")
         return [f"{d.get('title', '').strip()}（热度 {d['hot']}）" if d.get("hot") else d.get("title", "").strip()
                 for d in data if d.get("title")]
     except Exception as e:

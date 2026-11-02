@@ -6,6 +6,7 @@ from common import link_alive, log, platform_of
 VIDEO_DOMAINS = ["bilibili.com", "youtube.com", "douyin.com", "xiaohongshu.com", "vimeo.com"]
 VIDEO_URL = re.compile(r"bilibili\.com/video/|b23\.tv/|youtube\.com/(watch|shorts/)|youtu\.be/|"
                        r"douyin\.com/(video|note)/|xiaohongshu\.com/(explore|discovery/item)/|vimeo\.com/\d+")
+MIN_VIEWS = 5000  # 能拿到播放量（B 站）时，低于这个数的不推荐
 BVID = re.compile(r"BV[0-9A-Za-z]{10}")
 YTID = re.compile(r"(?:v=|youtu\.be/|shorts/)([\w-]{11})")
 
@@ -76,6 +77,9 @@ def candidates(ctx, seen_key, queries, limit=12):
             log(f"  失效，跳过：{c['url']}")
             continue
         if info.get("url") and info["url"] in seen:
+            continue
+        if info.get("views") is not None and info["views"] < MIN_VIEWS:
+            log(f"  播放量太低（{info['views']}），跳过：{c['url']}")
             continue
         c.update({k: v for k, v in info.items() if v})
         c["platform"] = platform_of(c["url"])

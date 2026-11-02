@@ -1,4 +1,5 @@
 """统一的大模型调用。用环境变量 LLM_PROVIDER 切换：zhipu（默认，免费）/ deepseek / claude。"""
+import base64
 import json
 import os
 import re
@@ -46,13 +47,20 @@ class _OpenAICompatible:
         from openai import OpenAI
         self.client = OpenAI(api_key=key, base_url=cfg["base_url"], max_retries=5, timeout=300)
 
-    def chat(self, model, system, user, image_url=None):
-        content = user
-        if image_url:
-            content = [
-                {"type": "image_url", "image_url": {"url": image_url}},
-                {"type": "text", "text": user},
-            ]
+    def chat(self, model, system, user, image=None):
+        if not image:
+            return self._create(model, system, user)
+        b64 = base64.b64encode(image).decode()
+        try:
+            return self._create(model, system, [
+                {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{b64}"}},
+                {"type": "text", "text": user}])
+        except Exception:  # 智谱的看图模型有的版本只认不带前缀的 base64
+            return self._create(model, system, [
+                {"type": "image_url", "image_url": {"url": b64}},
+                {"type": "text", "text": user}])
+
+    def _create(self, model, system, content):
         resp = self.client.chat.completions.create(
             model=model,
             messages=[{"role": "system", "content": system}, {"role": "user", "content": content}],
@@ -66,10 +74,11 @@ class _Claude:
         import anthropic
         self.client = anthropic.Anthropic(api_key=key, max_retries=4, timeout=600)
 
-    def chat(self, model, system, user, image_url=None):
+    def chat(self, model, system, user, image=None):
         content = [{"type": "text", "text": user}]
-        if image_url:
-            content.insert(0, {"type": "image", "source": {"type": "url", "url": image_url}})
+        if image:
+            content.insert(0, {"type": "image", "source": {
+                "type": "base64", "media_type": "image/jpeg", "data": base64.b64encode(image).decode()}})
         resp = self.client.beta.messages.create(
             model=model,
             max_tokens=16000,
@@ -107,18 +116,18 @@ class LLM:
     def can_see(self):
         return self.dry or bool(self.vision_model)
 
-    def json(self, system, user, fake=None, image_url=None):
-        """调用模型并返回解析好的 JSON；不合法就重试一次。dry 模式直接返回 fake。"""
+    def json(self, system, user, fake=None, image=None):
+        """调用模型并返回解析好的 JSON；不合法就重试一次。image 是 JPEG 字节。dry 模式直接返回 fake。"""
         if self.dry:
             return fake
         client, model = self.text_client, self.model
-        if image_url:
+        if image:
             if not self.vision_model:
                 raise RuntimeError("当前设置没有看图模型")
             client, model = self.vision_client, self.vision_model
         prompt = user
         for _ in range(2):
-            data = parse_json(client.chat(model, system, prompt, image_url))
+            data = parse_json(client.chat(model, system, prompt, image))
             if data is not None:
                 return data
             prompt = user + "\n\n注意：上一次的输出不是合法 JSON。这次只输出 JSON，不要任何其他文字。"

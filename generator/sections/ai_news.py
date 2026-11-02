@@ -1,8 +1,14 @@
 """🛠 AI 视频和图片制作资讯：周一到周五每天 2 条（每周 10 条），以视频工具为主。"""
+import re
+
 from common import BASE_SYSTEM, as_int, make_item
 
 ID, NAME, EMOJI = "ai_news", "AI 视频和图片制作资讯", "🛠"
 DAYS = range(5)
+
+# 频道主页、列表页、标签页不是一篇具体的文章；后面几个是云服务优惠券站
+NOT_ARTICLE = re.compile(r"youtube\.com/(@|channel/|c/|user/)|/(videos|tags?|search|category)/?(\?|$)|"
+                         r"tengxunyun8\.com|aliyun888|yunfuwuqiba")
 
 VIDEO_QUERIES = [
     "可灵 即梦 海螺 Vidu AI视频 新功能 更新",
@@ -18,7 +24,8 @@ IMAGE_QUERIES = [
 
 TASK = """今天要推荐 2 条 AI 视频和图片制作相关的资讯，读者在学用 AI 做视频。
 类型可以是：新模型、新功能、教程、场景制作方法、省积分技巧、提示词技巧。
-规则：至少 1 条是**视频**工具相关的，另一条视频或图片工具都可以；优先选最新、最实用的；两条不要讲同一件事；纯融资、八卦类新闻不要。
+规则：至少 1 条是**视频**工具相关的，另一条视频或图片工具都可以；优先选最新、最实用的；两条不要讲同一件事。
+不要选：纯融资或八卦新闻；云服务器、API 的促销和优惠券广告；内容空洞、只有标题党的文章。
 候选：
 {cands}
 
@@ -31,6 +38,8 @@ def run(ctx):
     res, urls = [], set()
     for q in (ctx.rotate(VIDEO_QUERIES), ctx.rotate(VIDEO_QUERIES, 1), ctx.rotate(IMAGE_QUERIES)):
         for r in ctx.search(q, topic="news", time_range="week", max_results=8)["results"]:
+            if NOT_ARTICLE.search(r["url"]):
+                continue
             if r["url"] not in seen and r["url"] not in urls:
                 urls.add(r["url"])
                 res.append(r)

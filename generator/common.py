@@ -1,5 +1,6 @@
 """共用的小工具：日志、JSON 读写、链接处理。"""
 import json
+import re
 import time
 from datetime import timedelta, timezone
 from pathlib import Path
@@ -21,8 +22,13 @@ BASE_SYSTEM = (
 VIDEO_NOTE = "AI 没有看过视频本身，解读根据标题、简介和网上的公开评价整理，细节以视频为准。"
 
 
+LOG_LINES = []  # 当天的运行记录，最后存到 docs/data/log/，方便排查
+
+
 def log(*args):
-    print(time.strftime("%H:%M:%S"), *args, flush=True)
+    line = " ".join(str(a) for a in (time.strftime("%H:%M:%S"), *args))
+    LOG_LINES.append(line)
+    print(line, flush=True)
 
 
 def load_json(path, default):
@@ -90,6 +96,14 @@ def norm_analysis(raw):
         elif isinstance(a, str) and a.strip():
             out.append({"label": "", "text": a.strip()})
     return out
+
+
+def grounded(name, sources):
+    """name 是否真的出现在给模型看的资料里（去掉空格和标点再比），用来挡住模型编出来的梗和歌名。"""
+    def squash(s):
+        return re.sub(r"[\s\W_]+", "", str(s)).lower()
+    key = squash(name)
+    return len(key) >= 2 and any(key in squash(s) for s in sources)
 
 
 def as_int(v, default=None):

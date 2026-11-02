@@ -13,7 +13,7 @@ import time
 from datetime import date, datetime
 from pathlib import Path
 
-from common import BJ, ROOT, load_json, log, save_json
+from common import BJ, LOG_LINES, ROOT, load_json, log, save_json
 
 SECTIONS = ["ai_video", "creative_video", "ai_news", "meme", "hot_music", "design_style", "music_style", "artwork"]
 WEEKDAYS = "一二三四五六日"
@@ -121,6 +121,10 @@ def main():
     })
     rebuild_index(site)
     log(f"完成：{status}，用了 {ctx.search.used} 次搜索 → {day_path}")
+    log_path = site / "data" / "log" / f"{day.isoformat()}.txt"
+    log_path.parent.mkdir(parents=True, exist_ok=True)
+    with log_path.open("a", encoding="utf-8") as f:
+        f.write("\n".join(LOG_LINES) + "\n\n")
     return 1 if status == "failed" else 0
 
 

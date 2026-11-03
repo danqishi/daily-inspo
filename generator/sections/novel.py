@@ -16,11 +16,14 @@ PREFERRED = ["美攻强受", "美强", "追夫", "美人攻", "强受"]   # 读�
 GENERAL = ["he", "强强", "1v1"]                           # 其他类型，按高分 he 文找
 
 MIN_CLICKS = 5000  # 长佩“人阅读”、晋江“章均点击”的下限
-PLATFORM_DETAILS = 12  # 长佩/晋江每天最多查几本书的详情
+PLATFORM_DETAILS = 30  # 长佩/晋江每天最多查几本书的详情
+MIN_SAOWEN_SCORE = 6.5  # 长佩/晋江的书如果扫文有评分（10 人以上），低于这个分就不推
 
 # 读者的雷点：标签名命中就算。“追夫火葬场”是受追攻，不算追妻。
 BAD_TAG = re.compile(r"(?i)(^|[^a-z])(be|oe|bg)([^a-z]|$)|悲剧|开放.*结局|双性|追妻|攻追受|弱强|弱攻强受|^弱攻$|坑|未完|腰斩|烂尾|非耽美|无cp|百合")
 BAD_UNLESS = {"火葬场": "追夫"}
+# 系列的续作、番外单独推没头没尾，跳过
+SEQUEL = re.compile(r"[2-9２-９二三四五六七八九]\s*$|[2-9二三四五六七八九][(（]|续|番外|第[二三四五六七八九]部")
 GOOD_TAG = re.compile(r"美攻强受|美强|追夫|受追攻|美人攻|强受")
 
 SYSTEM = ("你是一位读过大量耽美小说的编辑，在给一位读者每天推荐双男主小说。"
@@ -112,7 +115,7 @@ def _finish(out):
 
 def _eligible(n, skip):
     info = n["info"]
-    return (n["id"] not in skip and not n["marked"]
+    return (n["id"] not in skip and not n["marked"] and not SEQUEL.search(n["title"])
             and "耽美" in info and "原创" in info and "已完结" in info
             and n["score"] >= MIN_SCORE and n["raters"] >= MIN_RATERS
             and not _bad_tags(n["tags"], min_count=2))
@@ -186,7 +189,7 @@ def _platform_candidates(ctx, platform):
             items = platforms.cp_list(ctx.http, rng.randint(1, 50), rng.choice([0, 1, 3, 4]))
         else:
             tag = rng.choice([None, None, *platforms.JJ_TAGS.values()])
-            items = platforms.jj_list(ctx.http, rng.randint(1, 10), rng.choice([2, 4, 3]), tag)
+            items = platforms.jj_list(ctx.http, rng.randint(1, 10), rng.choice([2, 4]), tag)
         found += items
     rng.shuffle(found)
     found.sort(key=lambda n: -any(GOOD_TAG.search(t) for t in n["tags"]))
@@ -200,11 +203,13 @@ def _platform_pick(ctx, platform):
     fetch = platforms.cp_detail if platform == "长佩" else platforms.jj_detail
     checked = llm_calls = 0
     seen_ids = set()
+    why = {"详情失败": 0, "未完结/非纯爱": 0, f"点击不到 {MIN_CLICKS}": 0, "标签踩雷": 0}
     for c in _platform_candidates(ctx, platform):
         if checked >= PLATFORM_DETAILS or llm_calls >= WANT:
             break
         uid = f"{key}:{c['id']}"
-        if uid in skip or uid in seen_ids or _title_key(c["title"]) in titles or _bad_tags(c["tags"]):
+        if (uid in skip or uid in seen_ids or _title_key(c["title"]) in titles or _bad_tags(c["tags"])
+                or SEQUEL.search(c["title"])):
             continue
         seen_ids.add(uid)
         checked += 1
@@ -212,11 +217,17 @@ def _platform_pick(ctx, platform):
             b = fetch(ctx.http, c["id"])
         except Exception as e:
             log(f"  {platform} {c['id']} 详情没取到：{e}")
+            why["详情失败"] += 1
             continue
-        if not (b["finished"] and b["bl"] and b["clicks"] >= MIN_CLICKS):
+        if not (b["finished"] and b["bl"]):
+            why["未完结/非纯爱"] += 1
+            continue
+        if b["clicks"] < MIN_CLICKS:
+            why[f"点击不到 {MIN_CLICKS}"] += 1
             continue
         bad = _bad_tags(b["tags"])
         if bad:
+            why["标签踩雷"] += 1
             log(f"  《{b['title']}》标签踩雷：{'、'.join(bad)}")
             ctx.mark_seen("novel_rejected", uid)
             continue
@@ -231,6 +242,10 @@ def _platform_pick(ctx, platform):
                 bad = _bad_tags(tags, min_count=2)
                 if bad:
                     log(f"  《{b['title']}》扫文读者标签踩雷：{'、'.join(bad)}")
+                    ctx.mark_seen("novel_rejected", uid)
+                    continue
+                if sw["raters"] >= 10 and sw["score"] < MIN_SAOWEN_SCORE:
+                    log(f"  《{b['title']}》扫文评分只有 {sw['score']}，跳过")
                     ctx.mark_seen("novel_rejected", uid)
                     continue
                 reviews = saowen.fetch_reviews(ctx.http, sw["id"], limit=6)
@@ -261,6 +276,7 @@ def _platform_pick(ctx, platform):
             subtitle=f"{platform}完结 · {b['author']} · {b['clicks']:,} {b['clicks_label']} · 约 {round(b['words'] / 10000)} 万字",
             summary=out.get("summary", ""), analysis=_finish(out), links=links, tags=out.get("tags", []),
             source_note=f"数据和文案来自{platform}；介绍根据文案、标签{sw_hint}整理，AI 没有读过原文。")
+    log(f"  {platform}：查了 {checked} 本详情，问模型 {llm_calls} 次；" + "，".join(f"{k} {v}" for k, v in why.items()))
     raise RuntimeError(f"{platform}今天没找到符合口味的书")
 
 

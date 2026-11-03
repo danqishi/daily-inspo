@@ -15,7 +15,8 @@ ID, NAME, EMOJI = "film", "导演、电影和配乐", "🎬"
 DAYS = range(7)
 
 WIKI = "https://en.wikipedia.org"
-WIKI_UA = {"User-Agent": "daily-inspo/1.0 (personal daily digest)"}
+# 维基媒体要求 User-Agent 写明项目和联系方式，否则图片服务器容易返回 429
+WIKI_UA = {"User-Agent": "daily-inspo/1.0 (https://github.com/danqishi/daily-inspo; personal daily digest)"}
 MAX_LANGS = 55      # 维基百科语言版本超过这个数，基本就是世界级名片，换一部
 ATTEMPTS = 3
 
@@ -103,8 +104,13 @@ def _netease_track(ctx, track, composers, film_en):
 
 def _poster(ctx, url):
     """维基百科的海报只有低分辨率版本，不走通用图片下载的最小尺寸限制。"""
+    url = url.split("?")[0]
     try:
-        r = ctx.http.get(url, headers=WIKI_UA, timeout=30)
+        for i in range(3):
+            r = requests.get(url, headers=WIKI_UA, timeout=30)
+            if r.status_code != 429:
+                break
+            time.sleep(5 * (i + 1))
         r.raise_for_status()
         im = Image.open(io.BytesIO(r.content)).convert("RGB")
         buf = io.BytesIO()

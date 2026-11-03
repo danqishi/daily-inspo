@@ -51,6 +51,8 @@ jobs:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          SAOWEN_EMAIL: ${{ secrets.SAOWEN_EMAIL }}
+          SAOWEN_PASSWORD: ${{ secrets.SAOWEN_PASSWORD }}
           DATE: ${{ inputs.date }}
           ONLY: ${{ inputs.only }}
           FORCE: ${{ inputs.force }}

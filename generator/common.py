@@ -54,6 +54,7 @@ SEARCH_SITES = {
     "pinterest": ("Pinterest", "https://www.pinterest.com/search/pins/?q={}"),
     "huaban": ("花瓣", "https://huaban.com/search?q={}"),
     "behance": ("Behance", "https://www.behance.net/search/projects?search={}"),
+    "douban": ("豆瓣", "https://search.douban.com/movie/subject_search?search_text={}"),
 }
 
 

@@ -100,3 +100,13 @@ def fetch_reviews(http, nid, limit=10):
 
 def novel_url(nid):
     return f"{BASE}/novels/view/{nid}"
+
+
+def find(http, title, author):
+    """在扫文小院里按书名找同一本书（作者也要对上），找不到返回 None。"""
+    r = http.get(f"{BASE}/novels/search", params={"q": title}, timeout=30)
+    r.encoding = "utf-8"
+    for n in parse_list(r.text):
+        if n["author"] == author and re.sub(r"\(.*?\)|（.*?）", "", n["title"]).strip() == title.strip():
+            return n
+    return None

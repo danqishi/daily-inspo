@@ -12,7 +12,8 @@
 | 🎨 设计风格（带例图） | 每天 1 种 |
 | 🎼 音乐风格 + 代表曲 + 乐器 | 每天 1 组 |
 | 🖼 画作 / 摄影赏析（交替） | 每天 1 幅 |
-| 📚 双男主小说（扫文小院高分、已完结，避开 BE / 双性 / 追妻 / 弱强） | 每天 1 本 |
+| 🎬 导演 + 一部不那么大众的电影 + 一首电影配乐 | 每天 1 组 |
+| 📚 双男主小说：扫文小院高分 1 本 + 长佩或晋江完结文 1 本（避开 BE / 双性 / 追妻 / 弱强） | 每天 2 本 |
 
 ## 第一次设置
 
@@ -28,7 +29,7 @@
 ## 常用操作
 
 - **某个栏目今天没生成 / 想重新生成**：Actions → Run workflow，`only` 填栏目名（如 `meme,artwork`）。
-  栏目名：`ai_video` `creative_video` `ai_news` `meme` `hot_music` `design_style` `music_style` `artwork` `novel`
+  栏目名：`ai_video` `creative_video` `ai_news` `meme` `hot_music` `design_style` `music_style` `artwork` `film` `novel`
 - **整天重新生成**：Run workflow，勾选 `force`。
 - **换成付费 AI**（质量更好）：Settings → Secrets and variables → Actions → **Variables** 里添加 `LLM_PROVIDER`：
   - `deepseek`：再加一个 Secret `DEEPSEEK_API_KEY`（默认 deepseek-flash，每月约 10 元以内；看图仍用智谱免费模型，所以 `ZHIPU_API_KEY` 要保留）

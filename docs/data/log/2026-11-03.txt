@@ -44,3 +44,16 @@
 11:30:30   完成，1 条
 11:30:33 完成：ok，用了 0 次搜索 → /home/runner/work/daily-inspo/daily-inspo/docs/data/2026-11-03.json
 
+12:02:48 生成 2026-11-03（周二），AI：deepseek/deepseek-flash
+12:02:48 🎬 导演、电影和配乐
+12:03:23   海报下载失败：429 Client Error: Too Many Requests (015d12c) for url: https://upload.wikimedia.org/wikipedia/en/b/b1/PTUposter.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled
+12:03:23   完成，3 条
+12:03:26 📚 双男主小说
+12:03:29   扫文：标签「美强」找到 13 本候选
+12:03:34   《一银币一磅的恶魔》模型判断不推荐：这篇文采用 ADV 分支选项写法，带多个 BE 支线结局和反攻番外；你的雷点明确包括 BE 支线、BE 番外，而书评也反复提到“n 个 BE 后回归 HE”“不能接受 BE 可跳过”，所以不推荐。
+12:04:15   晋江：RuntimeError: 晋江今天没找到符合口味的书
+12:04:18   《恶性依赖》扫文读者标签踩雷：未完结
+12:04:22   《暗河长明》模型判断不推荐：书中含攻追受的追妻火葬场情节，正好踩中这位读者的雷点，因此不推荐。
+12:04:32   完成，2 条
+12:04:35 完成：ok，用了 0 次搜索 → /home/runner/work/daily-inspo/daily-inspo/docs/data/2026-11-03.json
+

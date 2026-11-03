@@ -51,10 +51,25 @@
    437430
   ],
   "novel": [
-   "4916"
+   "4916",
+   "7739",
+   "cp:137548"
   ],
   "novel_rejected": [
-   "46670"
+   "46670",
+   "41555",
+   "cp:209625",
+   "cp:234515"
+  ],
+  "film_directors": [
+   "杜琪峰"
+  ],
+  "film_tracks": [
+   "Yumeji's Theme"
+  ],
+  "novel_titles": [
+   "尖白深渊4暗棋",
+   "看鸟吗哥"
   ]
  },
  "finance_count": {},

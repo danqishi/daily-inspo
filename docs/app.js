@@ -24,6 +24,31 @@ function toggleRead(d, s, i) {
   return isRead(d, s, i);
 }
 
+// 收藏也只存在这台设备的浏览器里；存一份标题、简介和缩略图，收藏夹不用再去加载当天的数据
+const FAV_KEY = "favs";
+const loadFavs = () => {
+  try { return JSON.parse(localStorage.getItem(FAV_KEY)) || []; } catch { return []; }
+};
+const favId = (d, s, i) => `${d}|${s}|${i}`;
+const isFav = (d, s, i) => loadFavs().some((f) => favId(f.d, f.s, f.i) === favId(d, s, i));
+const DAY_CACHE = {};
+function toggleFav(d, s, i) {
+  let favs = loadFavs();
+  const id = favId(d, s, i);
+  if (favs.some((f) => favId(f.d, f.s, f.i) === id)) {
+    favs = favs.filter((f) => favId(f.d, f.s, f.i) !== id);
+  } else {
+    const item = DAY_CACHE[d]?.sections?.find((x) => x.id === s)?.items?.[i] || {};
+    favs.unshift({
+      d, s, i: +i, t: item.title || "", sub: item.subtitle || "",
+      m: (item.summary || "").slice(0, 80), img: item.images?.[0]?.src || "", at: Date.now(),
+    });
+  }
+  localStorage.setItem(FAV_KEY, JSON.stringify(favs));
+  return isFav(d, s, i);
+}
+const favLabel = (on) => (on ? "★ 已收藏" : "☆ 收藏");
+
 const sectionMeta = (id) => (INDEX.sections || []).find((s) => s.id === id) || { id, name: id, emoji: "" };
 
 function setNav(name) {
@@ -46,6 +71,7 @@ async function route() {
   if (parts[0] === "d") return renderDay(parts[1], parts[2]);
   if (parts[0] === "sections") return renderSectionList();
   if (parts[0] === "s") return renderSection(parts[1]);
+  if (parts[0] === "favs") return renderFavs(parts[1]);
   if (parts[0] === "search") return renderSearch(parts.slice(1).join("/"));
   return renderHome();
 }
@@ -81,6 +107,7 @@ function imagesHTML(images) {
 
 function itemHTML(date, sec, item, i) {
   const read = isRead(date, sec.id, i);
+  const fav = isFav(date, sec.id, i);
   return `
   <article class="card${read ? " read" : ""}" id="${esc(sec.id)}-${i}">
     ${item.badge ? `<span class="badge">${esc(item.badge)}</span>` : ""}
@@ -94,7 +121,7 @@ function itemHTML(date, sec, item, i) {
       `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.name)}</a>`).join("")}</div>` : ""}
     ${item.tags?.length ? `<div class="tags">${item.tags.map((t) => `<span>#${esc(t)}</span>`).join("")}</div>` : ""}
     ${item.source_note ? `<p class="note">${esc(item.source_note)}</p>` : ""}
-    <div class="foot"><button class="readbtn" data-read="${esc(date)}|${esc(sec.id)}|${i}">${read ? "已读 ✓" : "标为已读"}</button></div>
+    <div class="foot"><button class="favbtn${fav ? " on" : ""}" data-fav="${esc(date)}|${esc(sec.id)}|${i}">${favLabel(fav)}</button><button class="readbtn" data-read="${esc(date)}|${esc(sec.id)}|${i}">${read ? "已读 ✓" : "标为已读"}</button></div>
   </article>`;
 }
 
@@ -104,6 +131,7 @@ async function renderDay(date, anchor, banner = "") {
   let data;
   try {
     data = await getJSON(`data/${date}.json`);
+    DAY_CACHE[date] = data;
   } catch {
     $app.innerHTML = `<div class="empty">找不到 ${esc(date)} 的内容。</div>`;
     return;
@@ -154,6 +182,40 @@ function renderSection(id) {
     <div class="list">${rows.join("") || '<div class="empty">还没有内容</div>'}</div>`;
 }
 
+// 收藏夹：按栏目分类，顶部可切换只看某一类
+function renderFavs(cat) {
+  const favs = loadFavs();
+  if (!favs.length) {
+    $app.innerHTML = '<h2>★ 收藏夹</h2><div class="empty">还没有收藏。在每条内容下面点「☆ 收藏」就会出现在这里。</div>';
+    return;
+  }
+  const order = (INDEX.sections || []).map((s) => s.id);
+  const groups = {};
+  for (const f of favs) (groups[f.s] ||= []).push(f);
+  const cats = Object.keys(groups).sort((a, b) =>
+    (order.indexOf(a) + 1 || 999) - (order.indexOf(b) + 1 || 999));
+  if (cat && !groups[cat]) cat = "";
+  const chip = (id, label, n) =>
+    `<a class="${(cat || "") === id ? "on" : ""}" href="#/favs${id ? `/${id}` : ""}">${label}<small>${n}</small></a>`;
+  const row = (f) => `<div class="fav-row">
+    <a href="#/d/${f.d}/${f.s}-${f.i}">
+      ${f.img ? `<img loading="lazy" src="${esc(f.img)}" alt="">` : ""}
+      <span><small>${f.d}</small><br>${esc(f.t)}${f.sub ? `<p>${esc(f.sub)}</p>` : f.m ? `<p>${esc(f.m)}</p>` : ""}</span>
+    </a>
+    <button class="favbtn on" data-fav="${esc(f.d)}|${esc(f.s)}|${f.i}" title="取消收藏">★</button></div>`;
+  const shown = cat ? [cat] : cats;
+  $app.innerHTML = `<h2>★ 收藏夹</h2>
+    <div class="chips">${chip("", "全部", favs.length)}${cats.map((id) => {
+      const m = sectionMeta(id);
+      return chip(id, `${esc(m.emoji)} ${esc(m.name)}`, groups[id].length);
+    }).join("")}</div>
+    ${shown.map((id) => {
+      const m = sectionMeta(id);
+      return `${cat ? "" : `<div class="sec-title">${esc(m.emoji)} ${esc(m.name)} · ${groups[id].length}</div>`}
+        <div class="list">${groups[id].map(row).join("")}</div>`;
+    }).join("")}`;
+}
+
 function renderSearch(q) {
   $app.innerHTML = `<input class="searchbox" id="q" type="search" placeholder="搜标题、标签、简介，比如：包豪斯、可灵、爵士" value="${esc(q)}">
     <div class="list" id="results"></div>`;
@@ -187,6 +249,20 @@ document.addEventListener("click", (e) => {
     const read = toggleRead(d, s, i);
     btn.textContent = read ? "已读 ✓" : "标为已读";
     btn.closest(".card").classList.toggle("read", read);
+    return;
+  }
+  const fb = e.target.closest("[data-fav]");
+  if (fb) {
+    const [d, s, i] = fb.dataset.fav.split("|");
+    const on = toggleFav(d, s, i);
+    if (location.hash.startsWith("#/favs")) {
+      const y = window.scrollY;
+      renderFavs(decodeURIComponent(location.hash).split("/")[2]);
+      window.scrollTo(0, y);
+    } else {
+      fb.textContent = favLabel(on);
+      fb.classList.toggle("on", on);
+    }
     return;
   }
   const img = e.target.closest(".imgs img");

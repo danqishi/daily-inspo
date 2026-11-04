@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T07:38:25+08:00",
+ "updated": "2026-11-04T21:50:07+08:00",
  "sections": [
   {
    "id": "ai_video",
@@ -45,6 +45,11 @@
    "id": "film",
    "name": "导演、电影和配乐",
    "emoji": "🎬"
+  },
+  {
+   "id": "quote",
+   "name": "每日一句",
+   "emoji": "✒️"
   },
   {
    "id": "novel",
@@ -225,6 +230,17 @@
       "温柔"
      ],
      "m": "一支双簧管独奏，温柔得像在跟人讲道理，却比任何喊叫都有力量。"
+    },
+    {
+     "s": "quote",
+     "i": 0,
+     "t": "You can't get away from yourself by moving from one place to another.",
+     "g": [
+      "小说",
+      "出走",
+      "自我"
+     ],
+     "m": ""
     },
     {
      "s": "novel",

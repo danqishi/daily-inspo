@@ -2,9 +2,9 @@
  "date": "2026-11-04",
  "weekday": "周三",
  "status": "ok",
- "generated_at": "2026-11-04T07:38:25+08:00",
+ "generated_at": "2026-11-04T21:50:07+08:00",
  "llm": "deepseek/deepseek-flash",
- "searches": 14,
+ "searches": 1,
  "sections": [
   {
    "id": "ai_video",
@@ -743,6 +743,46 @@
       "温柔"
      ],
      "source_note": ""
+    }
+   ]
+  },
+  {
+   "id": "quote",
+   "name": "每日一句",
+   "emoji": "✒️",
+   "status": "ok",
+   "items": [
+    {
+     "title": "You can't get away from yourself by moving from one place to another.",
+     "subtitle": "—— 欧内斯特·海明威《《太阳照常升起》》",
+     "summary": "",
+     "analysis": [
+      {
+       "label": "译文",
+       "text": "意译：你没法靠换个地方，就把自己甩掉。"
+      },
+      {
+       "label": "出处",
+       "text": "欧内斯特·海明威 Ernest Hemingway，《《太阳照常升起》（The Sun Also Rises）》，1926年出版的长篇小说"
+      },
+      {
+       "label": "和今天的电影",
+       "text": "这是海明威第一部长篇里的一段对话，一群人战后漂在巴黎，喝酒、旅行、换城市，以为换个地方就能重新开始。句子本身很平，没有感叹号，但把那种幻想直接戳破了。放到今天的《必是天堂》里正好反过来：苏莱曼从拿撒勒去巴黎、去纽约，街上还是那些警察、边界和荒唐事——不是他甩不掉自己，是这个世界走到哪儿都长得一样。"
+      }
+     ],
+     "links": [
+      {
+       "name": "出处来源",
+       "url": "https://www.goodreads.com/quotes/344459-you-can-t-get-away-from-yourself-by-moving-from-one"
+      }
+     ],
+     "images": [],
+     "tags": [
+      "小说",
+      "出走",
+      "自我"
+     ],
+     "source_note": "出处已通过搜索核实（Quote by Ernest Hemingway: “you can't ge）；译文和解读由 AI 整理。"
     }
    ]
   },

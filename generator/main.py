@@ -15,7 +15,7 @@ from pathlib import Path
 
 from common import BJ, LOG_LINES, ROOT, load_json, log, save_json
 
-SECTIONS = ["ai_video", "creative_video", "ai_news", "meme", "hot_music", "design_style", "music_style", "artwork", "film", "novel"]
+SECTIONS = ["ai_video", "creative_video", "ai_news", "meme", "hot_music", "design_style", "music_style", "artwork", "film", "quote", "novel"]
 WEEKDAYS = "一二三四五六日"
 
 

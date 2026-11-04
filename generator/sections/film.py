@@ -186,6 +186,7 @@ def run(ctx):
             subtitle=f"电影 · {director.get('name_zh', '')} · {film.get('year', '')}", summary=film.get("summary", ""),
             analysis=film.get("analysis"), images=images, links=links, tags=film.get("tags", []),
             source_note="电影已在维基百科核实；介绍由 AI 根据公开资料整理，细节以影片为准。"))
+        ctx.today_film = {"title": items[-1]["title"], "subtitle": items[-1]["subtitle"], "summary": items[-1]["summary"]}  # 给「每日一句」参考
     if score and song:
         ctx.mark_seen("film_tracks", score.get("track", ""))
         analysis = [{"label": "听什么", "text": score.get("listen_for", "")}]

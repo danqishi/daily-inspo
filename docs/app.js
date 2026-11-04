@@ -24,19 +24,25 @@ function toggleRead(d, s, i) {
   return isRead(d, s, i);
 }
 
-// 收藏也只存在这台设备的浏览器里；存一份标题、简介和缩略图，收藏夹不用再去加载当天的数据
-const FAV_KEY = "favs";
-const loadFavs = () => {
-  try { return JSON.parse(localStorage.getItem(FAV_KEY)) || []; } catch { return []; }
+// 收藏存在浏览器里；存一份标题、简介和缩略图，收藏夹不用再去加载当天的数据。
+// 填了 GitHub 令牌的话，还会同步到你账号下的一个私密 Gist，多台设备共用。
+// 取消收藏时记下时间（favdel），合并时才知道是「删掉了」而不是「另一台设备还没收藏」。
+const FAV_KEY = "favs", DEL_KEY = "favdel";
+const loadJSON = (k, dflt) => {
+  try { return JSON.parse(localStorage.getItem(k)) || dflt; } catch { return dflt; }
 };
+const loadFavs = () => loadJSON(FAV_KEY, []);
 const favId = (d, s, i) => `${d}|${s}|${i}`;
-const isFav = (d, s, i) => loadFavs().some((f) => favId(f.d, f.s, f.i) === favId(d, s, i));
+const fid = (f) => favId(f.d, f.s, f.i);
+const isFav = (d, s, i) => loadFavs().some((f) => fid(f) === favId(d, s, i));
 const DAY_CACHE = {};
 function toggleFav(d, s, i) {
   let favs = loadFavs();
+  const del = loadJSON(DEL_KEY, {});
   const id = favId(d, s, i);
-  if (favs.some((f) => favId(f.d, f.s, f.i) === id)) {
-    favs = favs.filter((f) => favId(f.d, f.s, f.i) !== id);
+  if (favs.some((f) => fid(f) === id)) {
+    favs = favs.filter((f) => fid(f) !== id);
+    del[id] = Date.now();
   } else {
     const item = DAY_CACHE[d]?.sections?.find((x) => x.id === s)?.items?.[i] || {};
     favs.unshift({
@@ -45,9 +51,159 @@ function toggleFav(d, s, i) {
     });
   }
   localStorage.setItem(FAV_KEY, JSON.stringify(favs));
+  localStorage.setItem(DEL_KEY, JSON.stringify(del));
+  scheduleSync();
   return isFav(d, s, i);
 }
 const favLabel = (on) => (on ? "★ 已收藏" : "☆ 收藏");
+
+// 两边的收藏取并集；某条的删除时间比收藏时间晚，就算删掉了
+function mergeFavs(a, b) {
+  const del = { ...(a.del || {}) };
+  for (const [k, t] of Object.entries(b.del || {})) del[k] = Math.max(del[k] || 0, t);
+  const byId = {};
+  for (const f of [...(a.favs || []), ...(b.favs || [])]) {
+    const k = fid(f);
+    if (!byId[k] || f.at > byId[k].at) byId[k] = f;
+  }
+  const favs = Object.values(byId).filter((f) => !(del[fid(f)] >= f.at)).sort((x, y) => y.at - x.at);
+  return { favs, del };
+}
+
+const SYNC_FILE = "daily-inspo-favs.json";
+const syncToken = () => localStorage.getItem("sync:token") || "";
+let syncState = "", syncTimer = null, syncing = null;
+
+async function gh(path, opts = {}) {
+  const headers = { Authorization: `Bearer ${syncToken()}`, Accept: "application/vnd.github+json" };
+  if (opts.body) headers["Content-Type"] = "application/json";
+  const r = await fetch(`https://api.github.com${path}`, { ...opts, headers, cache: "no-store" });
+  if (r.status === 401) throw new Error("令牌无效或已过期");
+  if (r.status === 403) throw new Error("令牌没有 Gist 读写权限");
+  if (r.status === 404) throw Object.assign(new Error("找不到（404）"), { status: 404 });
+  if (!r.ok) throw new Error(`GitHub 返回 ${r.status}`);
+  return r.json();
+}
+
+// 找到存收藏的那个 Gist；第一次用时没有就新建一个私密的
+async function findGist(local) {
+  const saved = localStorage.getItem("sync:gist");
+  if (saved) {
+    try { return await gh(`/gists/${saved}`); } catch (e) { if (e.status !== 404) throw e; }
+  }
+  for (let page = 1; page <= 10; page++) {
+    const list = await gh(`/gists?per_page=100&page=${page}`);
+    const hit = list.find((g) => g.files?.[SYNC_FILE]);
+    if (hit) {
+      localStorage.setItem("sync:gist", hit.id);
+      return gh(`/gists/${hit.id}`);
+    }
+    if (list.length < 100) break;
+  }
+  const g = await gh("/gists", {
+    method: "POST",
+    body: JSON.stringify({
+      description: "每日灵感 · 收藏夹同步", public: false,
+      files: { [SYNC_FILE]: { content: JSON.stringify(local) } },
+    }),
+  });
+  localStorage.setItem("sync:gist", g.id);
+  return g;
+}
+
+async function doSync() {
+  if (!syncToken()) return;
+  syncState = "同步中…";
+  updateSyncUI();
+  try {
+    const before = localStorage.getItem(FAV_KEY) + localStorage.getItem(DEL_KEY);
+    const local = { favs: loadFavs(), del: loadJSON(DEL_KEY, {}) };
+    const g = await findGist(local);
+    const text = g.files?.[SYNC_FILE]?.content || "{}";
+    let remote = {};
+    try { remote = JSON.parse(text); } catch {}
+    const merged = mergeFavs(local, remote);
+    const out = JSON.stringify(merged);
+    if (out !== text) {
+      await gh(`/gists/${g.id}`, { method: "PATCH", body: JSON.stringify({ files: { [SYNC_FILE]: { content: out } } }) });
+    }
+    // 同步期间本机又点了收藏的话，不覆盖，交给下一轮同步
+    if (localStorage.getItem(FAV_KEY) + localStorage.getItem(DEL_KEY) === before) {
+      localStorage.setItem(FAV_KEY, JSON.stringify(merged.favs));
+      localStorage.setItem(DEL_KEY, JSON.stringify(merged.del));
+    }
+    localStorage.setItem("sync:last", String(Date.now()));
+    syncState = "";
+    if (JSON.stringify(merged.favs) !== JSON.stringify(local.favs)) refreshFavViews();
+  } catch (e) {
+    syncState = `同步失败：${e.message}`;
+  }
+  updateSyncUI();
+}
+// 同一时间只跑一次同步；跑的时候又有改动，跑完再来一轮
+let syncAgain = false;
+function syncNow() {
+  if (syncing) {
+    syncAgain = true;
+    return syncing;
+  }
+  syncing = (async () => {
+    do {
+      syncAgain = false;
+      await doSync();
+    } while (syncAgain);
+  })().finally(() => (syncing = null));
+  return syncing;
+}
+function scheduleSync() {
+  if (!syncToken()) return;
+  clearTimeout(syncTimer);
+  syncTimer = setTimeout(syncNow, 1200);
+}
+
+// 同步拉回来别的设备的收藏后，刷新当前页面上的收藏按钮或收藏夹
+function refreshFavViews() {
+  if (location.hash.startsWith("#/favs")) {
+    const y = window.scrollY;
+    renderFavs(decodeURIComponent(location.hash).split("/")[2]);
+    window.scrollTo(0, y);
+    return;
+  }
+  document.querySelectorAll(".card [data-fav]").forEach((b) => {
+    const on = isFav(...b.dataset.fav.split("|"));
+    b.textContent = favLabel(on);
+    b.classList.toggle("on", on);
+  });
+}
+
+function syncStatusText() {
+  if (syncState) return syncState;
+  const last = +localStorage.getItem("sync:last");
+  return last ? `已同步 · ${new Date(last).toLocaleString("zh-CN", { hour12: false })}` : "已开启";
+}
+function syncBoxHTML() {
+  if (!syncToken()) {
+    return `<details class="syncbox"><summary>☁️ 多设备同步：未开启（点这里设置）</summary>
+      <ol>
+        <li>打开 <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub 新建令牌页面</a>（需要登录）</li>
+        <li>Token name 随便填，比如「每日灵感收藏」；Expiration 选 No expiration 或一个较长的期限</li>
+        <li>Repository access 保持默认即可</li>
+        <li>Permissions 里点 Add permissions，勾选 <b>Gists</b>，把权限改成 <b>Read and write</b></li>
+        <li>点 Generate token，复制生成的令牌（github_pat_ 开头），粘贴到下面</li>
+      </ol>
+      <p class="muted">每台设备粘贴一次就行。这个令牌只能读写 Gist，碰不到你的仓库，只保存在这台设备的浏览器里。</p>
+      <div class="syncrow"><input id="tok" type="password" placeholder="github_pat_..." autocomplete="off"><button id="tokSave">开启同步</button></div>
+    </details>`;
+  }
+  return `<div class="syncbox"><span>☁️ <span id="syncStatus">${esc(syncStatusText())}</span></span>
+    <span><button id="syncNow">立即同步</button> <button id="syncOff">关闭同步</button></span></div>`;
+}
+function updateSyncUI() {
+  const el = document.getElementById("syncStatus");
+  if (!el) return;
+  el.textContent = syncStatusText();
+  el.classList.toggle("err", syncState.startsWith("同步失败"));
+}
 
 const sectionMeta = (id) => (INDEX.sections || []).find((s) => s.id === id) || { id, name: id, emoji: "" };
 
@@ -186,7 +342,7 @@ function renderSection(id) {
 function renderFavs(cat) {
   const favs = loadFavs();
   if (!favs.length) {
-    $app.innerHTML = '<h2>★ 收藏夹</h2><div class="empty">还没有收藏。在每条内容下面点「☆ 收藏」就会出现在这里。</div>';
+    $app.innerHTML = `<h2>★ 收藏夹</h2>${syncBoxHTML()}<div class="empty">还没有收藏。在每条内容下面点「☆ 收藏」就会出现在这里。</div>`;
     return;
   }
   const order = (INDEX.sections || []).map((s) => s.id);
@@ -204,7 +360,7 @@ function renderFavs(cat) {
     </a>
     <button class="favbtn on" data-fav="${esc(f.d)}|${esc(f.s)}|${f.i}" title="取消收藏">★</button></div>`;
   const shown = cat ? [cat] : cats;
-  $app.innerHTML = `<h2>★ 收藏夹</h2>
+  $app.innerHTML = `<h2>★ 收藏夹</h2>${syncBoxHTML()}
     <div class="chips">${chip("", "全部", favs.length)}${cats.map((id) => {
       const m = sectionMeta(id);
       return chip(id, `${esc(m.emoji)} ${esc(m.name)}`, groups[id].length);
@@ -251,6 +407,23 @@ document.addEventListener("click", (e) => {
     btn.closest(".card").classList.toggle("read", read);
     return;
   }
+  if (e.target.id === "tokSave") {
+    const t = document.getElementById("tok").value.trim();
+    if (!t) return;
+    localStorage.setItem("sync:token", t);
+    localStorage.removeItem("sync:gist");
+    route();
+    syncNow();
+    return;
+  }
+  if (e.target.id === "syncNow") return void syncNow();
+  if (e.target.id === "syncOff") {
+    if (!confirm("关闭后这台设备不再同步，已有的收藏会留在本机。确定吗？")) return;
+    ["sync:token", "sync:gist", "sync:last"].forEach((k) => localStorage.removeItem(k));
+    syncState = "";
+    route();
+    return;
+  }
   const fb = e.target.closest("[data-fav]");
   if (fb) {
     const [d, s, i] = fb.dataset.fav.split("|");
@@ -276,3 +449,9 @@ document.addEventListener("click", (e) => {
 
 window.addEventListener("hashchange", route);
 route();
+syncNow();
+// 切回这个页面时（比如手机上从别的 App 回来）拉一次，看看别的设备有没有新收藏
+document.addEventListener("visibilitychange", () => {
+  const last = +localStorage.getItem("sync:last") || 0;
+  if (document.visibilityState === "visible" && Date.now() - last > 60e3) syncNow();
+});

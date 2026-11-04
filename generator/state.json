@@ -5,7 +5,8 @@
    "https://www.youtube.com/watch?v=yOtQplnkotw",
    "https://www.youtube.com/watch?v=XvyH_x3k-5M",
    "https://www.youtube.com/watch?v=jhHhxAkutDE",
-   "https://www.youtube.com/watch?v=hhWEVIa29_Q"
+   "https://www.youtube.com/watch?v=hhWEVIa29_Q",
+   "https://www.youtube.com/watch?v=0aSCXD_81ys"
   ],
   "creative_video": [
    "https://www.bilibili.com/video/BV1Qfps6EEVr",
@@ -13,7 +14,8 @@
    "https://www.youtube.com/watch?v=2Hsn4W7ibPY",
    "http://www.bilibili.com/video/BV12HnJ6HEKb",
    "https://www.bilibili.com/video/BV1JjHL6PEjB",
-   "https://www.youtube.com/watch?v=ttscGIniYhg"
+   "https://www.youtube.com/watch?v=ttscGIniYhg",
+   "https://www.youtube.com/watch?v=dGJo696t_j0"
   ],
   "ai_news": [
    "https://www.youtube.com/@%E5%A4%A7%E5%9C%A3Ai%E8%87%AA%E4%B9%A0%E5%AE%A4/videos",
@@ -27,7 +29,9 @@
    "https://zhuanlan.zhihu.com/p/2096973243672540149",
    "https://kuku.baidu.com/landing/tscp_doc/d784e8a85b928122abede37e03de2a80",
    "https://github.com/LearnPrompt/awesome-seedance/blob/main/README_zh.md",
-   "https://kuku.baidu.com/landing/tscp_doc/9e7c37eb904292f0dadf4fa7b377f567"
+   "https://kuku.baidu.com/landing/tscp_doc/9e7c37eb904292f0dadf4fa7b377f567",
+   "https://techiexpert.com/best-ai-video-generator-tools",
+   "https://roboticsandautomationnews.com/2026/11/02/11-best-singing-photo-generator-tools-in-2026/106623/"
   ],
   "meme": [
    "筷子加水泥塞你嘴里",
@@ -48,7 +52,9 @@
    "学功夫练武术 你的胆子肥嘟嘟",
    "青衣",
    "宝船",
-   "一张相片"
+   "一张相片",
+   "天龙八部之宿敌",
+   "牡丹亭"
   ],
   "artwork": [
    437326,
@@ -56,13 +62,16 @@
    39883,
    267124,
    437430,
-   267019
+   267019,
+   437549
   ],
   "novel": [
    "4916",
    "7739",
    "cp:137548",
-   "cp:135053"
+   "cp:135053",
+   "1528",
+   "jj:4504938"
   ],
   "novel_rejected": [
    "46670",
@@ -71,34 +80,41 @@
    "cp:234515",
    "4286",
    "146",
-   "4147"
+   "4147",
+   "jj:2714187"
   ],
   "film_directors": [
    "杜琪峰",
-   "伊利亚·苏莱曼"
+   "伊利亚·苏莱曼",
+   "皮耶特罗·马切罗"
   ],
   "film_tracks": [
    "Yumeji's Theme",
-   "Gabriel's Oboe"
+   "Gabriel's Oboe",
+   "Playing Love"
   ],
   "novel_titles": [
    "尖白深渊4暗棋",
    "看鸟吗哥",
-   "逆光而行的你"
+   "逆光而行的你",
+   "恶徒",
+   "先生他有亲密接触恐惧症"
   ],
   "quotes": [
-   "You can't get away from yourself by moving from one place to another."
+   "You can't get away from yourself by moving from one place to another.",
+   "望着窗外，只要想起一生中后悔的事\n梅花便落满了南山"
   ]
  },
  "finance_count": {},
- "design_index": 6,
+ "design_index": 7,
  "recent_music_styles": [
   "Hindustani classical music",
   "Grunge",
   "Indie rock",
   "Shoegaze",
   "Funk",
-  "Jersey club"
+  "Jersey club",
+  "Future bass"
  ],
  "recent_instruments": [
   "Dombra",
@@ -106,7 +122,8 @@
   "Shamisen",
   "Saxophone",
   "Bass guitar",
-  "Marimba"
+  "Marimba",
+  "Violin"
  ],
- "artwork_toggle": 6
+ "artwork_toggle": 7
 }

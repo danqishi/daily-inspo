@@ -6,7 +6,8 @@
    "https://www.youtube.com/watch?v=XvyH_x3k-5M",
    "https://www.youtube.com/watch?v=jhHhxAkutDE",
    "https://www.youtube.com/watch?v=hhWEVIa29_Q",
-   "https://www.youtube.com/watch?v=0aSCXD_81ys"
+   "https://www.youtube.com/watch?v=0aSCXD_81ys",
+   "https://www.youtube.com/watch?v=QHWSXg6grlE"
   ],
   "creative_video": [
    "https://www.bilibili.com/video/BV1Qfps6EEVr",
@@ -15,7 +16,8 @@
    "http://www.bilibili.com/video/BV12HnJ6HEKb",
    "https://www.bilibili.com/video/BV1JjHL6PEjB",
    "https://www.youtube.com/watch?v=ttscGIniYhg",
-   "https://www.youtube.com/watch?v=dGJo696t_j0"
+   "https://www.youtube.com/watch?v=dGJo696t_j0",
+   "https://www.youtube.com/watch?v=Vj8K1ZJYbOE"
   ],
   "ai_news": [
    "https://www.youtube.com/@%E5%A4%A7%E5%9C%A3Ai%E8%87%AA%E4%B9%A0%E5%AE%A4/videos",
@@ -31,14 +33,17 @@
    "https://github.com/LearnPrompt/awesome-seedance/blob/main/README_zh.md",
    "https://kuku.baidu.com/landing/tscp_doc/9e7c37eb904292f0dadf4fa7b377f567",
    "https://techiexpert.com/best-ai-video-generator-tools",
-   "https://roboticsandautomationnews.com/2026/11/02/11-best-singing-photo-generator-tools-in-2026/106623/"
+   "https://roboticsandautomationnews.com/2026/11/02/11-best-singing-photo-generator-tools-in-2026/106623/",
+   "https://kuku.baidu.com/landing/tscp_doc/b1ef6368654dbb40777bbc3192fcd93f",
+   "https://x.com/Delroy715/status/2116130442651005028"
   ],
   "meme": [
    "筷子加水泥塞你嘴里",
    "双11忙忙碌碌寻宝藏belike",
    "我刚满十八岁",
    "小猫踏步舞",
-   "商家你好我来返图了"
+   "商家你好我来返图了",
+   "我和豆包关系最好时belike"
   ],
   "hot_music": [
    "恋人",
@@ -54,7 +59,9 @@
    "宝船",
    "一张相片",
    "天龙八部之宿敌",
-   "牡丹亭"
+   "牡丹亭",
+   "光年之外",
+   "半点心"
   ],
   "artwork": [
    437326,
@@ -63,7 +70,8 @@
    267124,
    437430,
    267019,
-   437549
+   437549,
+   267426
   ],
   "novel": [
    "4916",
@@ -71,7 +79,9 @@
    "cp:137548",
    "cp:135053",
    "1528",
-   "jj:4504938"
+   "jj:4504938",
+   "4434",
+   "cp:859022"
   ],
   "novel_rejected": [
    "46670",
@@ -81,32 +91,38 @@
    "4286",
    "146",
    "4147",
-   "jj:2714187"
+   "jj:2714187",
+   "cp:1573598"
   ],
   "film_directors": [
    "杜琪峰",
    "伊利亚·苏莱曼",
-   "皮耶特罗·马切罗"
+   "皮耶特罗·马切罗",
+   "罗伊·安德森"
   ],
   "film_tracks": [
    "Yumeji's Theme",
    "Gabriel's Oboe",
-   "Playing Love"
+   "Playing Love",
+   "On the Nature of Daylight"
   ],
   "novel_titles": [
    "尖白深渊4暗棋",
    "看鸟吗哥",
    "逆光而行的你",
    "恶徒",
-   "先生他有亲密接触恐惧症"
+   "先生他有亲密接触恐惧症",
+   "莫瑞斯maurice",
+   "人鱼观察日志"
   ],
   "quotes": [
    "You can't get away from yourself by moving from one place to another.",
-   "望着窗外，只要想起一生中后悔的事\n梅花便落满了南山"
+   "望着窗外，只要想起一生中后悔的事\n梅花便落满了南山",
+   "Não sou nada.\nNunca serei nada.\nNão posso querer ser nada.\nÀ parte isso, tenho em mim todos os sonhos do mundo."
   ]
  },
  "finance_count": {},
- "design_index": 7,
+ "design_index": 8,
  "recent_music_styles": [
   "Hindustani classical music",
   "Grunge",
@@ -114,7 +130,8 @@
   "Shoegaze",
   "Funk",
   "Jersey club",
-  "Future bass"
+  "Future bass",
+  "Flamenco"
  ],
  "recent_instruments": [
   "Dombra",
@@ -123,7 +140,8 @@
   "Saxophone",
   "Bass guitar",
   "Marimba",
-  "Violin"
+  "Violin",
+  "Timpani"
  ],
- "artwork_toggle": 7
+ "artwork_toggle": 8
 }

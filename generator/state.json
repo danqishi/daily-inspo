@@ -7,7 +7,8 @@
    "https://www.youtube.com/watch?v=jhHhxAkutDE",
    "https://www.youtube.com/watch?v=hhWEVIa29_Q",
    "https://www.youtube.com/watch?v=0aSCXD_81ys",
-   "https://www.youtube.com/watch?v=QHWSXg6grlE"
+   "https://www.youtube.com/watch?v=QHWSXg6grlE",
+   "https://www.youtube.com/watch?v=pVumNsuZopg"
   ],
   "creative_video": [
    "https://www.bilibili.com/video/BV1Qfps6EEVr",
@@ -17,7 +18,8 @@
    "https://www.bilibili.com/video/BV1JjHL6PEjB",
    "https://www.youtube.com/watch?v=ttscGIniYhg",
    "https://www.youtube.com/watch?v=dGJo696t_j0",
-   "https://www.youtube.com/watch?v=Vj8K1ZJYbOE"
+   "https://www.youtube.com/watch?v=Vj8K1ZJYbOE",
+   "https://www.youtube.com/watch?v=9kdXKbaRyqA"
   ],
   "ai_news": [
    "https://www.youtube.com/@%E5%A4%A7%E5%9C%A3Ai%E8%87%AA%E4%B9%A0%E5%AE%A4/videos",
@@ -71,7 +73,8 @@
    437430,
    267019,
    437549,
-   267426
+   267426,
+   38006
   ],
   "novel": [
    "4916",
@@ -81,7 +84,9 @@
    "1528",
    "jj:4504938",
    "4434",
-   "cp:859022"
+   "cp:859022",
+   "88061",
+   "jj:6217154"
   ],
   "novel_rejected": [
    "46670",
@@ -98,13 +103,15 @@
    "杜琪峰",
    "伊利亚·苏莱曼",
    "皮耶特罗·马切罗",
-   "罗伊·安德森"
+   "罗伊·安德森",
+   "杨·史云梅耶"
   ],
   "film_tracks": [
    "Yumeji's Theme",
    "Gabriel's Oboe",
    "Playing Love",
-   "On the Nature of Daylight"
+   "On the Nature of Daylight",
+   "Deborah's Theme"
   ],
   "novel_titles": [
    "尖白深渊4暗棋",
@@ -113,16 +120,19 @@
    "恶徒",
    "先生他有亲密接触恐惧症",
    "莫瑞斯maurice",
-   "人鱼观察日志"
+   "人鱼观察日志",
+   "攒花藏刀",
+   "把alpha人鱼陛下叼回窝"
   ],
   "quotes": [
    "You can't get away from yourself by moving from one place to another.",
    "望着窗外，只要想起一生中后悔的事\n梅花便落满了南山",
-   "Não sou nada.\nNunca serei nada.\nNão posso querer ser nada.\nÀ parte isso, tenho em mim todos os sonhos do mundo."
+   "Não sou nada.\nNunca serei nada.\nNão posso querer ser nada.\nÀ parte isso, tenho em mim todos os sonhos do mundo.",
+   "Lasciate ogne speranza, voi ch'intrate."
   ]
  },
  "finance_count": {},
- "design_index": 8,
+ "design_index": 9,
  "recent_music_styles": [
   "Hindustani classical music",
   "Grunge",
@@ -131,7 +141,8 @@
   "Funk",
   "Jersey club",
   "Future bass",
-  "Flamenco"
+  "Flamenco",
+  "Trance"
  ],
  "recent_instruments": [
   "Dombra",
@@ -141,7 +152,8 @@
   "Bass guitar",
   "Marimba",
   "Violin",
-  "Timpani"
+  "Timpani",
+  "Hammond organ"
  ],
- "artwork_toggle": 8
+ "artwork_toggle": 9
 }

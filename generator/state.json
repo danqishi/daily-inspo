@@ -9,7 +9,8 @@
    "https://www.youtube.com/watch?v=0aSCXD_81ys",
    "https://www.youtube.com/watch?v=QHWSXg6grlE",
    "https://www.youtube.com/watch?v=pVumNsuZopg",
-   "https://www.youtube.com/watch?v=Z-yob9lNTTs"
+   "https://www.youtube.com/watch?v=Z-yob9lNTTs",
+   "https://www.youtube.com/watch?v=c4CfRY2wMcI"
   ],
   "creative_video": [
    "https://www.bilibili.com/video/BV1Qfps6EEVr",
@@ -21,7 +22,8 @@
    "https://www.youtube.com/watch?v=dGJo696t_j0",
    "https://www.youtube.com/watch?v=Vj8K1ZJYbOE",
    "https://www.youtube.com/watch?v=9kdXKbaRyqA",
-   "https://www.youtube.com/watch?v=zI0T3P-g-pM"
+   "https://www.youtube.com/watch?v=zI0T3P-g-pM",
+   "https://www.youtube.com/watch?v=IHmkNisT_bw"
   ],
   "ai_news": [
    "https://www.youtube.com/@%E5%A4%A7%E5%9C%A3Ai%E8%87%AA%E4%B9%A0%E5%AE%A4/videos",
@@ -39,7 +41,9 @@
    "https://techiexpert.com/best-ai-video-generator-tools",
    "https://roboticsandautomationnews.com/2026/11/02/11-best-singing-photo-generator-tools-in-2026/106623/",
    "https://kuku.baidu.com/landing/tscp_doc/b1ef6368654dbb40777bbc3192fcd93f",
-   "https://x.com/Delroy715/status/2116130442651005028"
+   "https://x.com/Delroy715/status/2116130442651005028",
+   "https://kuku.baidu.com/landing/tscp_doc/ce6adf873018dd45dc120c02589c988f",
+   "https://www.mage.space/zh-CN/free-ai-image-generator"
   ],
   "meme": [
    "筷子加水泥塞你嘴里",
@@ -47,7 +51,8 @@
    "我刚满十八岁",
    "小猫踏步舞",
    "商家你好我来返图了",
-   "我和豆包关系最好时belike"
+   "我和豆包关系最好时belike",
+   "全民进入大保暖时代"
   ],
   "hot_music": [
    "恋人",
@@ -65,7 +70,9 @@
    "天龙八部之宿敌",
    "牡丹亭",
    "光年之外",
-   "半点心"
+   "半点心",
+   "悬溺",
+   "坏女孩"
   ],
   "artwork": [
    437326,
@@ -77,7 +84,8 @@
    437549,
    267426,
    38006,
-   283121
+   283121,
+   50486
   ],
   "novel": [
    "4916",
@@ -91,7 +99,9 @@
    "88061",
    "jj:6217154",
    "14222",
-   "cp:1355792"
+   "cp:1355792",
+   "9271",
+   "jj:3848563"
   ],
   "novel_rejected": [
    "46670",
@@ -102,7 +112,8 @@
    "146",
    "4147",
    "jj:2714187",
-   "cp:1573598"
+   "cp:1573598",
+   "jj:3312131"
   ],
   "film_directors": [
    "杜琪峰",
@@ -110,7 +121,8 @@
    "皮耶特罗·马切罗",
    "罗伊·安德森",
    "杨·史云梅耶",
-   "小克莱伯·门多萨"
+   "小克莱伯·门多萨",
+   "琳恩·拉姆塞"
   ],
   "film_tracks": [
    "Yumeji's Theme",
@@ -118,7 +130,8 @@
    "Playing Love",
    "On the Nature of Daylight",
    "Deborah's Theme",
-   "De Ushuaia a la Quiaca"
+   "De Ushuaia a la Quiaca",
+   "The Heart Asks Pleasure First"
   ],
   "novel_titles": [
    "尖白深渊4暗棋",
@@ -131,18 +144,21 @@
    "攒花藏刀",
    "把alpha人鱼陛下叼回窝",
    "杀破狼",
-   "江山客"
+   "江山客",
+   "初三的六一儿童节",
+   "定海浮生录"
   ],
   "quotes": [
    "You can't get away from yourself by moving from one place to another.",
    "望着窗外，只要想起一生中后悔的事\n梅花便落满了南山",
    "Não sou nada.\nNunca serei nada.\nNão posso querer ser nada.\nÀ parte isso, tenho em mim todos os sonhos do mundo.",
    "Lasciate ogne speranza, voi ch'intrate.",
-   "墙有茨，不可扫也。中冓之言，不可道也。所可道也，言之丑也。"
+   "墙有茨，不可扫也。中冓之言，不可道也。所可道也，言之丑也。",
+   "Come away, O human child!\nTo the waters and the wild\nWith a faery, hand in hand,\nFor the world's more full of weeping than you can understand."
   ]
  },
  "finance_count": {},
- "design_index": 10,
+ "design_index": 11,
  "recent_music_styles": [
   "Hindustani classical music",
   "Grunge",
@@ -153,7 +169,9 @@
   "Future bass",
   "Flamenco",
   "Trance",
-  "Blues"
+  "Blues",
+  "Disco",
+  "Trip hop"
  ],
  "recent_instruments": [
   "Dombra",
@@ -165,7 +183,9 @@
   "Violin",
   "Timpani",
   "Hammond organ",
-  "Harp"
+  "Harp",
+  "Electric guitar",
+  "Sheng"
  ],
- "artwork_toggle": 10
+ "artwork_toggle": 11
 }

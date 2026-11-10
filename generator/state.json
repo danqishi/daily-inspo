@@ -11,7 +11,8 @@
    "https://www.youtube.com/watch?v=pVumNsuZopg",
    "https://www.youtube.com/watch?v=Z-yob9lNTTs",
    "https://www.youtube.com/watch?v=c4CfRY2wMcI",
-   "https://www.youtube.com/watch?v=h4vhk7bvnnM"
+   "https://www.youtube.com/watch?v=h4vhk7bvnnM",
+   "https://www.youtube.com/watch?v=IU6OjmmFdDw"
   ],
   "creative_video": [
    "https://www.bilibili.com/video/BV1Qfps6EEVr",
@@ -25,7 +26,8 @@
    "https://www.youtube.com/watch?v=9kdXKbaRyqA",
    "https://www.youtube.com/watch?v=zI0T3P-g-pM",
    "https://www.youtube.com/watch?v=IHmkNisT_bw",
-   "https://www.youtube.com/watch?v=32V2UhlLJUc"
+   "https://www.youtube.com/watch?v=32V2UhlLJUc",
+   "https://www.bilibili.com/video/BV1NFH36bEM9"
   ],
   "ai_news": [
    "https://www.youtube.com/@%E5%A4%A7%E5%9C%A3Ai%E8%87%AA%E4%B9%A0%E5%AE%A4/videos",
@@ -47,7 +49,9 @@
    "https://kuku.baidu.com/landing/tscp_doc/ce6adf873018dd45dc120c02589c988f",
    "https://www.mage.space/zh-CN/free-ai-image-generator",
    "https://x.com/AomyYing/status/2118654299689689417",
-   "https://www.youtube.com/watch?v=_dpIyV7o1AM"
+   "https://www.youtube.com/watch?v=_dpIyV7o1AM",
+   "https://kuku.baidu.com/landing/tscp_doc/c488ba9e622e79f21c06e1671635f494",
+   "https://www.csdn.net/detail/webblog_71885386/41965"
   ],
   "meme": [
    "筷子加水泥塞你嘴里",
@@ -57,7 +61,8 @@
    "商家你好我来返图了",
    "我和豆包关系最好时belike",
    "全民进入大保暖时代",
-   "这次真让我装到了"
+   "这次真让我装到了",
+   "交换一张你拍到的秋天吧"
   ],
   "hot_music": [
    "恋人",
@@ -79,7 +84,9 @@
    "悬溺",
    "坏女孩",
    "无 意",
-   "我怀疑大禹治水（治没了我的薪水）"
+   "我怀疑大禹治水（治没了我的薪水）",
+   "明年依然好时节（纵然我的相思）",
+   "연애의 조건 (Love Options)"
   ],
   "artwork": [
    437326,
@@ -93,7 +100,8 @@
    38006,
    283121,
    50486,
-   271885
+   271885,
+   459084
   ],
   "novel": [
    "4916",
@@ -111,7 +119,9 @@
    "9271",
    "jj:3848563",
    "10812",
-   "cp:381983"
+   "cp:381983",
+   "402",
+   "jj:3869714"
   ],
   "novel_rejected": [
    "46670",
@@ -130,7 +140,8 @@
    "cp:242944",
    "cp:259001",
    "cp:112749",
-   "cp:1558145"
+   "cp:1558145",
+   "584"
   ],
   "film_directors": [
    "杜琪峰",
@@ -140,7 +151,8 @@
    "杨·史云梅耶",
    "小克莱伯·门多萨",
    "琳恩·拉姆塞",
-   "凯莉·雷查德"
+   "凯莉·雷查德",
+   "克里斯蒂安·佩措尔德"
   ],
   "film_tracks": [
    "Yumeji's Theme",
@@ -150,7 +162,8 @@
    "Deborah's Theme",
    "De Ushuaia a la Quiaca",
    "The Heart Asks Pleasure First",
-   "Hand Covers Bruise"
+   "Hand Covers Bruise",
+   "Paris, Texas"
   ],
   "novel_titles": [
    "尖白深渊4暗棋",
@@ -167,7 +180,9 @@
    "初三的六一儿童节",
    "定海浮生录",
    "六爻",
-   "郎骑竹马呼啸来"
+   "郎骑竹马呼啸来",
+   "残酷罗曼史",
+   "师叔这是现代请自重"
   ],
   "quotes": [
    "You can't get away from yourself by moving from one place to another.",
@@ -176,11 +191,12 @@
    "Lasciate ogne speranza, voi ch'intrate.",
    "墙有茨，不可扫也。中冓之言，不可道也。所可道也，言之丑也。",
    "Come away, O human child!\nTo the waters and the wild\nWith a faery, hand in hand,\nFor the world's more full of weeping than you can understand.",
-   "It is not down in any map; true places never are."
+   "It is not down in any map; true places never are.",
+   "会心处不必在远。"
   ]
  },
  "finance_count": {},
- "design_index": 12,
+ "design_index": 13,
  "recent_music_styles": [
   "Hindustani classical music",
   "Grunge",
@@ -194,7 +210,8 @@
   "Blues",
   "Disco",
   "Trip hop",
-  "Swing jazz"
+  "Swing jazz",
+  "Cumbia"
  ],
  "recent_instruments": [
   "Dombra",
@@ -209,7 +226,8 @@
   "Harp",
   "Electric guitar",
   "Sheng",
-  "Bianzhong bells"
+  "Bianzhong bells",
+  "Pipa"
  ],
- "artwork_toggle": 12
+ "artwork_toggle": 13
 }

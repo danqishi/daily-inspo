@@ -13,7 +13,8 @@
    "https://www.youtube.com/watch?v=c4CfRY2wMcI",
    "https://www.youtube.com/watch?v=h4vhk7bvnnM",
    "https://www.youtube.com/watch?v=IU6OjmmFdDw",
-   "https://www.youtube.com/watch?v=fsNouZn3yis"
+   "https://www.youtube.com/watch?v=fsNouZn3yis",
+   "https://www.youtube.com/watch?v=Ep6AzKxanhc"
   ],
   "creative_video": [
    "https://www.bilibili.com/video/BV1Qfps6EEVr",
@@ -29,7 +30,8 @@
    "https://www.youtube.com/watch?v=IHmkNisT_bw",
    "https://www.youtube.com/watch?v=32V2UhlLJUc",
    "https://www.bilibili.com/video/BV1NFH36bEM9",
-   "https://www.youtube.com/watch?v=AGNyhcKXJN0"
+   "https://www.youtube.com/watch?v=AGNyhcKXJN0",
+   "https://www.youtube.com/watch?v=LiprsUOyfz0"
   ],
   "ai_news": [
    "https://www.youtube.com/@%E5%A4%A7%E5%9C%A3Ai%E8%87%AA%E4%B9%A0%E5%AE%A4/videos",
@@ -55,7 +57,9 @@
    "https://kuku.baidu.com/landing/tscp_doc/c488ba9e622e79f21c06e1671635f494",
    "https://www.csdn.net/detail/webblog_71885386/41965",
    "https://x.com/btcup99/status/2120180768463102199",
-   "https://docs.riyuexinzhu.com/flux-image-3-nano-banana-2-1-gpt-image-2-6-shi-ce-pian"
+   "https://docs.riyuexinzhu.com/flux-image-3-nano-banana-2-1-gpt-image-2-6-shi-ce-pian",
+   "https://onezhuanone.com/articles/6600",
+   "https://kuku.baidu.com/landing/tscp_doc/67c4caccb68dcc0d4d207fad36cdc31f"
   ],
   "meme": [
    "筷子加水泥塞你嘴里",
@@ -67,7 +71,8 @@
    "全民进入大保暖时代",
    "这次真让我装到了",
    "交换一张你拍到的秋天吧",
-   "嘉豪"
+   "嘉豪",
+   "可以给我买麻辣烫糖葫芦吗"
   ],
   "hot_music": [
    "恋人",
@@ -93,7 +98,9 @@
    "明年依然好时节（纵然我的相思）",
    "연애의 조건 (Love Options)",
    "时过境迁",
-   "你的不经意"
+   "你的不经意",
+   "慌啥子嘛",
+   "烂奇迹(不小心惹了上帝)"
   ],
   "artwork": [
    437326,
@@ -109,7 +116,8 @@
    50486,
    271885,
    459084,
-   267087
+   267087,
+   265726
   ],
   "novel": [
    "4916",
@@ -131,7 +139,9 @@
    "402",
    "jj:3869714",
    "3095",
-   "cp:2147566"
+   "cp:2147566",
+   "40827",
+   "jj:2915431"
   ],
   "novel_rejected": [
    "46670",
@@ -163,7 +173,8 @@
    "琳恩·拉姆塞",
    "凯莉·雷查德",
    "克里斯蒂安·佩措尔德",
-   "万玛才旦"
+   "万玛才旦",
+   "韦西·沙赞那庭"
   ],
   "film_tracks": [
    "Yumeji's Theme",
@@ -175,7 +186,8 @@
    "The Heart Asks Pleasure First",
    "Hand Covers Bruise",
    "Paris, Texas",
-   "Solitude"
+   "Solitude",
+   "Hana-bi"
   ],
   "novel_titles": [
    "尖白深渊4暗棋",
@@ -196,7 +208,9 @@
    "残酷罗曼史",
    "师叔这是现代请自重",
    "查无此人",
-   "没有人给他写信"
+   "没有人给他写信",
+   "杀戮秀",
+   "1930来的先生"
   ],
   "quotes": [
    "You can't get away from yourself by moving from one place to another.",
@@ -207,11 +221,12 @@
    "Come away, O human child!\nTo the waters and the wild\nWith a faery, hand in hand,\nFor the world's more full of weeping than you can understand.",
    "It is not down in any map; true places never are.",
    "会心处不必在远。",
-   "落在一个人一生中的雪，我们不能全部看见。"
+   "落在一个人一生中的雪，我们不能全部看见。",
+   "整个的上海打了个盹，做了个不近情理的梦。"
   ]
  },
  "finance_count": {},
- "design_index": 14,
+ "design_index": 15,
  "recent_music_styles": [
   "Hindustani classical music",
   "Grunge",
@@ -227,7 +242,8 @@
   "Trip hop",
   "Swing jazz",
   "Cumbia",
-  "Acid jazz"
+  "Acid jazz",
+  "Trap"
  ],
  "recent_instruments": [
   "Dombra",
@@ -244,7 +260,8 @@
   "Sheng",
   "Bianzhong bells",
   "Pipa",
-  "Guzheng"
+  "Guzheng",
+  "Harmonica"
  ],
- "artwork_toggle": 14
+ "artwork_toggle": 15
 }

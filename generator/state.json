@@ -14,7 +14,8 @@
    "https://www.youtube.com/watch?v=h4vhk7bvnnM",
    "https://www.youtube.com/watch?v=IU6OjmmFdDw",
    "https://www.youtube.com/watch?v=fsNouZn3yis",
-   "https://www.youtube.com/watch?v=Ep6AzKxanhc"
+   "https://www.youtube.com/watch?v=Ep6AzKxanhc",
+   "https://www.youtube.com/watch?v=lrsI-eQ3HEw"
   ],
   "creative_video": [
    "https://www.bilibili.com/video/BV1Qfps6EEVr",
@@ -31,7 +32,8 @@
    "https://www.youtube.com/watch?v=32V2UhlLJUc",
    "https://www.bilibili.com/video/BV1NFH36bEM9",
    "https://www.youtube.com/watch?v=AGNyhcKXJN0",
-   "https://www.youtube.com/watch?v=LiprsUOyfz0"
+   "https://www.youtube.com/watch?v=LiprsUOyfz0",
+   "https://www.youtube.com/watch?v=xXyhCb0Hvfs"
   ],
   "ai_news": [
    "https://www.youtube.com/@%E5%A4%A7%E5%9C%A3Ai%E8%87%AA%E4%B9%A0%E5%AE%A4/videos",
@@ -117,7 +119,8 @@
    271885,
    459084,
    267087,
-   265726
+   265726,
+   267891
   ],
   "novel": [
    "4916",
@@ -141,7 +144,9 @@
    "3095",
    "cp:2147566",
    "40827",
-   "jj:2915431"
+   "jj:2915431",
+   "64315",
+   "cp:1115874"
   ],
   "novel_rejected": [
    "46670",
@@ -174,7 +179,8 @@
    "凯莉·雷查德",
    "克里斯蒂安·佩措尔德",
    "万玛才旦",
-   "韦西·沙赞那庭"
+   "韦西·沙赞那庭",
+   "黑泽清"
   ],
   "film_tracks": [
    "Yumeji's Theme",
@@ -187,7 +193,8 @@
    "Hand Covers Bruise",
    "Paris, Texas",
    "Solitude",
-   "Hana-bi"
+   "Hana-bi",
+   "The Ecstasy of Gold"
   ],
   "novel_titles": [
    "尖白深渊4暗棋",
@@ -210,7 +217,9 @@
    "查无此人",
    "没有人给他写信",
    "杀戮秀",
-   "1930来的先生"
+   "1930来的先生",
+   "酒与枪",
+   "妖道难撩"
   ],
   "quotes": [
    "You can't get away from yourself by moving from one place to another.",
@@ -222,11 +231,12 @@
    "It is not down in any map; true places never are.",
    "会心处不必在远。",
    "落在一个人一生中的雪，我们不能全部看见。",
-   "整个的上海打了个盹，做了个不近情理的梦。"
+   "整个的上海打了个盹，做了个不近情理的梦。",
+   "恥の多い生涯を送って来ました。"
   ]
  },
  "finance_count": {},
- "design_index": 15,
+ "design_index": 16,
  "recent_music_styles": [
   "Hindustani classical music",
   "Grunge",
@@ -243,7 +253,8 @@
   "Swing jazz",
   "Cumbia",
   "Acid jazz",
-  "Trap"
+  "Trap",
+  "Reggae"
  ],
  "recent_instruments": [
   "Dombra",
@@ -261,7 +272,8 @@
   "Bianzhong bells",
   "Pipa",
   "Guzheng",
-  "Harmonica"
+  "Harmonica",
+  "Cello"
  ],
- "artwork_toggle": 15
+ "artwork_toggle": 16
 }

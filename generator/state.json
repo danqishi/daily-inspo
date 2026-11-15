@@ -16,7 +16,8 @@
    "https://www.youtube.com/watch?v=fsNouZn3yis",
    "https://www.youtube.com/watch?v=Ep6AzKxanhc",
    "https://www.youtube.com/watch?v=lrsI-eQ3HEw",
-   "https://www.youtube.com/watch?v=hA2FGW2HQww"
+   "https://www.youtube.com/watch?v=hA2FGW2HQww",
+   "https://www.youtube.com/watch?v=MiPA5PbNwtg"
   ],
   "creative_video": [
    "https://www.bilibili.com/video/BV1Qfps6EEVr",
@@ -35,7 +36,8 @@
    "https://www.youtube.com/watch?v=AGNyhcKXJN0",
    "https://www.youtube.com/watch?v=LiprsUOyfz0",
    "https://www.youtube.com/watch?v=xXyhCb0Hvfs",
-   "https://www.youtube.com/watch?v=NFazpVty5dE"
+   "https://www.youtube.com/watch?v=NFazpVty5dE",
+   "https://www.youtube.com/watch?v=M5A20mPOcbw"
   ],
   "ai_news": [
    "https://www.youtube.com/@%E5%A4%A7%E5%9C%A3Ai%E8%87%AA%E4%B9%A0%E5%AE%A4/videos",
@@ -63,7 +65,9 @@
    "https://x.com/btcup99/status/2120180768463102199",
    "https://docs.riyuexinzhu.com/flux-image-3-nano-banana-2-1-gpt-image-2-6-shi-ce-pian",
    "https://onezhuanone.com/articles/6600",
-   "https://kuku.baidu.com/landing/tscp_doc/67c4caccb68dcc0d4d207fad36cdc31f"
+   "https://kuku.baidu.com/landing/tscp_doc/67c4caccb68dcc0d4d207fad36cdc31f",
+   "https://www.youtube.com/watch?v=_0tMqA33k-U",
+   "https://www.marktechpost.com/2026/11/13/best-ai-video-generation-models-2026"
   ],
   "meme": [
    "筷子加水泥塞你嘴里",
@@ -76,7 +80,8 @@
    "这次真让我装到了",
    "交换一张你拍到的秋天吧",
    "嘉豪",
-   "可以给我买麻辣烫糖葫芦吗"
+   "可以给我买麻辣烫糖葫芦吗",
+   "爱乐之城群像齐舞挑战"
   ],
   "hot_music": [
    "恋人",
@@ -104,7 +109,9 @@
    "时过境迁",
    "你的不经意",
    "慌啥子嘛",
-   "烂奇迹(不小心惹了上帝)"
+   "烂奇迹(不小心惹了上帝)",
+   "死神在揣着玫瑰",
+   "deng deng deng deng deng deng"
   ],
   "artwork": [
    437326,
@@ -123,7 +130,8 @@
    267087,
    265726,
    267891,
-   266133
+   266133,
+   266332
   ],
   "novel": [
    "4916",
@@ -151,7 +159,9 @@
    "64315",
    "cp:1115874",
    "79121",
-   "jj:4770243"
+   "jj:4770243",
+   "650",
+   "cp:660601"
   ],
   "novel_rejected": [
    "46670",
@@ -186,7 +196,8 @@
    "万玛才旦",
    "韦西·沙赞那庭",
    "黑泽清",
-   "成濑巳喜男"
+   "成濑巳喜男",
+   "克里斯·马克"
   ],
   "film_tracks": [
    "Yumeji's Theme",
@@ -201,7 +212,8 @@
    "Solitude",
    "Hana-bi",
    "The Ecstasy of Gold",
-   "Merry Christmas Mr. Lawrence"
+   "Merry Christmas Mr. Lawrence",
+   "Lara's Theme"
   ],
   "novel_titles": [
    "尖白深渊4暗棋",
@@ -228,7 +240,9 @@
    "酒与枪",
    "妖道难撩",
    "纯爱派",
-   "每天都怕总裁发现我是卧底"
+   "每天都怕总裁发现我是卧底",
+   "人间世",
+   "下不为例"
   ],
   "quotes": [
    "You can't get away from yourself by moving from one place to another.",
@@ -242,11 +256,12 @@
    "落在一个人一生中的雪，我们不能全部看见。",
    "整个的上海打了个盹，做了个不近情理的梦。",
    "恥の多い生涯を送って来ました。",
-   "无言独上西楼，月如钩。"
+   "无言独上西楼，月如钩。",
+   "Je vais m'exercer seul à ma fantasque escrime,\nFlairant dans tous les coins les hasards de la rime,\nTrébuchant sur les mots comme sur les pavés,\nHeurtant parfois des vers depuis longtemps rêvés."
   ]
  },
  "finance_count": {},
- "design_index": 17,
+ "design_index": 18,
  "recent_music_styles": [
   "Hindustani classical music",
   "Grunge",
@@ -265,7 +280,8 @@
   "Acid jazz",
   "Trap",
   "Reggae",
-  "Drill"
+  "Drill",
+  "Techno"
  ],
  "recent_instruments": [
   "Dombra",
@@ -285,7 +301,8 @@
   "Guzheng",
   "Harmonica",
   "Cello",
-  "Clarinet"
+  "Clarinet",
+  "Theremin"
  ],
- "artwork_toggle": 17
+ "artwork_toggle": 18
 }

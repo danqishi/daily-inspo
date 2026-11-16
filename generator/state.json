@@ -17,7 +17,8 @@
    "https://www.youtube.com/watch?v=Ep6AzKxanhc",
    "https://www.youtube.com/watch?v=lrsI-eQ3HEw",
    "https://www.youtube.com/watch?v=hA2FGW2HQww",
-   "https://www.youtube.com/watch?v=MiPA5PbNwtg"
+   "https://www.youtube.com/watch?v=MiPA5PbNwtg",
+   "https://www.youtube.com/watch?v=vF6r_GUaU94"
   ],
   "creative_video": [
    "https://www.bilibili.com/video/BV1Qfps6EEVr",
@@ -37,7 +38,8 @@
    "https://www.youtube.com/watch?v=LiprsUOyfz0",
    "https://www.youtube.com/watch?v=xXyhCb0Hvfs",
    "https://www.youtube.com/watch?v=NFazpVty5dE",
-   "https://www.youtube.com/watch?v=M5A20mPOcbw"
+   "https://www.youtube.com/watch?v=M5A20mPOcbw",
+   "https://www.youtube.com/watch?v=oSKsSgLWhN4"
   ],
   "ai_news": [
    "https://www.youtube.com/@%E5%A4%A7%E5%9C%A3Ai%E8%87%AA%E4%B9%A0%E5%AE%A4/videos",
@@ -67,7 +69,9 @@
    "https://onezhuanone.com/articles/6600",
    "https://kuku.baidu.com/landing/tscp_doc/67c4caccb68dcc0d4d207fad36cdc31f",
    "https://www.youtube.com/watch?v=_0tMqA33k-U",
-   "https://www.marktechpost.com/2026/11/13/best-ai-video-generation-models-2026"
+   "https://www.marktechpost.com/2026/11/13/best-ai-video-generation-models-2026",
+   "https://kuku.baidu.com/landing/tscp_doc/d130f5cfc72ae21e74acf73db67b2843",
+   "https://felloai.com/best-ai-image-generator"
   ],
   "meme": [
    "筷子加水泥塞你嘴里",
@@ -81,7 +85,8 @@
    "交换一张你拍到的秋天吧",
    "嘉豪",
    "可以给我买麻辣烫糖葫芦吗",
-   "爱乐之城群像齐舞挑战"
+   "爱乐之城群像齐舞挑战",
+   "古代监控"
   ],
   "hot_music": [
    "恋人",
@@ -111,7 +116,9 @@
    "慌啥子嘛",
    "烂奇迹(不小心惹了上帝)",
    "死神在揣着玫瑰",
-   "deng deng deng deng deng deng"
+   "deng deng deng deng deng deng",
+   "目瑙纵歌",
+   "山风山风等等我"
   ],
   "artwork": [
    437326,
@@ -131,7 +138,8 @@
    265726,
    267891,
    266133,
-   266332
+   266332,
+   437675
   ],
   "novel": [
    "4916",
@@ -161,7 +169,9 @@
    "79121",
    "jj:4770243",
    "650",
-   "cp:660601"
+   "cp:660601",
+   "42349",
+   "jj:1609760"
   ],
   "novel_rejected": [
    "46670",
@@ -197,7 +207,8 @@
    "韦西·沙赞那庭",
    "黑泽清",
    "成濑巳喜男",
-   "克里斯·马克"
+   "克里斯·马克",
+   "洪常秀"
   ],
   "film_tracks": [
    "Yumeji's Theme",
@@ -213,7 +224,8 @@
    "Hana-bi",
    "The Ecstasy of Gold",
    "Merry Christmas Mr. Lawrence",
-   "Lara's Theme"
+   "Lara's Theme",
+   "The Last Waltz"
   ],
   "novel_titles": [
    "尖白深渊4暗棋",
@@ -242,7 +254,9 @@
    "纯爱派",
    "每天都怕总裁发现我是卧底",
    "人间世",
-   "下不为例"
+   "下不为例",
+   "小镇",
+   "刀下留npc啊英雄全息"
   ],
   "quotes": [
    "You can't get away from yourself by moving from one place to another.",
@@ -257,11 +271,12 @@
    "整个的上海打了个盹，做了个不近情理的梦。",
    "恥の多い生涯を送って来ました。",
    "无言独上西楼，月如钩。",
-   "Je vais m'exercer seul à ma fantasque escrime,\nFlairant dans tous les coins les hasards de la rime,\nTrébuchant sur les mots comme sur les pavés,\nHeurtant parfois des vers depuis longtemps rêvés."
+   "Je vais m'exercer seul à ma fantasque escrime,\nFlairant dans tous les coins les hasards de la rime,\nTrébuchant sur les mots comme sur les pavés,\nHeurtant parfois des vers depuis longtemps rêvés.",
+   "El tiempo es la sustancia de que estoy hecho. El tiempo es un río que me arrebata, pero yo soy el río; es un tigre que me destroza, pero yo soy el tigre; es un fuego que me consume, pero yo soy el fuego."
   ]
  },
  "finance_count": {},
- "design_index": 18,
+ "design_index": 19,
  "recent_music_styles": [
   "Hindustani classical music",
   "Grunge",
@@ -281,7 +296,8 @@
   "Trap",
   "Reggae",
   "Drill",
-  "Techno"
+  "Techno",
+  "Afrobeats"
  ],
  "recent_instruments": [
   "Dombra",
@@ -302,7 +318,8 @@
   "Harmonica",
   "Cello",
   "Clarinet",
-  "Theremin"
+  "Theremin",
+  "Bassoon"
  ],
- "artwork_toggle": 18
+ "artwork_toggle": 19
 }

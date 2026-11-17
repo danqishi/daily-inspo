@@ -18,7 +18,8 @@
    "https://www.youtube.com/watch?v=lrsI-eQ3HEw",
    "https://www.youtube.com/watch?v=hA2FGW2HQww",
    "https://www.youtube.com/watch?v=MiPA5PbNwtg",
-   "https://www.youtube.com/watch?v=vF6r_GUaU94"
+   "https://www.youtube.com/watch?v=vF6r_GUaU94",
+   "https://www.youtube.com/watch?v=AEDWED84FFg"
   ],
   "creative_video": [
    "https://www.bilibili.com/video/BV1Qfps6EEVr",
@@ -39,7 +40,8 @@
    "https://www.youtube.com/watch?v=xXyhCb0Hvfs",
    "https://www.youtube.com/watch?v=NFazpVty5dE",
    "https://www.youtube.com/watch?v=M5A20mPOcbw",
-   "https://www.youtube.com/watch?v=oSKsSgLWhN4"
+   "https://www.youtube.com/watch?v=oSKsSgLWhN4",
+   "https://www.youtube.com/watch?v=Tgl25jYYI3s"
   ],
   "ai_news": [
    "https://www.youtube.com/@%E5%A4%A7%E5%9C%A3Ai%E8%87%AA%E4%B9%A0%E5%AE%A4/videos",
@@ -71,7 +73,9 @@
    "https://www.youtube.com/watch?v=_0tMqA33k-U",
    "https://www.marktechpost.com/2026/11/13/best-ai-video-generation-models-2026",
    "https://kuku.baidu.com/landing/tscp_doc/d130f5cfc72ae21e74acf73db67b2843",
-   "https://felloai.com/best-ai-image-generator"
+   "https://felloai.com/best-ai-image-generator",
+   "https://bbs.csdn.net/weixin_29055699/article/details/100834765",
+   "https://kuku.baidu.com/landing/tscp_doc/361e29a900421edb549f1275d083151f"
   ],
   "meme": [
    "筷子加水泥塞你嘴里",
@@ -86,7 +90,8 @@
    "嘉豪",
    "可以给我买麻辣烫糖葫芦吗",
    "爱乐之城群像齐舞挑战",
-   "古代监控"
+   "古代监控",
+   "慌啥子嘛慢慢来"
   ],
   "hot_music": [
    "恋人",
@@ -118,7 +123,9 @@
    "死神在揣着玫瑰",
    "deng deng deng deng deng deng",
    "目瑙纵歌",
-   "山风山风等等我"
+   "山风山风等等我",
+   "Violet",
+   "Talking to the Moon"
   ],
   "artwork": [
    437326,
@@ -139,7 +146,8 @@
    267891,
    266133,
    266332,
-   437675
+   437675,
+   282040
   ],
   "novel": [
    "4916",
@@ -171,7 +179,9 @@
    "650",
    "cp:660601",
    "42349",
-   "jj:1609760"
+   "jj:1609760",
+   "5767",
+   "cp:414005"
   ],
   "novel_rejected": [
    "46670",
@@ -191,7 +201,10 @@
    "cp:259001",
    "cp:112749",
    "cp:1558145",
-   "584"
+   "584",
+   "cp:2103604",
+   "cp:273388",
+   "cp:147907"
   ],
   "film_directors": [
    "杜琪峰",
@@ -208,7 +221,8 @@
    "黑泽清",
    "成濑巳喜男",
    "克里斯·马克",
-   "洪常秀"
+   "洪常秀",
+   "许鞍华"
   ],
   "film_tracks": [
    "Yumeji's Theme",
@@ -225,7 +239,8 @@
    "The Ecstasy of Gold",
    "Merry Christmas Mr. Lawrence",
    "Lara's Theme",
-   "The Last Waltz"
+   "The Last Waltz",
+   "La Valse d'Amélie"
   ],
   "novel_titles": [
    "尖白深渊4暗棋",
@@ -256,7 +271,9 @@
    "人间世",
    "下不为例",
    "小镇",
-   "刀下留npc啊英雄全息"
+   "刀下留npc啊英雄全息",
+   "乱世为王",
+   "呆狗"
   ],
   "quotes": [
    "You can't get away from yourself by moving from one place to another.",
@@ -272,11 +289,12 @@
    "恥の多い生涯を送って来ました。",
    "无言独上西楼，月如钩。",
    "Je vais m'exercer seul à ma fantasque escrime,\nFlairant dans tous les coins les hasards de la rime,\nTrébuchant sur les mots comme sur les pavés,\nHeurtant parfois des vers depuis longtemps rêvés.",
-   "El tiempo es la sustancia de que estoy hecho. El tiempo es un río que me arrebata, pero yo soy el río; es un tigre que me destroza, pero yo soy el tigre; es un fuego que me consume, pero yo soy el fuego."
+   "El tiempo es la sustancia de que estoy hecho. El tiempo es un río que me arrebata, pero yo soy el río; es un tigre que me destroza, pero yo soy el tigre; es un fuego que me consume, pero yo soy el fuego.",
+   "以上我所写的并没有什么优美的故事，只因他们充满我幼年的记忆，忘却不了，难以忘却，就记在这里了。"
   ]
  },
  "finance_count": {},
- "design_index": 19,
+ "design_index": 20,
  "recent_music_styles": [
   "Hindustani classical music",
   "Grunge",
@@ -297,7 +315,8 @@
   "Reggae",
   "Drill",
   "Techno",
-  "Afrobeats"
+  "Afrobeats",
+  "Heavy metal"
  ],
  "recent_instruments": [
   "Dombra",
@@ -319,7 +338,8 @@
   "Cello",
   "Clarinet",
   "Theremin",
-  "Bassoon"
+  "Bassoon",
+  "Harpsichord"
  ],
- "artwork_toggle": 19
+ "artwork_toggle": 20
 }

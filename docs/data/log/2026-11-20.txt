@@ -1,0 +1,55 @@
+23:38:15 生成 2026-11-20（周五），AI：deepseek/deepseek-flash
+23:38:15 🤖 AI 创意视频
+23:38:15   搜索 #1：AI 短片 创意 脑洞 可灵 即梦 海螺 生成
+23:38:16   搜索 #2：AI music video creative generated
+23:38:26   完成，1 条
+23:38:29 ✨ 创意视频
+23:38:29   搜索 #3：转场 剪辑 创意 视频
+23:38:35   搜索 #4：creative editing transitions video
+23:38:42   失效，跳过：https://www.youtube.com/watch?v=5Q_rxA0H88s
+23:38:53   完成，1 条
+23:38:56 🛠 AI 视频和图片制作资讯
+23:38:56   搜索 #5：可灵 即梦 海螺 Vidu AI视频 新功能 更新
+23:38:59   搜索 #6：Runway Veo Sora Kling AI video new feature update
+23:39:02   搜索 #7：AI image generator new model update Midjourney Flux Gemini
+23:39:19   完成，2 条
+23:39:22 🔥 抖音热梗
+23:39:24   热榜 douyin：50 条
+23:39:24   搜索 #8：抖音 热梗 盘点 本周
+23:39:25   搜索 #9：抖音 新梗 爆火
+23:39:50   搜索 #10：橘子海剪影宿命感拉满 是什么梗 出处
+23:39:51   搜索 #11：抖音 橘子海剪影宿命感拉满
+23:39:56   「橘子海剪影宿命感拉满」资料里没有解释，换下一个
+23:39:56   搜索 #12：谁还没跳茉茉手势舞 是什么梗 出处
+23:39:57   搜索 #13：抖音 谁还没跳茉茉手势舞
+23:40:04   完成，1 条
+23:40:07 🎵 抖音热门音乐
+23:40:08   网易云网络热歌榜：10 首
+23:40:08   网易云飙升榜：100 首
+23:40:08   搜索 #14：抖音 热门 BGM 台词 音频 最近
+23:40:29   完成，2 条
+23:40:32 🎨 设计风格
+23:40:46   搜索 #15：Mid-century modern interior poster examples
+23:41:02   配图：检查 4 张，不合格 0 张，留下 4 张
+23:41:02   完成，1 条
+23:41:05 🎼 音乐风格和乐器
+23:41:28   图片下载失败 https://upload.wikimedia.org/wikipedia/commons/4/46/Ukulele_instrumap.jpg?utm_so：429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/4/46/Ukulele_instrumap.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled
+23:41:30   配图：检查 4 张，不合格 2 张，留下 2 张
+23:41:30   完成，2 条
+23:41:33 🖼 摄影和画作
+23:41:34   搜索 #16：[Female Nude, Reclining, in Profile] Julien Vallou de Villeneuve ca. 1853 Met museum
+23:41:38   看图描述失败，改用文字资料：BadRequestError: Error code: 400 - 系统检测到输入或生成内容可能包含不安全或敏感内容，请您避免输入易产生敏感内容的提示语，感谢您的配合。
+23:41:49   完成，1 条
+23:41:52 🎬 导演、电影和配乐
+23:42:14   完成，3 条
+23:42:17 ✒️ 每日一句
+23:42:35   搜索 #17："Mi infancia son recuerdos de un patio de Sevilla
+y un huerto claro donde madura el limonero;
+mi juventud, veinte años en tierra de Castilla;
+mi historia, algunos casos que recordar no quiero." 安东尼奥·马查多
+23:42:37   完成，1 条
+23:42:40 📚 双男主小说
+23:42:44   扫文：标签「he」找到 4 本候选
+23:43:05   完成，2 条
+23:43:08 完成：ok，用了 17 次搜索 → /home/runner/work/daily-inspo/daily-inspo/docs/data/2026-11-20.json
+

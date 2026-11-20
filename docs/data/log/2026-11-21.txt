@@ -1,0 +1,32 @@
+23:41:05 生成 2026-11-21（周六），AI：deepseek/deepseek-flash
+23:41:05 🤖 AI 创意视频
+23:41:05   搜索 #1：AI 短剧 剧情 微电影 AI 生成 好看
+23:41:06   搜索 #2：AI generated short film creative Sora Veo Kling
+23:41:17   完成，1 条
+23:41:20 ✨ 创意视频
+23:41:20   搜索 #3：实验短片 视觉艺术
+23:41:21   搜索 #4：experimental short film visual art
+23:41:25   搜索 #5：深度访谈 对话 人物
+23:41:41   完成，1 条
+23:41:44 🎨 设计风格
+23:41:53   搜索 #6：Glitch art art examples
+23:42:09   配图：检查 4 张，不合格 0 张，留下 4 张
+23:42:09   完成，1 条
+23:42:12 🎼 音乐风格和乐器
+23:42:35   配图：检查 2 张，不合格 0 张，留下 2 张
+23:42:35   完成，2 条
+23:42:38 🖼 摄影和画作
+23:42:40   搜索 #7：The Annunciation to Zacharias; (verso) The Angel of the Annunciation Giovanni di Paolo (Giovanni di Paolo di Grazia) ca. 1455–60 Met museum
+23:42:43   看图描述失败，改用文字资料：RuntimeError: 图片下载失败
+23:42:59   完成，1 条
+23:43:02 🎬 导演、电影和配乐
+23:43:27   电影没核实到：Blind / Joachim Trier
+23:44:06   完成，3 条
+23:44:09 ✒️ 每日一句
+23:44:31   搜索 #8："Between grief and nothing I will take grief." 威廉·福克纳
+23:44:32   完成，1 条
+23:44:35 📚 双男主小说
+23:44:37   扫文：标签「美人攻」找到 8 本候选
+23:45:08   完成，2 条
+23:45:11 完成：ok，用了 8 次搜索 → /home/runner/work/daily-inspo/daily-inspo/docs/data/2026-11-21.json
+

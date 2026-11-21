@@ -22,7 +22,8 @@
    "https://www.youtube.com/watch?v=AEDWED84FFg",
    "https://www.youtube.com/watch?v=VsRYr4tvJr8",
    "https://www.youtube.com/watch?v=vJoOmansotU",
-   "https://www.youtube.com/watch?v=vX0qmT-klUo"
+   "https://www.youtube.com/watch?v=vX0qmT-klUo",
+   "https://www.youtube.com/watch?v=XQGJ7S8RoR4"
   ],
   "creative_video": [
    "https://www.bilibili.com/video/BV1Qfps6EEVr",
@@ -47,7 +48,8 @@
    "https://www.youtube.com/watch?v=Tgl25jYYI3s",
    "https://www.youtube.com/watch?v=OEI0Gl3IsN4",
    "https://www.bilibili.com/video/BV1Xasf6QEts",
-   "https://www.youtube.com/watch?v=pomLQxFQr5o"
+   "https://www.youtube.com/watch?v=pomLQxFQr5o",
+   "https://www.youtube.com/watch?v=KGWKBcgXVOs"
   ],
   "ai_news": [
    "https://www.youtube.com/@%E5%A4%A7%E5%9C%A3Ai%E8%87%AA%E4%B9%A0%E5%AE%A4/videos",
@@ -166,7 +168,8 @@
    282040,
    459090,
    266982,
-   458977
+   458977,
+   282004
   ],
   "novel": [
    "4916",
@@ -206,7 +209,9 @@
    "18985",
    "cp:1984006",
    "6855",
-   "jj:6997207"
+   "jj:6997207",
+   "37755",
+   "cp:1430915"
   ],
   "novel_rejected": [
    "46670",
@@ -253,7 +258,8 @@
    "许鞍华",
    "莫森·玛克玛尔巴夫",
    "维克多·艾里斯",
-   "约阿希姆·提尔"
+   "约阿希姆·提尔",
+   "拉莉萨·舍皮琴科"
   ],
   "film_tracks": [
    "Yumeji's Theme",
@@ -274,7 +280,8 @@
    "La Valse d'Amélie",
    "Chi Mai",
    "Il Postino",
-   "The Beast"
+   "The Beast",
+   "Dawn"
   ],
   "novel_titles": [
    "尖白深渊4暗棋",
@@ -313,7 +320,9 @@
    "相见欢",
    "群星寂",
    "大哥",
-   "真是好茶"
+   "真是好茶",
+   "最后一天",
+   "此卦当真"
   ],
   "quotes": [
    "You can't get away from yourself by moving from one place to another.",
@@ -333,11 +342,12 @@
    "以上我所写的并没有什么优美的故事，只因他们充满我幼年的记忆，忘却不了，难以忘却，就记在这里了。",
    "我们的生命在这一瞬间，\n仿佛在第一次的拥抱里\n过去的悲欢忽然在眼前\n凝结成屹然不动的形体。",
    "Mi infancia son recuerdos de un patio de Sevilla\ny un huerto claro donde madura el limonero;\nmi juventud, veinte años en tierra de Castilla;\nmi historia, algunos casos que recordar no quiero.",
-   "Between grief and nothing I will take grief."
+   "Between grief and nothing I will take grief.",
+   "此生谁料，心在天山，身老沧洲。"
   ]
  },
  "finance_count": {},
- "design_index": 23,
+ "design_index": 24,
  "recent_music_styles": [
   "Hindustani classical music",
   "Grunge",
@@ -362,7 +372,8 @@
   "Heavy metal",
   "Baroque music",
   "Lo-fi hip hop",
-  "K-pop"
+  "K-pop",
+  "Romantic era classical"
  ],
  "recent_instruments": [
   "Dombra",
@@ -388,7 +399,8 @@
   "Harpsichord",
   "Banjo",
   "Ukulele",
-  "Bongo drums"
+  "Bongo drums",
+  "Kalimba"
  ],
- "artwork_toggle": 23
+ "artwork_toggle": 24
 }

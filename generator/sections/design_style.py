@@ -1,5 +1,7 @@
-"""🎨 每天 1 种设计风格，配 3–4 张经过看图检查的例图。按 catalog/design_styles.json 顺序轮换。"""
-from common import BASE_SYSTEM, GEN, load_json, make_item, search_link
+"""🎨 每天 1 种设计风格，配 3–4 张经过看图检查的例图。按 catalog/design_styles.json 顺序轮换。
+后面再加 1 张「每日海报」（见 poster.py），海报失败不影响风格这一条。"""
+from common import BASE_SYSTEM, GEN, load_json, log, make_item, search_link
+from sections import poster
 from sources.images import pick_images, wikimedia_images
 
 ID, NAME, EMOJI = "design_style", "设计风格", "🎨"
@@ -28,9 +30,14 @@ def run(ctx):
         analysis.append({"label": "AI 生图提示词", "text": out["prompt"]})
     kw = s["en"]
     ctx.state["design_index"] = idx + 1
-    return [make_item(
+    items = [make_item(
         title=f"{s['zh']} {s['en']}", subtitle=s["cat"], summary=out.get("summary", ""), analysis=analysis,
         images=images, tags=out.get("tags", []),
         links=[search_link("pinterest", kw), search_link("huaban", s["zh"]), search_link("behance", kw)],
         source_note="" if images else "今天没找到合格的例图，可以点下面的链接看更多例子。",
     )]
+    try:
+        items += poster.run(ctx)
+    except Exception as e:
+        log(f"  每日海报失败：{type(e).__name__}: {e}")
+    return items

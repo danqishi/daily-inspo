@@ -102,7 +102,7 @@ def _netease_track(ctx, track, composers, film_en):
     return None
 
 
-def _poster(ctx, url):
+def _poster(ctx, url, name_hint="film"):
     """维基百科的海报只有低分辨率版本，不走通用图片下载的最小尺寸限制。"""
     url = url.split("?")[0]
     try:
@@ -113,9 +113,10 @@ def _poster(ctx, url):
             time.sleep(5 * (i + 1))
         r.raise_for_status()
         im = Image.open(io.BytesIO(r.content)).convert("RGB")
+        im.thumbnail((1200, 1200))  # 有些是维基共享资源上的高清原图，压一下
         buf = io.BytesIO()
         im.save(buf, "JPEG", quality=88)
-        return write_image(ctx, buf.getvalue(), url, name_hint="film")
+        return write_image(ctx, buf.getvalue(), url, name_hint=name_hint)
     except Exception as e:
         log(f"  海报下载失败：{e}")
         return None

@@ -2,9 +2,9 @@
  "date": "2026-11-22",
  "weekday": "周日",
  "status": "ok",
- "generated_at": "2026-11-22T07:33:53+08:00",
+ "generated_at": "2026-11-22T09:52:18+08:00",
  "llm": "deepseek/deepseek-flash",
- "searches": 8,
+ "searches": 1,
  "sections": [
   {
    "id": "ai_video",
@@ -120,95 +120,165 @@
    "status": "ok",
    "items": [
     {
-     "title": "宋式美学 Song dynasty aesthetics",
-     "subtitle": "东方美学",
-     "summary": "宋式美学是一种「做减法」的东方审美：颜色浅、留白多、线条干净，尽量克制，但细节越看越有味道，很像把画面调成静音，却仍能看见呼吸。",
+     "title": "便当盒布局 Bento grid layout",
+     "subtitle": "UI / 排版",
+     "summary": "便当盒布局就是把画面切成几个大小不一、但边距统一的圆角方块，像日式便当盒的格子一样拼在一起——一屏之内把所有信息整齐说完，不藏不挤。",
      "analysis": [
       {
        "label": "一句话认出它",
-       "text": "画面大致是空一半、淡一半，主体偏在一侧，背景像旧宣纸或雨后的天色。只要出现大面积留白、低饱和的青灰米白，以及一种「不吵」的安静感，多半就是宋式。"
+       "text": "看到一堆圆角矩形小块，大小不同却严丝合缝地拼满整个画面，块与块之间的缝隙宽窄一致，基本就是它。每一块只放一件事：一个数字、一句标题、一个小图标或一张图。它给人的感觉是“秩序 + 好胃口”，信息多但不乱。"
       },
       {
        "label": "起源",
-       "text": "它来自中国宋代（公元 960—1279 年），那时文人审美受到推崇，喝茶、插花、赏瓷、写字画画都是日常修养。宋代瓷器追求釉色纯净，绘画讲究意境而不是把东西画满，这套「少即是多」的标准一直影响到今天。"
+       "text": "名字来自日式便当盒：饭、菜、小菜各占一格，互不串味，但整体是一份完整的饭。设计圈普遍认为是苹果在 2020 年前后的产品页和发布会幻灯片把这种排法带火的，之后被设计师总结成 “Bento grid” 这个名字，现在成了 UI 和封面排版里的常见套路。"
       },
       {
        "label": "色彩",
-       "text": "主色是低饱和、带灰调的颜色：汝窑那种淡淡的天青（偏灰的浅蓝绿）、月白、粉青，加上宣纸的米白、茶色，再用墨黑和赭石压住画面。关键原则是「没有纯色」——把饱和度降下来，画面立刻就有宋味。"
+       "text": "底色通常很干净：纯白、米白或浅灰，深色版则是近黑，为的是让格子之间有“空气”。每张卡片可以给一个自己的颜色，但整体控制在两三种主色加中性色，否则会很吵。想要高级感，就让颜色偏灰偏淡（低饱和）；想要活泼，就用一两个高饱和色当视觉焦点，其余保持素净。"
       },
       {
        "label": "字体和排版",
-       "text": "宋体字的骨架来自宋代雕版印刷（现在的宋体字形是后来明代刻书定型的），横细竖粗、笔画末端有小三角装饰，天然就带着书卷气。排版上字要少、字号要小、行距要松，文字尽量靠边或靠角，中间大片留空，别把画面填满。"
+       "text": "每格里的字都很少：一个大标题或一个大数字，配一行小字解释，可以是英文小标签。字号要拉开差距——大标题特别大，说明文字特别小，中间不要有“差不多大”的字，那样会显得平。文字在格子里通常左对齐或居中，同一个画面里统一一种，别一半左一半中。"
       },
       {
        "label": "构图和图形",
-       "text": "核心是「留白」和「偏侧」：主体不放在正中间，让画面一角有内容，其余留空，南宋画家马远就因为爱这样画，被称为「马一角」。图形元素选单一的、细的、自然的：一枝花、一只瓶、一道远山、一片水纹，别堆叠。"
+       "text": "核心就三条：圆角统一，缝隙统一和边缘对齐。格子的大小要有节奏，比如一大两小、或一个通栏加几个小方块，不要全是同样大小的方块（那就成了九宫格，很呆）。图形元素尽量简化：纯色块、细线条图标、一个手机截图、一张图，别在格子里再堆细节。"
       },
       {
        "label": "代表作品或设计师",
-       "text": "瓷器看汝窑天青釉，那种「雨过天青」的淡蓝绿是宋式配色的标准答案；绘画看范宽《溪山行旅图》的厚重，和马远《寒江独钓图》的大片空白。书法可以看宋徽宗的瘦金体，细瘦挺拔，很适合拿来做标题字的参考。"
+       "text": "最典型的参考是苹果官网的 iPhone、Mac 产品页，以及发布会的功能展示页，一格一个卖点。另一类常见在效率工具和手机品牌的官网首页上，用一屏格子把功能全列完。想抄作业，直接去 Figma 社区搜 “bento”，有大量现成模板可以看结构。"
       },
       {
        "label": "和相近风格的区别",
-       "text": "和日式侘寂比：侘寂更粗、更旧、更强调残缺和粗糙质感（比如土墙、裂纹），宋式则更精致、更干净、更有文人的雅气。和新中式比：新中式常用大红、金色，堆很多传统符号，宋式恰恰相反——颜色淡、元素少、克制得多。"
+       "text": "和普通“卡片式设计”比，它的卡片大小故意不一样，而且必须正好拼满一屏，不会留大片空白或需要滑动。和杂志网格、瑞士网格比，它更松弛：圆角、有颜色、块内有图，不那么严肃刻板。和瀑布流比，它是“一屏看完”，不是“一直往下滑”。"
       },
       {
        "label": "怎么用",
-       "text": "做视频封面：底色用米白或淡天青，主体物件放在左侧三分之一处，右侧大面积留空，只放一行小字标题（宋体或细黑体），字距拉松。写 AI 提示词时，关键词就抓这几组：negative space（留白）、muted celadon and rice-paper beige（淡青与宣纸米白）、off-center composition（偏侧构图）、soft diffused light（柔和散射光）、minimal ink wash（极简水墨）。"
+       "text": "做视频封面：竖屏切成 5–7 格，最大的那格放主标题，其余放数字（比如“3 个技巧”）、关键词或一张局部图，缝隙保持一致，颜色只留一个重点色。写 AI 生图提示词时，抓这几个词就够：bento grid layout（便当盒布局）、modular rounded cards（模块化圆角卡片）、even gaps（均匀间隙）、clean background（干净背景），再补一句 flat vector 或 3D render 决定质感。"
       },
       {
        "label": "AI 生图提示词",
-       "text": "Song dynasty aesthetics, minimalist still life, a single slender plum branch in a pale celadon Ru-ware vase, placed off-center on the left third, vast empty negative space on the right, warm rice-paper beige background with subtle fiber texture, muted palette of pale blue-green celadon, ink black and soft ochre, fine delicate ink-wash lines, soft diffused daylight, no harsh shadows, quiet and restrained mood, elegant editorial photography, shallow grain, vertical 3:4 composition, no text, no watermark"
+       "text": "Bento grid layout poster design, modular rounded-corner cards of varying sizes perfectly filling the frame, one large hero card plus several smaller ones, consistent even gaps, clean off-white background, two accent colors (soft coral and deep navy) with neutral gray, minimal flat vector icons and one photo inside a card, large bold headline in the hero card, small caption text in other cards, plenty of breathing room, high-end editorial UI style, top-down flat composition, 3:4 vertical, no clutter --ar 3:4"
       }
      ],
      "links": [
       {
        "name": "在Pinterest搜索",
-       "url": "https://www.pinterest.com/search/pins/?q=Song%20dynasty%20aesthetics"
+       "url": "https://www.pinterest.com/search/pins/?q=Bento%20grid%20layout"
       },
       {
        "name": "在花瓣搜索",
-       "url": "https://huaban.com/search?q=%E5%AE%8B%E5%BC%8F%E7%BE%8E%E5%AD%A6"
+       "url": "https://huaban.com/search?q=%E4%BE%BF%E5%BD%93%E7%9B%92%E5%B8%83%E5%B1%80"
       },
       {
        "name": "在Behance搜索",
-       "url": "https://www.behance.net/search/projects?search=Song%20dynasty%20aesthetics"
+       "url": "https://www.behance.net/search/projects?search=Bento%20grid%20layout"
       }
      ],
      "images": [
       {
-       "src": "img/2026-11/2026-11-22-design-9c8f09be.jpg",
-       "caption": "图中展示了中国传统陶瓷和植物装饰，体现了宋式美学的简约与自然之美。",
+       "src": "img/2026-11/2026-11-22-design-6ffddcec.jpg",
+       "caption": "图中展示了多个模块化的内容区域，每个区域都有明确的标题和视觉分隔，符合便当盒布局的特点。",
        "credit": "网络图片",
        "page": ""
       },
       {
-       "src": "img/2026-11/2026-11-22-design-d723ced7.jpg",
-       "caption": "碗上的斑驳釉面和简约造型体现了宋代的美学",
+       "src": "img/2026-11/2026-11-22-design-5b72ae2c.jpg",
+       "caption": "图中展示了典型的便当盒布局，每个模块大小不一且排列整齐。",
        "credit": "网络图片",
        "page": ""
       },
       {
-       "src": "img/2026-11/2026-11-22-design-c9e7f404.jpg",
-       "caption": "碗上的釉面图案展示了宋式美学的自然与简约之美",
+       "src": "img/2026-11/2026-11-22-design-6f616447.jpg",
+       "caption": "图中展示了多个信息模块，每个模块都有明确的标题和数据，排列整齐，符合便当盒布局的特点。",
        "credit": "网络图片",
        "page": ""
       },
       {
-       "src": "img/2026-11/2026-11-22-design-2a9ffb32.jpg",
-       "caption": "这件瓷瓶展示了宋代美学中简约而精致的工艺特点",
+       "src": "img/2026-11/2026-11-22-design-8afaca8f.jpg",
+       "caption": "图中展示了多个信息模块，每个模块都有明确的标题和描述，排列整齐有序，符合便当盒布局的特点。",
        "credit": "网络图片",
        "page": ""
       }
      ],
      "tags": [
-      "宋式美学",
-      "留白",
-      "天青釉",
-      "低饱和配色",
-      "东方极简"
+      "便当盒布局",
+      "Bento Grid",
+      "模块化排版",
+      "圆角卡片",
+      "封面设计"
      ],
      "source_note": ""
+    },
+    {
+     "title": "《迷魂记》Vertigo (film)",
+     "subtitle": "每日海报 · 电影海报 · 阿尔弗雷德·希区柯克 Alfred Hitchcock · 1958",
+     "summary": "一张几乎不画剧情的海报：一个白螺旋加两个小黑人，就把“眩晕”这两个字画成了看得见的东西。",
+     "analysis": [
+      {
+       "label": "第一眼看哪里",
+       "text": "眼睛会先被中间那个白色螺旋吸进去，顺着线一圈圈转到中心，最后停在那两个叠在一起的小人身上。人小得可怜，但整张图只有他们有“人味”，所以反而成了主角。这种“被卷进去”的观看顺序，就是眩晕本身。"
+      },
+      {
+       "label": "构图",
+       "text": "极其居中对称：上面一行小字，中间一个大螺旋，下面一个大片名，像上下夹住的三明治。除了这三块，其余全是空着的橙色，没有第二个图形来抢戏。人物被缩到很小，跟巨大的螺旋形成强烈比例差，不安感就是这么来的。"
+      },
+      {
+       "label": "色彩",
+       "text": "整张图只有橙、白、黑三个颜色，没有渐变，也没有阴影。橙色铺满背景，是一种偏暖、偏亮的橙；白色用来画螺旋，亮度最高，所以最跳；黑色只给字和人物剪影，压住画面。暖色配上疯狂旋转的白线，本该温暖的橙反而显得焦躁、发热。"
+      },
+      {
+       "label": "字体和排版",
+       "text": "全部用无衬线大写字母，没有花体字，也没有装饰。片名 VERTIGO 字号最大，压在画面最底部，字距拉得很开，看着很稳；上面那行卡司和导演信息字号小、加粗、居中，端端正正。层级很清楚：先看到片名，再看中间的人，最后才愿意去读小字。"
+      },
+      {
+       "label": "设计风格",
+       "text": "这是典型的世纪中叶现代主义平面设计，五六十年代欧美的海报、电影片头常用这种路子。它的做法是把复杂内容压成几个几何形状、纯色块和无衬线大字，靠一个“视觉比喻”说话，而不是画一堆写实人物。这种风格一般追求：颜色少、形状简单、留白多、信息层级分明、缩小后依然认得出来。"
+      },
+      {
+       "label": "为什么好看",
+       "text": "它一个剧情细节都没画，只画了“晕”这个感觉。螺旋既像漩涡，又像眼睛，也像人往下坠的轨迹，一个形状说了三层意思。元素少、颜色少，所以一眼就能记住，做成手机上的小缩略图也不会糊成一团。"
+      },
+      {
+       "label": "可以学到什么",
+       "text": "第一，一张封面只讲一种感觉，先想清楚那个感觉长什么样（旋转？坠落？收紧？），再选一个形状把它放大到占满画面。第二，颜色压到三种以内：一个主色铺满背景，最亮的那色给核心图形，黑色只给文字和剪影。第三，把字号差距拉开——主标题可以大到夸张，其他信息大胆地缩到很小，别平均用力，否则整张图就没有重点。"
+      },
+      {
+       "label": "AI 生图提示词（模仿这种风格）",
+       "text": "Mid-century modern graphic poster design, flat solid burnt-orange background, one large white hypnotic spiral centered on the canvas, two tiny black silhouettes falling toward the spiral's center (one in a suit, one in a flowing dress), only three colors total: orange, white, black, bold sans-serif all-caps typography blocks reserved at the top and bottom (empty text placeholders, no letters), generous negative space, high contrast, screen-print texture with subtle paper grain, 1950s poster layout, vertical composition, minimal and graphic, no photorealism"
+      }
+     ],
+     "links": [
+      {
+       "name": "维基百科",
+       "url": "https://en.wikipedia.org/wiki/Vertigo_(film)"
+      },
+      {
+       "name": "在Pinterest搜索",
+       "url": "https://www.pinterest.com/search/pins/?q=%E4%B8%96%E7%BA%AA%E4%B8%AD%E5%8F%B6%E7%8E%B0%E4%BB%A3%E4%B8%BB%E4%B9%89%E5%B9%B3%E9%9D%A2%E8%AE%BE%E8%AE%A1%20poster"
+      },
+      {
+       "name": "在花瓣搜索",
+       "url": "https://huaban.com/search?q=%E8%BF%B7%E9%AD%82%E8%AE%B0%20%E6%B5%B7%E6%8A%A5"
+      }
+     ],
+     "images": [
+      {
+       "src": "img/2026-11/2026-11-22-poster-cec0dbca.jpg",
+       "caption": "《迷魂记》电影海报",
+       "credit": "Wikipedia",
+       "page": "https://en.wikipedia.org/wiki/Vertigo_(film)"
+      }
+     ],
+     "tags": [
+      "世纪中叶现代主义",
+      "极简三色",
+      "螺旋视觉隐喻",
+      "无衬线大标题",
+      "电影海报"
+     ],
+     "source_note": "作品已在维基百科核实；海报图片版权归原作者，只用于个人学习。",
+     "badge": "每日海报 · 世纪中叶现代主义平面设计"
     }
    ]
   },

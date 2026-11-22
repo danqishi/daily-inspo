@@ -23,7 +23,8 @@
    "https://www.youtube.com/watch?v=VsRYr4tvJr8",
    "https://www.youtube.com/watch?v=vJoOmansotU",
    "https://www.youtube.com/watch?v=vX0qmT-klUo",
-   "https://www.youtube.com/watch?v=XQGJ7S8RoR4"
+   "https://www.youtube.com/watch?v=XQGJ7S8RoR4",
+   "https://www.youtube.com/watch?v=oXWO6GY2_BA"
   ],
   "creative_video": [
    "https://www.bilibili.com/video/BV1Qfps6EEVr",
@@ -49,7 +50,8 @@
    "https://www.youtube.com/watch?v=OEI0Gl3IsN4",
    "https://www.bilibili.com/video/BV1Xasf6QEts",
    "https://www.youtube.com/watch?v=pomLQxFQr5o",
-   "https://www.youtube.com/watch?v=KGWKBcgXVOs"
+   "https://www.youtube.com/watch?v=KGWKBcgXVOs",
+   "https://www.bilibili.com/video/BV1pJ411y7qe"
   ],
   "ai_news": [
    "https://www.youtube.com/@%E5%A4%A7%E5%9C%A3Ai%E8%87%AA%E4%B9%A0%E5%AE%A4/videos",
@@ -87,7 +89,9 @@
    "https://kuku.baidu.com/landing/tscp_doc/bd61f0079ae46922328335805124f893",
    "https://sz.ifeng.com/c/8xzkepi52HO",
    "https://github.com/JuneYaooo/rea-video/blob/main/skills/rea-video/SKILL.md",
-   "https://ideogram.ai/blog/best-ai-image-generators-consistent-characters"
+   "https://ideogram.ai/blog/best-ai-image-generators-consistent-characters",
+   "https://cloud.baidu.com/article/10209638",
+   "https://roughworks.ca/blog/ai-image-generators-for-brands"
   ],
   "meme": [
    "筷子加水泥塞你嘴里",
@@ -105,7 +109,8 @@
    "古代监控",
    "慌啥子嘛慢慢来",
    "忘情牛肉面舞蹈大赛",
-   "谁还没跳茉茉手势舞"
+   "谁还没跳茉茉手势舞",
+   "kissmysoul手势舞挑战"
   ],
   "hot_music": [
    "恋人",
@@ -143,7 +148,9 @@
    "time machine (feat. aren park)",
    "刀剑如梦",
    "冬天又来临",
-   "江南雪"
+   "江南雪",
+   "愚爱",
+   "哪里都是你"
   ],
   "artwork": [
    437326,
@@ -169,7 +176,8 @@
    459090,
    266982,
    458977,
-   282004
+   282004,
+   436101
   ],
   "novel": [
    "4916",
@@ -211,7 +219,9 @@
    "6855",
    "jj:6997207",
    "37755",
-   "cp:1430915"
+   "cp:1430915",
+   "1279",
+   "jj:3898591"
   ],
   "novel_rejected": [
    "46670",
@@ -237,7 +247,8 @@
    "cp:147907",
    "17722",
    "jj:4488183",
-   "jj:3347771"
+   "jj:3347771",
+   "617"
   ],
   "film_directors": [
    "杜琪峰",
@@ -259,7 +270,8 @@
    "莫森·玛克玛尔巴夫",
    "维克多·艾里斯",
    "约阿希姆·提尔",
-   "拉莉萨·舍皮琴科"
+   "拉莉萨·舍皮琴科",
+   "卢奎西亚·马特尔"
   ],
   "film_tracks": [
    "Yumeji's Theme",
@@ -281,7 +293,8 @@
    "Chi Mai",
    "Il Postino",
    "The Beast",
-   "Dawn"
+   "Dawn",
+   "The Wings"
   ],
   "novel_titles": [
    "尖白深渊4暗棋",
@@ -322,7 +335,9 @@
    "大哥",
    "真是好茶",
    "最后一天",
-   "此卦当真"
+   "此卦当真",
+   "秋雨微凉",
+   "禁谈风月快穿"
   ],
   "quotes": [
    "You can't get away from yourself by moving from one place to another.",
@@ -343,14 +358,16 @@
    "我们的生命在这一瞬间，\n仿佛在第一次的拥抱里\n过去的悲欢忽然在眼前\n凝结成屹然不动的形体。",
    "Mi infancia son recuerdos de un patio de Sevilla\ny un huerto claro donde madura el limonero;\nmi juventud, veinte años en tierra de Castilla;\nmi historia, algunos casos que recordar no quiero.",
    "Between grief and nothing I will take grief.",
-   "此生谁料，心在天山，身老沧洲。"
+   "此生谁料，心在天山，身老沧洲。",
+   "These fragments I have shored against my ruins"
   ],
   "posters": [
-   "迷魂记"
+   "迷魂记",
+   "未知的欢愉"
   ]
  },
  "finance_count": {},
- "design_index": 25,
+ "design_index": 26,
  "recent_music_styles": [
   "Hindustani classical music",
   "Grunge",
@@ -376,7 +393,8 @@
   "Baroque music",
   "Lo-fi hip hop",
   "K-pop",
-  "Romantic era classical"
+  "Romantic era classical",
+  "City pop"
  ],
  "recent_instruments": [
   "Dombra",
@@ -403,7 +421,8 @@
   "Banjo",
   "Ukulele",
   "Bongo drums",
-  "Kalimba"
+  "Kalimba",
+  "Trumpet"
  ],
- "artwork_toggle": 24
+ "artwork_toggle": 25
 }

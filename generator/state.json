@@ -25,7 +25,8 @@
    "https://www.youtube.com/watch?v=vX0qmT-klUo",
    "https://www.youtube.com/watch?v=XQGJ7S8RoR4",
    "https://www.youtube.com/watch?v=oXWO6GY2_BA",
-   "https://www.youtube.com/watch?v=RA9PKCUgcEY"
+   "https://www.youtube.com/watch?v=RA9PKCUgcEY",
+   "https://www.youtube.com/watch?v=8icJ67IsXnc"
   ],
   "creative_video": [
    "https://www.bilibili.com/video/BV1Qfps6EEVr",
@@ -53,7 +54,8 @@
    "https://www.youtube.com/watch?v=pomLQxFQr5o",
    "https://www.youtube.com/watch?v=KGWKBcgXVOs",
    "https://www.bilibili.com/video/BV1pJ411y7qe",
-   "https://www.digitaling.com/projects/319605.html"
+   "https://www.digitaling.com/projects/319605.html",
+   "https://vimeo.com/1151361225"
   ],
   "ai_news": [
    "https://www.youtube.com/@%E5%A4%A7%E5%9C%A3Ai%E8%87%AA%E4%B9%A0%E5%AE%A4/videos",
@@ -95,7 +97,9 @@
    "https://cloud.baidu.com/article/10209638",
    "https://roughworks.ca/blog/ai-image-generators-for-brands",
    "https://blog.csdn.net/weixin_29050513/article/details/170949520",
-   "https://github.com/niobium617/prompt-reverse-engineer-skill"
+   "https://github.com/niobium617/prompt-reverse-engineer-skill",
+   "https://www.atlascloud.ai/zh/blog/tips/seedance-2.5-flash-best-use-cases",
+   "https://morphic.com/zh/resources/how-to/how-to-make-a-360-orbit-ai-shot"
   ],
   "meme": [
    "筷子加水泥塞你嘴里",
@@ -115,7 +119,8 @@
    "忘情牛肉面舞蹈大赛",
    "谁还没跳茉茉手势舞",
    "kissmysoul手势舞挑战",
-   "看ok了老铁们感性了"
+   "看ok了老铁们感性了",
+   "奶蛙"
   ],
   "hot_music": [
    "恋人",
@@ -157,7 +162,9 @@
    "愚爱",
    "哪里都是你",
    "把回忆拼好给你",
-   "小跳蛙"
+   "小跳蛙",
+   "譬如我 (枕头下发霉的梦)",
+   "NEON"
   ],
   "artwork": [
    437326,
@@ -185,7 +192,8 @@
    458977,
    282004,
    436101,
-   266121
+   266121,
+   78197
   ],
   "novel": [
    "4916",
@@ -231,7 +239,9 @@
    "1279",
    "jj:3898591",
    "1593",
-   "cp:1632896"
+   "cp:1632896",
+   "39716",
+   "jj:4762908"
   ],
   "novel_rejected": [
    "46670",
@@ -260,7 +270,8 @@
    "jj:3347771",
    "617",
    "5544",
-   "47525"
+   "47525",
+   "38412"
   ],
   "film_directors": [
    "杜琪峰",
@@ -284,7 +295,8 @@
    "约阿希姆·提尔",
    "拉莉萨·舍皮琴科",
    "卢奎西亚·马特尔",
-   "马克·詹金"
+   "马克·詹金",
+   "杰瑞米·索尔尼尔"
   ],
   "film_tracks": [
    "Yumeji's Theme",
@@ -308,7 +320,8 @@
    "The Beast",
    "Dawn",
    "The Wings",
-   "House of Woodcock"
+   "House of Woodcock",
+   "Love Theme"
   ],
   "novel_titles": [
    "尖白深渊4暗棋",
@@ -353,7 +366,9 @@
    "秋雨微凉",
    "禁谈风月快穿",
    "诱捕天使行动",
-   "爱后即焚"
+   "爱后即焚",
+   "默读",
+   "生存守则无限流"
   ],
   "quotes": [
    "You can't get away from yourself by moving from one place to another.",
@@ -376,16 +391,18 @@
    "Between grief and nothing I will take grief.",
    "此生谁料，心在天山，身老沧洲。",
    "These fragments I have shored against my ruins",
-   "Be not afeard; the isle is full of noises,\nSounds and sweet airs, that give delight and hurt not.\nSometimes a thousand twangling instruments\nWill hum about mine ears, and sometime voices\nThat, if I then had waked after long sleep,\nWill make me sleep again; and then in dreaming,\nThe clouds methought would open and show riches\nReady to drop upon me, that when I waked\nI cried to dream again."
+   "Be not afeard; the isle is full of noises,\nSounds and sweet airs, that give delight and hurt not.\nSometimes a thousand twangling instruments\nWill hum about mine ears, and sometime voices\nThat, if I then had waked after long sleep,\nWill make me sleep again; and then in dreaming,\nThe clouds methought would open and show riches\nReady to drop upon me, that when I waked\nI cried to dream again.",
+   "Things fall apart; the centre cannot hold;\nMere anarchy is loosed upon the world,\nThe blood-dimmed tide is loosed, and everywhere\nThe ceremony of innocence is drowned;"
   ],
   "posters": [
    "迷魂记",
    "未知的欢愉",
-   "大都会"
+   "大都会",
+   "《了不起的盖茨比》"
   ]
  },
  "finance_count": {},
- "design_index": 27,
+ "design_index": 28,
  "recent_music_styles": [
   "Hindustani classical music",
   "Grunge",
@@ -413,7 +430,8 @@
   "K-pop",
   "Romantic era classical",
   "City pop",
-  "Math rock"
+  "Math rock",
+  "Boom bap hip hop"
  ],
  "recent_instruments": [
   "Dombra",
@@ -442,7 +460,8 @@
   "Bongo drums",
   "Kalimba",
   "Trumpet",
-  "Acoustic guitar"
+  "Acoustic guitar",
+  "Roland TR-808"
  ],
- "artwork_toggle": 26
+ "artwork_toggle": 27
 }

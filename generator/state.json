@@ -26,7 +26,8 @@
    "https://www.youtube.com/watch?v=XQGJ7S8RoR4",
    "https://www.youtube.com/watch?v=oXWO6GY2_BA",
    "https://www.youtube.com/watch?v=RA9PKCUgcEY",
-   "https://www.youtube.com/watch?v=8icJ67IsXnc"
+   "https://www.youtube.com/watch?v=8icJ67IsXnc",
+   "https://www.youtube.com/watch?v=4B-p_RU6mJ4"
   ],
   "creative_video": [
    "https://www.bilibili.com/video/BV1Qfps6EEVr",
@@ -55,7 +56,8 @@
    "https://www.youtube.com/watch?v=KGWKBcgXVOs",
    "https://www.bilibili.com/video/BV1pJ411y7qe",
    "https://www.digitaling.com/projects/319605.html",
-   "https://vimeo.com/1151361225"
+   "https://vimeo.com/1151361225",
+   "https://www.digitaling.com/projects/320963.html"
   ],
   "ai_news": [
    "https://www.youtube.com/@%E5%A4%A7%E5%9C%A3Ai%E8%87%AA%E4%B9%A0%E5%AE%A4/videos",
@@ -99,7 +101,9 @@
    "https://blog.csdn.net/weixin_29050513/article/details/170949520",
    "https://github.com/niobium617/prompt-reverse-engineer-skill",
    "https://www.atlascloud.ai/zh/blog/tips/seedance-2.5-flash-best-use-cases",
-   "https://morphic.com/zh/resources/how-to/how-to-make-a-360-orbit-ai-shot"
+   "https://morphic.com/zh/resources/how-to/how-to-make-a-360-orbit-ai-shot",
+   "https://post.m.smzdm.com/p/ak83k37r",
+   "https://www.imagine.art/insights/best-ai-image-generators"
   ],
   "meme": [
    "筷子加水泥塞你嘴里",
@@ -120,7 +124,8 @@
    "谁还没跳茉茉手势舞",
    "kissmysoul手势舞挑战",
    "看ok了老铁们感性了",
-   "奶蛙"
+   "奶蛙",
+   "康康舞曲乐器对弹挑战"
   ],
   "hot_music": [
    "恋人",
@@ -164,7 +169,9 @@
    "把回忆拼好给你",
    "小跳蛙",
    "譬如我 (枕头下发霉的梦)",
-   "NEON"
+   "NEON",
+   "降温",
+   "1000 winters"
   ],
   "artwork": [
    437326,
@@ -193,7 +200,8 @@
    282004,
    436101,
    266121,
-   78197
+   78197,
+   282234
   ],
   "novel": [
    "4916",
@@ -241,7 +249,9 @@
    "1593",
    "cp:1632896",
    "39716",
-   "jj:4762908"
+   "jj:4762908",
+   "190",
+   "cp:1888561"
   ],
   "novel_rejected": [
    "46670",
@@ -296,7 +306,8 @@
    "拉莉萨·舍皮琴科",
    "卢奎西亚·马特尔",
    "马克·詹金",
-   "杰瑞米·索尔尼尔"
+   "杰瑞米·索尔尼尔",
+   "尼古劳斯·盖尔哈特"
   ],
   "film_tracks": [
    "Yumeji's Theme",
@@ -321,7 +332,8 @@
    "Dawn",
    "The Wings",
    "House of Woodcock",
-   "Love Theme"
+   "Love Theme",
+   "Das Boot"
   ],
   "novel_titles": [
    "尖白深渊4暗棋",
@@ -368,7 +380,9 @@
    "诱捕天使行动",
    "爱后即焚",
    "默读",
-   "生存守则无限流"
+   "生存守则无限流",
+   "天涯客",
+   "佩尼达日落"
   ],
   "quotes": [
    "You can't get away from yourself by moving from one place to another.",
@@ -392,17 +406,19 @@
    "此生谁料，心在天山，身老沧洲。",
    "These fragments I have shored against my ruins",
    "Be not afeard; the isle is full of noises,\nSounds and sweet airs, that give delight and hurt not.\nSometimes a thousand twangling instruments\nWill hum about mine ears, and sometime voices\nThat, if I then had waked after long sleep,\nWill make me sleep again; and then in dreaming,\nThe clouds methought would open and show riches\nReady to drop upon me, that when I waked\nI cried to dream again.",
-   "Things fall apart; the centre cannot hold;\nMere anarchy is loosed upon the world,\nThe blood-dimmed tide is loosed, and everywhere\nThe ceremony of innocence is drowned;"
+   "Things fall apart; the centre cannot hold;\nMere anarchy is loosed upon the world,\nThe blood-dimmed tide is loosed, and everywhere\nThe ceremony of innocence is drowned;",
+   "麦地\n别人看见你\n觉得你温暖，美丽\n我则站在你痛苦质问的中心\n被你灼伤"
   ],
   "posters": [
    "迷魂记",
    "未知的欢愉",
    "大都会",
-   "《了不起的盖茨比》"
+   "《了不起的盖茨比》",
+   "金臂人"
   ]
  },
  "finance_count": {},
- "design_index": 28,
+ "design_index": 29,
  "recent_music_styles": [
   "Hindustani classical music",
   "Grunge",
@@ -431,7 +447,8 @@
   "Romantic era classical",
   "City pop",
   "Math rock",
-  "Boom bap hip hop"
+  "Boom bap hip hop",
+  "Chinese-style pop (Zhongguofeng)"
  ],
  "recent_instruments": [
   "Dombra",
@@ -461,7 +478,8 @@
   "Kalimba",
   "Trumpet",
   "Acoustic guitar",
-  "Roland TR-808"
+  "Roland TR-808",
+  "Bagpipes"
  ],
- "artwork_toggle": 27
+ "artwork_toggle": 28
 }

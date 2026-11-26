@@ -27,7 +27,8 @@
    "https://www.youtube.com/watch?v=oXWO6GY2_BA",
    "https://www.youtube.com/watch?v=RA9PKCUgcEY",
    "https://www.youtube.com/watch?v=8icJ67IsXnc",
-   "https://www.youtube.com/watch?v=4B-p_RU6mJ4"
+   "https://www.youtube.com/watch?v=4B-p_RU6mJ4",
+   "https://www.youtube.com/watch?v=RP-B7N9NNt4"
   ],
   "creative_video": [
    "https://www.bilibili.com/video/BV1Qfps6EEVr",
@@ -57,7 +58,8 @@
    "https://www.bilibili.com/video/BV1pJ411y7qe",
    "https://www.digitaling.com/projects/319605.html",
    "https://vimeo.com/1151361225",
-   "https://www.digitaling.com/projects/320963.html"
+   "https://www.digitaling.com/projects/320963.html",
+   "https://www.digitaling.com/projects/214101.html"
   ],
   "ai_news": [
    "https://www.youtube.com/@%E5%A4%A7%E5%9C%A3Ai%E8%87%AA%E4%B9%A0%E5%AE%A4/videos",
@@ -103,7 +105,9 @@
    "https://www.atlascloud.ai/zh/blog/tips/seedance-2.5-flash-best-use-cases",
    "https://morphic.com/zh/resources/how-to/how-to-make-a-360-orbit-ai-shot",
    "https://post.m.smzdm.com/p/ak83k37r",
-   "https://www.imagine.art/insights/best-ai-image-generators"
+   "https://www.imagine.art/insights/best-ai-image-generators",
+   "https://www.threads.com/@superman.marketing/post/Df-K4_SjUay/4k-%E4%B8%8D%E5%BF%85%E5%BE%9E%E7%AC%AC%E4%B8%80%E6%AD%A5%E5%B0%B1%E9%96%8B%E5%A7%8B%E5%85%88%E7%94%A8%E8%8D%89%E7%A8%BF%E9%A9%97%E8%AD%89%E7%95%AB%E9%9D%A2%E5%86%8D%E9%80%90%E6%AD%A5%E8%AA%BF%E6%95%B4%E6%9C%80%E5%BE%8C%E6%89%8D%E6%8A%95%E5%85%A5%E7%A9%8D%E5%88%86%E7%94%9F%E6%88%90%E6%88%90%E5%93%81seedance-25-%E4%B9%9F%E8%83%BD%E7%94%A8%E6%96%BC%E9%9B%A3%E6%8B%8D%E6%88%96%E6%88%90%E6%9C%AC%E8%BC%83%E9%AB%98%E7%9A%84%E5%A0%B4%E6%99%AF%E4%B8%A6%E8%88%87%E5%AF%A6%E6%8B%8D%E7%B4%A0%E6%9D%90%E6%90%AD%E9%85%8D%E6%96%87%E7%AB%A0%E6%8F%90%E5%8F%8A-higgs",
+   "https://www.csdn.net/article/2026-11-25/171354573"
   ],
   "meme": [
    "筷子加水泥塞你嘴里",
@@ -125,7 +129,8 @@
    "kissmysoul手势舞挑战",
    "看ok了老铁们感性了",
    "奶蛙",
-   "康康舞曲乐器对弹挑战"
+   "康康舞曲乐器对弹挑战",
+   "换我画地为牢了"
   ],
   "hot_music": [
    "恋人",
@@ -171,7 +176,9 @@
    "譬如我 (枕头下发霉的梦)",
    "NEON",
    "降温",
-   "1000 winters"
+   "1000 winters",
+   "开始懂了",
+   "九张机"
   ],
   "artwork": [
    437326,
@@ -201,7 +208,8 @@
    436101,
    266121,
    78197,
-   282234
+   282234,
+   44918
   ],
   "novel": [
    "4916",
@@ -251,7 +259,9 @@
    "39716",
    "jj:4762908",
    "190",
-   "cp:1888561"
+   "cp:1888561",
+   "2606",
+   "jj:3986008"
   ],
   "novel_rejected": [
    "46670",
@@ -281,7 +291,9 @@
    "617",
    "5544",
    "47525",
-   "38412"
+   "38412",
+   "8908",
+   "1278"
   ],
   "film_directors": [
    "杜琪峰",
@@ -307,7 +319,8 @@
    "卢奎西亚·马特尔",
    "马克·詹金",
    "杰瑞米·索尔尼尔",
-   "尼古劳斯·盖尔哈特"
+   "尼古劳斯·盖尔哈特",
+   "贾樟柯"
   ],
   "film_tracks": [
    "Yumeji's Theme",
@@ -333,7 +346,8 @@
    "The Wings",
    "House of Woodcock",
    "Love Theme",
-   "Das Boot"
+   "Das Boot",
+   "Summer"
   ],
   "novel_titles": [
    "尖白深渊4暗棋",
@@ -382,7 +396,9 @@
    "默读",
    "生存守则无限流",
    "天涯客",
-   "佩尼达日落"
+   "佩尼达日落",
+   "coldfevercold三部曲之三冷冽炽情",
+   "小瘸子"
   ],
   "quotes": [
    "You can't get away from yourself by moving from one place to another.",
@@ -407,18 +423,20 @@
    "These fragments I have shored against my ruins",
    "Be not afeard; the isle is full of noises,\nSounds and sweet airs, that give delight and hurt not.\nSometimes a thousand twangling instruments\nWill hum about mine ears, and sometime voices\nThat, if I then had waked after long sleep,\nWill make me sleep again; and then in dreaming,\nThe clouds methought would open and show riches\nReady to drop upon me, that when I waked\nI cried to dream again.",
    "Things fall apart; the centre cannot hold;\nMere anarchy is loosed upon the world,\nThe blood-dimmed tide is loosed, and everywhere\nThe ceremony of innocence is drowned;",
-   "麦地\n别人看见你\n觉得你温暖，美丽\n我则站在你痛苦质问的中心\n被你灼伤"
+   "麦地\n别人看见你\n觉得你温暖，美丽\n我则站在你痛苦质问的中心\n被你灼伤",
+   "Multitude, solitude: termes égaux et convertibles pour le poète actif et fécond. Qui ne sait pas peupler sa solitude, ne sait pas non plus être seul dans une foule affairée."
   ],
   "posters": [
    "迷魂记",
    "未知的欢愉",
    "大都会",
    "《了不起的盖茨比》",
-   "金臂人"
+   "金臂人",
+   "地下丝绒与妮可"
   ]
  },
  "finance_count": {},
- "design_index": 29,
+ "design_index": 30,
  "recent_music_styles": [
   "Hindustani classical music",
   "Grunge",
@@ -448,7 +466,8 @@
   "City pop",
   "Math rock",
   "Boom bap hip hop",
-  "Chinese-style pop (Zhongguofeng)"
+  "Chinese-style pop (Zhongguofeng)",
+  "Amapiano"
  ],
  "recent_instruments": [
   "Dombra",
@@ -479,7 +498,8 @@
   "Trumpet",
   "Acoustic guitar",
   "Roland TR-808",
-  "Bagpipes"
+  "Bagpipes",
+  "Conga"
  ],
- "artwork_toggle": 28
+ "artwork_toggle": 29
 }

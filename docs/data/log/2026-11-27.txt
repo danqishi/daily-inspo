@@ -1,0 +1,54 @@
+23:48:48 生成 2026-11-27（周五），AI：deepseek/deepseek-flash
+23:48:48 🤖 AI 创意视频
+23:48:48   搜索 #1：AI 动画短片 画风 惊艳
+23:48:49   搜索 #2：AI generated short film creative Sora Veo Kling
+23:48:59   完成，1 条
+23:49:02 ✨ 创意视频
+23:49:02   Vimeo Staff Picks：10 条未推过
+23:49:04   搜索 #3：声音设计 声画 创意短片
+23:49:08   搜索 #4：sound design driven short film
+23:49:30   完成，1 条
+23:49:33 🛠 AI 视频和图片制作资讯
+23:49:33   搜索 #5：AI 视频 省积分 技巧 免费额度
+23:49:35   搜索 #6：可灵 即梦 海螺 Vidu AI视频 新功能 更新
+23:49:37   搜索 #7：Midjourney 即梦 GPT 图像 Nano Banana Flux 新功能 更新
+23:49:49   完成，2 条
+23:49:52 🔥 抖音热梗
+23:49:54   热榜 douyin：48 条
+23:49:54   搜索 #8：抖音 最近爆火的梗 是什么梗 出处
+23:49:55   搜索 #9：抖音 新梗 爆火
+23:50:18   搜索 #10：换我画地为牢了 是什么梗 出处
+23:50:19   搜索 #11：抖音 换我画地为牢了
+23:50:25   完成，1 条
+23:50:28 🎵 抖音热门音乐
+23:50:29   网易云网络热歌榜：10 首
+23:50:29   网易云飙升榜：100 首
+23:50:29   搜索 #12：抖音 热歌 本周 热门 BGM
+23:50:55   完成，2 条
+23:50:58 🎨 设计风格
+23:51:10   搜索 #13：Chinese ink wash style painting design examples
+23:51:14   维基共享资源搜索失败：Expecting value: line 1 column 1 (char 0)
+23:51:21   图片下载失败 https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Immortal_in_Splashed_In：429 Client Error: We suspect this request is automated: if so, please respect our robot policy. If you think you were incorrectly blocked, please contact noc@wikimedia.org reporting this message (01f0bde) for url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Immortal_in_Splashed_Ink.jpg/250px-Immortal_in_Splashed_Ink.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail
+23:51:24   配图：检查 4 张，不合格 0 张，留下 4 张
+23:51:37   完成，2 条
+23:51:40 🎼 音乐风格和乐器
+23:52:01   维基共享资源搜索失败：Expecting value: line 1 column 1 (char 0)
+23:52:03   配图：检查 0 张，不合格 0 张，留下 0 张
+23:52:03   完成，2 条
+23:52:06 🖼 摄影和画作
+23:52:12   搜索 #14：Rough Waves Ogata Kōrin ca. 1704–9 Met museum
+23:52:24   完成，1 条
+23:52:27 🎬 导演、电影和配乐
+23:52:58   电影没核实到：Judge Archer / Xu Haofeng
+23:53:28   电影没核实到：In Expectation / Zhang Ming
+23:54:22   完成，3 条
+23:54:25 ✒️ 每日一句
+23:54:35   搜索 #15："Multitude, solitude: termes égaux et convertibles pour le poète actif et fécond. Qui ne sait pas peupler sa solitude, ne sait pas non plus être seul dans une foule affairée." 夏尔·波德莱尔
+23:54:37   完成，1 条
+23:54:40 📚 双男主小说
+23:54:44   扫文：标签「1v1」找到 7 本候选
+23:54:44   《和尚班之岁月随想》标签踩雷：be
+23:54:56   《不夜城》模型判断不推荐：这是破镜重圆梗，后半写法是攻回头追受：杨肖文当年为前任抛下李以诚，还带前任去了说好不会带别人去的面摊，四年后才反过来追人，正踩在你「追妻火葬场（攻追受）」的雷点上；而且受是直掰弯、又偏被动，既不是美攻强受，也不是受追攻，你喜欢的类型一个都没沾上。
+23:55:22   完成，2 条
+23:55:25 完成：ok，用了 15 次搜索 → /home/runner/work/daily-inspo/daily-inspo/docs/data/2026-11-27.json
+

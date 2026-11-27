@@ -28,7 +28,8 @@
    "https://www.youtube.com/watch?v=RA9PKCUgcEY",
    "https://www.youtube.com/watch?v=8icJ67IsXnc",
    "https://www.youtube.com/watch?v=4B-p_RU6mJ4",
-   "https://www.youtube.com/watch?v=RP-B7N9NNt4"
+   "https://www.youtube.com/watch?v=RP-B7N9NNt4",
+   "https://www.youtube.com/watch?v=sbi19GMk19c"
   ],
   "creative_video": [
    "https://www.bilibili.com/video/BV1Qfps6EEVr",
@@ -59,7 +60,8 @@
    "https://www.digitaling.com/projects/319605.html",
    "https://vimeo.com/1151361225",
    "https://www.digitaling.com/projects/320963.html",
-   "https://www.digitaling.com/projects/214101.html"
+   "https://www.digitaling.com/projects/214101.html",
+   "https://vimeo.com/1249436870"
   ],
   "ai_news": [
    "https://www.youtube.com/@%E5%A4%A7%E5%9C%A3Ai%E8%87%AA%E4%B9%A0%E5%AE%A4/videos",
@@ -209,7 +211,8 @@
    266121,
    78197,
    282234,
-   44918
+   44918,
+   266480
   ],
   "novel": [
    "4916",
@@ -261,7 +264,9 @@
    "190",
    "cp:1888561",
    "2606",
-   "jj:3986008"
+   "jj:3986008",
+   "259",
+   "cp:1128480"
   ],
   "novel_rejected": [
    "46670",
@@ -293,7 +298,8 @@
    "47525",
    "38412",
    "8908",
-   "1278"
+   "1278",
+   "cp:265055"
   ],
   "film_directors": [
    "杜琪峰",
@@ -320,7 +326,8 @@
    "马克·詹金",
    "杰瑞米·索尔尼尔",
    "尼古劳斯·盖尔哈特",
-   "贾樟柯"
+   "贾樟柯",
+   "陈英雄"
   ],
   "film_tracks": [
    "Yumeji's Theme",
@@ -347,7 +354,8 @@
    "House of Woodcock",
    "Love Theme",
    "Das Boot",
-   "Summer"
+   "Summer",
+   "Latika's Theme"
   ],
   "novel_titles": [
    "尖白深渊4暗棋",
@@ -398,7 +406,9 @@
    "天涯客",
    "佩尼达日落",
    "coldfevercold三部曲之三冷冽炽情",
-   "小瘸子"
+   "小瘸子",
+   "星尘深处",
+   "男配"
   ],
   "quotes": [
    "You can't get away from yourself by moving from one place to another.",
@@ -424,7 +434,8 @@
    "Be not afeard; the isle is full of noises,\nSounds and sweet airs, that give delight and hurt not.\nSometimes a thousand twangling instruments\nWill hum about mine ears, and sometime voices\nThat, if I then had waked after long sleep,\nWill make me sleep again; and then in dreaming,\nThe clouds methought would open and show riches\nReady to drop upon me, that when I waked\nI cried to dream again.",
    "Things fall apart; the centre cannot hold;\nMere anarchy is loosed upon the world,\nThe blood-dimmed tide is loosed, and everywhere\nThe ceremony of innocence is drowned;",
    "麦地\n别人看见你\n觉得你温暖，美丽\n我则站在你痛苦质问的中心\n被你灼伤",
-   "Multitude, solitude: termes égaux et convertibles pour le poète actif et fécond. Qui ne sait pas peupler sa solitude, ne sait pas non plus être seul dans une foule affairée."
+   "Multitude, solitude: termes égaux et convertibles pour le poète actif et fécond. Qui ne sait pas peupler sa solitude, ne sait pas non plus être seul dans une foule affairée.",
+   "自去自来堂上燕，相亲相近水中鸥。"
   ],
   "posters": [
    "迷魂记",
@@ -432,13 +443,13 @@
    "大都会",
    "《了不起的盖茨比》",
    "金臂人",
-   "地下丝绒与妮可"
+   "地下丝绒与妮可",
+   "黄色潜水艇"
   ]
  },
  "finance_count": {},
- "design_index": 30,
+ "design_index": 31,
  "recent_music_styles": [
-  "Hindustani classical music",
   "Grunge",
   "Indie rock",
   "Shoegaze",
@@ -467,10 +478,10 @@
   "Math rock",
   "Boom bap hip hop",
   "Chinese-style pop (Zhongguofeng)",
-  "Amapiano"
+  "Amapiano",
+  "Classic rock"
  ],
  "recent_instruments": [
-  "Dombra",
   "Didgeridoo",
   "Shamisen",
   "Saxophone",
@@ -499,7 +510,8 @@
   "Acoustic guitar",
   "Roland TR-808",
   "Bagpipes",
-  "Conga"
+  "Conga",
+  "Xiao flute"
  ],
- "artwork_toggle": 29
+ "artwork_toggle": 30
 }

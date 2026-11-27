@@ -1,0 +1,34 @@
+23:45:57 生成 2026-11-28（周六），AI：deepseek/deepseek-flash
+23:45:57 🤖 AI 创意视频
+23:45:57   搜索 #1：AI 短片 创意 脑洞 可灵 即梦 海螺 生成
+23:45:58   搜索 #2：AI film festival short film winner
+23:46:21   完成，1 条
+23:46:24 ✨ 创意视频
+23:46:24   Vimeo Staff Picks：10 条未推过
+23:46:25   搜索 #3：品牌 TVC 创意 广告片
+23:46:26   搜索 #4：brand commercial film campaign
+23:46:44   完成，1 条
+23:46:47 🎨 设计风格
+23:47:05   搜索 #5：Acid graphics poster examples
+23:47:09   维基共享资源搜索失败：Expecting value: line 1 column 1 (char 0)
+23:47:13   图片下载失败 https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=383166286194：cannot identify image file <_io.BytesIO object at 0x77d593f9bba0>
+23:47:19   配图：检查 4 张，不合格 0 张，留下 4 张
+23:47:37   完成，2 条
+23:47:40 🎼 音乐风格和乐器
+23:48:01   维基共享资源搜索失败：Expecting value: line 1 column 1 (char 0)
+23:48:03   配图：检查 1 张，不合格 0 张，留下 1 张
+23:48:03   完成，2 条
+23:48:06 🖼 摄影和画作
+23:48:06   搜索 #6：Eugène Pelletan Nadar 1855–59 Met museum
+23:48:21   完成，1 条
+23:48:24 🎬 导演、电影和配乐
+23:50:06   完成，3 条
+23:50:09 ✒️ 每日一句
+23:50:26   搜索 #7："自去自来堂上燕，相亲相近水中鸥。" 杜甫
+23:50:27   完成，1 条
+23:50:30 📚 双男主小说
+23:50:32   扫文：标签「美强」找到 4 本候选
+23:50:47   《小福晋》扫文评分只有 6.01，跳过
+23:50:56   完成，2 条
+23:50:59 完成：ok，用了 7 次搜索 → /home/runner/work/daily-inspo/daily-inspo/docs/data/2026-11-28.json
+
